@@ -4,7 +4,7 @@
 <?php include_once('includes/auth.php'); ?>
 <?php include_once('includes/logout.php'); ?>
 <?php include_once('includes/connect.php'); ?>
-<?php $pagename="Dashboard"; ?>
+<?php $pagename="Projects"; ?>
 <!DOCTYPE html>
 <html>
 
@@ -28,6 +28,7 @@
 
   <!-- Favicon -->
   <link rel="shortcut icon" href="assets/img/favicon.ico">
+  
   <script src="vendor/jquery/jquery-1.11.1.min.js"></script>
   
 
@@ -75,9 +76,8 @@
                         <div class="col-md-11">
                             <div class="alert alert-system alert-dismissable">
                                 <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-                                <h1><i class="fa fa-cogs pr10"></i> Welcome to AxisPanel.</h1>
-                                <h3>New Features will be added to Dashboard soon.</h3>
-                                <p>For now you can start entering your data from the pages on the left sidebar.</p>
+                                <h1><i class="fa fa-cogs pr10"></i> Projects.</h1>
+                                
                             </div>
                         </div>
                     </div>
@@ -98,7 +98,7 @@
 <!-- BEGIN: PAGE SCRIPTS -->
 
   <!-- jQuery -->
-  <script src="vendor/jquery/jquery-1.11.1.min.js"></script>
+  <!--<script src="vendor/jquery/jquery-1.11.1.min.js"></script>-->
   <script src="vendor/jquery/jquery_ui/jquery-ui.min.js"></script>
 
   <!-- Simple Circles Plugin -->

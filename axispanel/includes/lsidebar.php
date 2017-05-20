@@ -24,7 +24,7 @@
 
           <li class="sidebar-label pt20">Main Menu</li>
 
-          <li <?php if(isset($pagename) && $pagename=='Dashboard') { echo 'class="active"'; } ?>>
+          <li >
             <a href="index.php">
               <span class="glyphicon glyphicon-home"></span>
               <span class="sidebar-title">Dashboard</span>
@@ -33,51 +33,33 @@
 
 		  <!-- sidebar bullets -->
           <li class="sidebar-label pt20">Projects</li>
-          <li <?php if(isset($pagename) && $pagename=='Project Details') { echo 'class="active"'; } ?>>
-            <a href="projectdetails.php">
+		      <li >
+            <a href="projects.php">
               <span class="fa fa-plus-square-o"></span>
-              <span class="sidebar-title">Project Details</span>
-            </a>
-          </li>
-		  <li <?php if(isset($pagename) && $pagename=='Project Names') { echo 'class="active"'; } ?>>
-            <a href="projectnames.php">
-              <span class="fa fa-plus-square-o"></span>
-              <span class="sidebar-title">Project Names</span>
-            </a>
-          </li>
-		  <li <?php if(isset($pagename) && $pagename=='Project Types') { echo 'class="active"'; } ?>>
-            <a href="projecttypes.php">
-              <span class="fa fa-bars"></span>
-              <span class="sidebar-title">Project Types</span>
+              <span class="sidebar-title">Projects</span>
             </a>
           </li>
 
-          <li class="sidebar-label pt20">Items</li>
-          <li <?php if(isset($pagename) && $pagename=='Item Details') { echo 'class="active"'; } ?>>
-            <a class="accordion-toggle" href="#">
-              <span class="glyphicon glyphicon-shopping-cart"></span>
-              <span class="sidebar-title">Item Details</span>
-              <span class="caret"></span>
-            </a>
-            <ul class="nav sub-nav">
-              <li>
-                <a href="appliances.php?type=Applicances"> Home Appliances </a>
-              </li>
-              <li>
-                <a href="hardware.php?type=Hardware"> Hardware </a>
-              </li>
-            </ul>
-          </li>
-		  <li <?php if(isset($pagename) && $pagename=='Item Brands') { echo 'class="active"'; } ?>>
-            <a href="brands.php">
-              <span class="glyphicon glyphicon-tags"></span>
-              <span class="sidebar-title">Item Brands</span>
+
+          <li class="sidebar-label pt20">EVENTS</li>
+          <li >
+            <a href="news.php">
+              <span class="fa fa-bullhorn"></span>
+              <span class="sidebar-title">News</span>
             </a>
           </li>
-		  <li <?php if(isset($pagename) && $pagename=='Item Categories') { echo 'class="active"'; } ?>>
-            <a href="categories.php">
-              <span class="fa fa-table"></span>
-              <span class="sidebar-title">Item Categories</span>
+
+		      <li >
+            <a href="activities.php">
+              <span class="fa fa-flag"></span>
+              <span class="sidebar-title">Activities</span>
+            </a>
+          </li>
+
+          <li >
+            <a href="events.php">
+              <span class="fa fa-magic"></span>
+              <span class="sidebar-title">Events</span>
             </a>
           </li>
 
@@ -97,3 +79,24 @@
 
     </aside>
     <!-- End: Sidebar Left -->
+
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+
+        setNavigation()
+
+        function setNavigation() {
+
+          var Url = window.location.pathname.split(/[\s/]+/);
+          var pageName = Url[Url.length-1]
+
+              $("aside a").each(function () {
+                  var href = $(this).attr('href');
+                  if (pageName.substring(0, href.length) === href) {
+                      $(this).closest('li').addClass('active');
+                  }
+              });
+          }
+    })
+    </script>
