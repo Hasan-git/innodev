@@ -1,7 +1,7 @@
 <?php
 include_once('../includes/connect.php');
 
-if( isset($_POST['prName']) && isset($_POST['title']) && isset($_POST['description']) && isset($_FILES['image']) ) {
+if( isset($_POST['prName']) && isset($_POST['title']) && isset($_POST['description']) && isset($_FILES['imagefile']) ) {
 
 
     $prName = $_POST['prName'];
@@ -16,14 +16,14 @@ if( isset($_POST['prName']) && isset($_POST['title']) && isset($_POST['descripti
 
     $tmp_name = $image["tmp_name"];
     $guid = uniqid();
-    $name = dirname(dirname(__DIR__)).DIRECTORY_SEPARATOR . 'images' .DIRECTORY_SEPARATOR . 'activity' . DIRECTORY_SEPARATOR .basename($guid.'@'.$image["name"]);
+    $name = dirname(dirname(dirname(__DIR__))).DIRECTORY_SEPARATOR . 'images' .DIRECTORY_SEPARATOR . 'activity' . DIRECTORY_SEPARATOR .basename($guid.'@'.$image["name"]);
 
     $image_ = $guid.'@'.$image["name"];
 
     if(move_uploaded_file($tmp_name, $name)){
 
         $sqlnew = "INSERT INTO tblactivities (prName, actDate, title, location, description, image, video)
-                    VALUES ($prName, '$actDate', '$title', '$location', '$description', '$image_', '$video')";
+                    VALUES ('$prName', '$actDate', '$title', '$location', '$description', '$image_', '$video')";
 
         if (mysqli_query($conn, $sqlnew)) {
 
@@ -34,7 +34,7 @@ if( isset($_POST['prName']) && isset($_POST['title']) && isset($_POST['descripti
                 'title' => $title,
                 'location' => $location,
                 'description' => $description,
-                'image' => $image_,
+                'imageName' => $image_,
                 'video' => $video,
             );
             $response = json_encode($record);
@@ -42,7 +42,11 @@ if( isset($_POST['prName']) && isset($_POST['title']) && isset($_POST['descripti
             header("HTTP/1.0 200 OK");
             echo $response;
         }else {
-            header("HTTP/1.0 500 Internal Server Error");
+        header("HTTP/1.0 500 Internal Server Error");
+        // Primary key Duplication
+        if(mysqli_errno($conn) == 1062)
+            echo "$prName record already reserved. Please, Select a new name";
+        else
             echo "An error occurred";
         }
     }else{

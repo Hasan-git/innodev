@@ -22,7 +22,7 @@ if(isset($_GET['prName'])) {
 
                 $Id=$row['Id'];
                 $prName=$row['prName'];
-                $actdate=$row['actdate'];
+                $actdate=$row['actDate'];
                 $title = $row['title'];
                 $location = $row['location'];
                 $description = $row['description'];
@@ -32,11 +32,11 @@ if(isset($_GET['prName'])) {
                 $activity['data'][] = array(
                     'Id' => $Id,
                     'prName' => $prName,
-                    'actdate' => $actdate,
+                    'actDate' => $actdate,
                     'title' => $title,
                     'location' => $location,
                     'description' => $description,
-                    'image' => $image,
+                    'imageName' => $image,
                     'video' => $video);
             }
 

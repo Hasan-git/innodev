@@ -9,7 +9,7 @@ if ( !empty( $_FILES ) && isset($_POST['actTitle'])  ) {
     {
         $tmp_name = $_FILES["file"]["tmp_name"][$key];
         $guid = uniqid();
-        $path = dirname(dirname(__DIR__)).DIRECTORY_SEPARATOR . 'images'.DIRECTORY_SEPARATOR . 'activity' . DIRECTORY_SEPARATOR .basename($guid.'@'.$_FILES["file"]["name"][$key]);
+        $path = dirname(dirname(dirname(__DIR__))).DIRECTORY_SEPARATOR . 'images'.DIRECTORY_SEPARATOR . 'activity' . DIRECTORY_SEPARATOR .basename($guid.'@'.$_FILES["file"]["name"][$key]);
         // move_uploaded_file($tmp_name, $name);
         if(move_uploaded_file( $tmp_name, $path )){
 
