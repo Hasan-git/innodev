@@ -3,14 +3,16 @@ include_once('../includes/connect.php');
 
 if( isset($_POST['prName']) && isset($_POST['title']) && isset($_POST['description']) && isset($_FILES['image']) ) {
 
+
     $prName = $_POST['prName'];
     $title = $_POST['title'];
     $description = $_POST['description'];
-    $image = $_FILES['image'];
+    $image = $_FILES['imagefile'];
 
     $location       =  isset($_POST['location']) ? $_POST['location'] : '' ;
-    $actDate   =  isset($_POST['actDate']) ? $_POST['actDate'] : date('Y-m-d') ;
-    $video       =  isset($_POST['video']) ? $_POST['video'] : '' ;
+    $actDate        =  isset($_POST['actDate']) ? $_POST['actDate'] : date('Y-m-d') ;
+    $video          =  isset($_POST['video']) ? $_POST['video'] : '' ;
+
 
     $tmp_name = $image["tmp_name"];
     $guid = uniqid();

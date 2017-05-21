@@ -6,7 +6,7 @@ if( isset($_POST['prname']) && isset($_POST['title']) && isset($_FILES['image'])
 
     $prname = $_POST['prname'];
     $title = $_POST['title'];
-    $image = $_FILES['image'];
+    $image = $_FILES['imagefile'];
     $description = $_POST['description'];
 
     $target         =  isset($_POST['target']) ? $_POST['target'] :'' ;
@@ -17,11 +17,11 @@ if( isset($_POST['prname']) && isset($_POST['title']) && isset($_FILES['image'])
 
     $tmp_name = $image["tmp_name"];
     $guid = uniqid();
-    $name = dirname(dirname(__DIR__)).DIRECTORY_SEPARATOR . 'images' .DIRECTORY_SEPARATOR . 'project' . DIRECTORY_SEPARATOR .basename($guid.'@'.$image["name"]);
+    $path = dirname(dirname(__DIR__)).DIRECTORY_SEPARATOR . 'images' .DIRECTORY_SEPARATOR . 'project' . DIRECTORY_SEPARATOR .basename($guid.'@'.$image["name"]);
 
     $image_ = $guid.'@'.$image["name"];
 
-    if(move_uploaded_file($tmp_name, $name)){
+    if(move_uploaded_file($tmp_name, $path)){
 
         $sqlnew = "INSERT INTO tblprojects (prname, title, target, doner, startDate, endDate, image, description, notes)
                     VALUES ('$prname', '$title', '$target', '$doner', '$startDate', '$endDate', '$image_', '$description', '$notes')";

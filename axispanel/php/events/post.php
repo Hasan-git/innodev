@@ -6,7 +6,7 @@ if( isset($_POST['prName']) && isset($_POST['title']) && isset($_POST['descripti
     $prName = $_POST['prName'];
     $title = $_POST['title'];
     $description = $_POST['description'];
-    $image = $_FILES['image'];
+    $image = $_FILES['imagefile'];
 
     $location       =  isset($_POST['location']) ? $_POST['location'] : '' ;
     $eDate   =  isset($_POST['eDate']) ? $_POST['eDate'] : date('Y-m-d') ;

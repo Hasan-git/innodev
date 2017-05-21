@@ -6,7 +6,7 @@ if( isset($_POST['title']) && isset($_POST['text']) && isset($_FILES['image']) )
 
     $title = $_POST['title'];
     $text = $_POST['text'];
-    $image = $_FILES['image'];
+    $image = $_FILES['imagefile'];
 
     $author       =  isset($_POST['author']) ? $_POST['author'] :'' ;
     $newsDate   =  isset($_POST['startDate']) ? $_POST['startDate'] : date('Y-m-d') ;
