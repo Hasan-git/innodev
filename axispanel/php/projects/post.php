@@ -1,8 +1,7 @@
 <?php
 include_once('../includes/connect.php');
 
-if( isset($_POST['prname']) && isset($_POST['title']) && isset($_FILES['image']) && isset($_POST['description']) ) {
-
+if( isset($_POST['prname']) && isset($_POST['title']) && isset($_FILES['imagefile']) && isset($_POST['description']) ) {
 
     $prname = $_POST['prname'];
     $title = $_POST['title'];
@@ -17,8 +16,7 @@ if( isset($_POST['prname']) && isset($_POST['title']) && isset($_FILES['image'])
 
     $tmp_name = $image["tmp_name"];
     $guid = uniqid();
-    $path = dirname(dirname(__DIR__)).DIRECTORY_SEPARATOR . 'images' .DIRECTORY_SEPARATOR . 'project' . DIRECTORY_SEPARATOR .basename($guid.'@'.$image["name"]);
-
+    $path = dirname(dirname(dirname(__DIR__))).DIRECTORY_SEPARATOR . 'images' .DIRECTORY_SEPARATOR . 'project' . DIRECTORY_SEPARATOR .basename($guid.'@'.$image["name"]);
     $image_ = $guid.'@'.$image["name"];
 
     if(move_uploaded_file($tmp_name, $path)){
@@ -36,7 +34,7 @@ if( isset($_POST['prname']) && isset($_POST['title']) && isset($_FILES['image'])
                 'doner' => $doner,
                 'startDate' => $startDate,
                 'endDate' => $endDate,
-                'image' => $image_,
+                'imageName' => $image_,
                 'description' => $description,
                 'notes' => $notes,
             );
@@ -46,7 +44,11 @@ if( isset($_POST['prname']) && isset($_POST['title']) && isset($_FILES['image'])
             echo $response;
         }else {
             header("HTTP/1.0 500 Internal Server Error");
-            echo "An error occurred";
+            // Primary key Duplication
+            if(mysqli_errno($conn) == 1062)
+                echo "$prname project already reserved. Please, Select a new name for this project";
+            else
+                echo "An error occurred";
         }
     }else{
         // FILED TO MOVE THE FILE

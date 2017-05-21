@@ -1,7 +1,9 @@
 <?php
 include_once('../includes/connect.php');
 
-if( isset($_POST['prname']) && isset($_POST['title']) && isset($_FILES['image']) && isset($_POST['description']) ) {
+// var_dump($_POST);
+
+if( isset($_POST['prname']) && isset($_POST['title']) && isset($_POST['Id']) && isset($_FILES['imagefile']) && isset($_POST['description']) ) {
 
 
     $Id = $_POST['Id'];
@@ -20,12 +22,12 @@ if( isset($_POST['prname']) && isset($_POST['title']) && isset($_FILES['image'])
         $image  =   $_FILES['imagefile'] ;
         $tmp_name = $image["tmp_name"];
         $guid = uniqid();
-        $path = dirname(dirname(__DIR__)).DIRECTORY_SEPARATOR . 'images' .DIRECTORY_SEPARATOR . 'project' . DIRECTORY_SEPARATOR .basename($guid.'@'.$image["name"]);
+        $path = dirname(dirname(dirname(__DIR__))).DIRECTORY_SEPARATOR . 'images' .DIRECTORY_SEPARATOR . 'project' . DIRECTORY_SEPARATOR .basename($guid.'@'.$image["name"]);
         $image_ = $guid.'@'.$image["name"];
 
         move_uploaded_file($tmp_name, $path);
     }else{
-        $image_ =$_POST['image'];
+        $image_ =$_POST['imageName'];
     }
 
     $updateQuery = "UPDATE tblprojects SET prname='$prname', title='$title', target='$target', doner='$doner', startDate='$startDate', endDate='$endDate', image='$image_', description='$description', notes='$notes' WHERE Id='$Id'";
@@ -40,7 +42,7 @@ if( isset($_POST['prname']) && isset($_POST['title']) && isset($_FILES['image'])
             'doner' => $doner,
             'startDate' => $startDate,
             'endDate' => $endDate,
-            'image' => $image_,
+            'imageName' => $image_,
             'description' => $description,
             'notes' => $notes,
         );
@@ -50,9 +52,12 @@ if( isset($_POST['prname']) && isset($_POST['title']) && isset($_FILES['image'])
         echo $response;
 
     }else{
-        // echo mysqli_error($conn);
-        header("HTTP/1.0 500 Internal Server Error");
-        echo "An error occurred";
+       header("HTTP/1.0 500 Internal Server Error");
+        // Primary key Duplication
+        if(mysqli_errno($conn) == 1062)
+            echo "$prname project already reserved. Please, Select a new name for this project";
+        else
+            echo "An error occurred";
     }
 }else{
 

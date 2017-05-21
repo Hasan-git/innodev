@@ -29,7 +29,7 @@ include_once('../includes/connect.php');
 						'doner' => $doner,
 						'startDate' => $startDate,
 						'endDate' => $endDate,
-						'image' => $image,
+						'imageName' => $image,
 						'description' => $description,
 						'notes' => $notes );
 			}

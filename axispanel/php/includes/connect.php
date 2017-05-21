@@ -2,7 +2,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "sinmarlb_dbsinmar";
+$dbname = "signinwe_dbinnodev";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);

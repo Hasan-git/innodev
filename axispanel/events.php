@@ -65,31 +65,23 @@
 	<?php include_once('includes/lsidebar.php') ?>
 
     <!-- Start: Content-Wrapper -->
-    <section id="content_wrapper">
+    <div id="content_wrapper">
 		<?php include_once('includes/topbar.php') ?>
 
-        <section id="content" class=" animated fadeIn">
+        <div id="content" class=" animated fadeIn">
             <div class="tray tray-center">
                 <div class="col-md-12">
 
-                    <div class="row">
-                        <div class="col-md-11">
-                            <div class="alert alert-system alert-dismissable">
-                                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-                                <h1><i class="fa fa-cogs pr10"></i> events.</h1>
-                                
-                            </div>
-                        </div>
-                    </div>
+                   
 
                 </div>
             </div>
 
-        </section>
+        </div>
 		
 		<?php include_once('includes/footer.php') ?>
 		
-    </section>
+    </div>
     <!-- End: Content-Wrapper -->
 	
   </div>
