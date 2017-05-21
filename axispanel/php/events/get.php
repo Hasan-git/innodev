@@ -35,7 +35,7 @@ if(isset($_GET['prName'])) {
 						'title' => $title,
 						'location' => $location,
 						'description' => $description,
-						'image' => $image,
+						'imageName' => $image,
 						'video' => $video);
 			}
 

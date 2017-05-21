@@ -1,7 +1,7 @@
 <?php
 include_once('../includes/connect.php');
 
-if( isset($_POST['prName']) && isset($_POST['title']) && isset($_POST['description']) && isset($_FILES['image']) ) {
+if( isset($_POST['prName']) && isset($_POST['title']) && isset($_POST['description']) && ( isset($_FILES['imagefile']) ||  isset($_POST['imageName']) ) ) {
 
     $Id = $_POST['Id'];
     $prName = $_POST['prName'];
@@ -23,7 +23,7 @@ if( isset($_POST['prName']) && isset($_POST['title']) && isset($_POST['descripti
 
         move_uploaded_file($tmp_name, $path);
     }else{
-        $image_ =$_POST['image'];
+        $image_ = $_POST['imageName'];
     }
 
     $updateQuery = "UPDATE tblevents SET prName='$prName', eDate='$eDate', title='$title', location='$location', description='$description', image='$image_', video='$video' WHERE Id='$Id'";
@@ -38,7 +38,7 @@ if( isset($_POST['prName']) && isset($_POST['title']) && isset($_POST['descripti
             'title' => $title,
             'location' => $location,
             'description' => $description,
-            'image' => $image_,
+            'imageName' => $image_,
             'video' => $video,
         );
 
@@ -47,10 +47,13 @@ if( isset($_POST['prName']) && isset($_POST['title']) && isset($_POST['descripti
         echo $response;
 
     }else{
-        // echo mysqli_error($conn);
         header("HTTP/1.0 500 Internal Server Error");
-        echo "An error occurred";
-    }
+        // Primary key Duplication
+        if(mysqli_errno($conn) == 1062)
+            echo "$prName record already reserved. Please, Select a new name";
+        else
+            echo "An error occurred";
+        }
 }else{
 
     header("HTTP/1.0 400 Bad Request");

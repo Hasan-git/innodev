@@ -125,7 +125,7 @@
                                             <div class="clearfix"><br/></div>
                                             <div align="right" class="">
                                                 <button type="button" class="btn btn-default" role="button" id="cancelNewForm"> Cancel </button>
-                                                <button type="button" name="submitnew" class="btn btn-primary" id="saveNewForm"> Create Project</button>
+                                                <button type="button" name="submitnew" class="btn btn-primary" id="saveNewForm"> Create Record</button>
                                             </div>
                                         </form>
                                     </div>
@@ -248,7 +248,7 @@
         <div>
             <h2 id="modal1Title">Notification</h2>
             <p id="modal1Desc">
-                Are you sure you want to delete this project ?
+                Are you sure you want to delete this Record ?
             </p>
         </div>
         <br>
