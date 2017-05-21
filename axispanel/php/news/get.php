@@ -24,7 +24,7 @@ if ($result) {
                 'title' => $title,
                 'author' => $author,
                 'text' => $text,
-                'image' => $image,
+                'imageName' => $image,
                 'video' => $video );
         }
 

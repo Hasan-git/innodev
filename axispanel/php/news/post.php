@@ -1,7 +1,7 @@
 <?php
 include_once('../includes/connect.php');
 
-if( isset($_POST['title']) && isset($_POST['text']) && isset($_FILES['image']) ) {
+if( isset($_POST['title']) && isset($_POST['text']) && isset($_FILES['imagefile']) ) {
 
 
     $title = $_POST['title'];
@@ -14,7 +14,7 @@ if( isset($_POST['title']) && isset($_POST['text']) && isset($_FILES['image']) )
 
     $tmp_name = $image["tmp_name"];
     $guid = uniqid();
-    $name = dirname(dirname(__DIR__)).DIRECTORY_SEPARATOR . 'images' .DIRECTORY_SEPARATOR . 'news' . DIRECTORY_SEPARATOR .basename($guid.'@'.$image["name"]);
+    $name = dirname(dirname(dirname(__DIR__))).DIRECTORY_SEPARATOR . 'images' .DIRECTORY_SEPARATOR . 'news' . DIRECTORY_SEPARATOR .basename($guid.'@'.$image["name"]);
 
     $image_ = $guid.'@'.$image["name"];
 
@@ -31,7 +31,7 @@ if( isset($_POST['title']) && isset($_POST['text']) && isset($_FILES['image']) )
                 'title' => $title,
                 'author' => $author,
                 'text' => $text,
-                'image' => $image_,
+                'imageName' => $image_,
                 'video' => $video,
             );
             $response = json_encode($record);

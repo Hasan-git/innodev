@@ -90,21 +90,21 @@
                                             <div class="form-group admin-form">
                                                 <div class="col-sm-6">
                                                     <label class="control-label">Project Title*</label>
-                                                    <input type="text" data-validation="required" name="title" id="title" class="form-control" placeholder="Project Detail Title ..." required>
+                                                    <input type="text" data-validation="required" name="title" id="title" class="form-control" placeholder="Project Title ..." required>
                                                 </div>
                                                 <div class="col-sm-6">
                                                     <label class="control-label">Project Name*</label>
-                                                    <input type="text" data-validation="required" name="prname" id="prname" class="form-control" placeholder="Project Detail Title ..." required>
+                                                    <input type="text" data-validation="required" name="prname" id="prname" class="form-control" placeholder="Project Title ..." required>
                                                 </div>
                                             </div>
                                             <div class="form-group admin-form">
                                                 <div class="col-sm-6">
                                                     <label class="control-label">Target</label>
-                                                    <input type="text" name="target" id="target" class="form-control" placeholder="Project Detail Title ..." required>
+                                                    <input type="text" name="target" id="target" class="form-control" placeholder="Project Target ..." required>
                                                 </div>
                                                 <div class="col-sm-6">
                                                     <label class="control-label">Doner</label>
-                                                    <input type="text" name="doner" id="doner" class="form-control" placeholder="Sub Type If Needed...">
+                                                    <input type="text" name="doner" id="doner" class="form-control" placeholder=" Doner ...">
                                                 </div>
                                             </div>
                                             <div class="form-group admin-form">
@@ -123,11 +123,11 @@
 
                                                 <div class="col-sm-3">
                                                     <label class="control-label">Start Date*</label>
-                                                    <input data-validation="required" type="date" name="startDate" id="startDate" class="form-control" placeholder="Date..." required="required">
+                                                    <input  type="date" name="startDate" id="startDate" class="form-control" placeholder="Date..." >
                                                 </div>
                                                 <div class="col-sm-3">
                                                     <label class="control-label">End Date*</label>
-                                                    <input data-validation="required" type="date" name="endDate" id="endDate" class="form-control" placeholder="Date..." required="required">
+                                                    <input  type="date" name="endDate" id="endDate" class="form-control" placeholder="Date..." >
                                                 </div>
 
                                                 <div class="col-sm-5">
@@ -167,44 +167,44 @@
                                             <div class="form-group admin-form">
                                                 <div class="col-sm-6">
                                                     <label class="control-label">Project Title*</label>
-                                                    <input type="text" data-validation="required" name="title" id="title" class="form-control" placeholder="Project Detail Title ..." required>
+                                                    <input type="text" data-validation="required" name="title" id="title" class="form-control" placeholder="Project Title ..." required>
                                                 </div>
                                                 <div class="col-sm-6">
                                                     <label class="control-label">Project Name*</label>
-                                                    <input type="text" data-validation="required" name="prname" id="prname" class="form-control" placeholder="Project Detail Title ..." required>
+                                                    <input type="text" data-validation="required" name="prname" id="prname" class="form-control" placeholder="Project Name ..." required>
                                                 </div>
                                             </div>
                                             <div class="form-group admin-form">
                                                 <div class="col-sm-6">
                                                     <label class="control-label">Target</label>
-                                                    <input type="text" name="target" id="target" class="form-control" placeholder="Project Detail Title ..." required>
+                                                    <input type="text" name="target" id="target" class="form-control" placeholder="Project Target ..." required>
                                                 </div>
                                                 <div class="col-sm-6">
                                                     <label class="control-label">Doner</label>
-                                                    <input type="text" name="doner" id="doner" class="form-control" placeholder="Sub Type If Needed...">
+                                                    <input type="text" name="doner" id="doner" class="form-control" placeholder="Doner">
                                                 </div>
                                             </div>
                                             <div class="form-group admin-form">
                                                 <div class="col-sm-12">
                                                     <label class="control-label">Title Description</label>
-                                                    <textarea data-validation="required" name="description" id="description" class="form-control textarea-grow" rows="4" placeholder="Write Description Here..."></textarea>
+                                                    <textarea data-validation="required" name="description" id="description" class="form-control textarea-grow" rows="4" placeholder="Write Description ..."></textarea>
                                                 </div>
                                             </div>
                                             <div class="form-group admin-form">
                                                 <div class="col-sm-12">
                                                     <label class="control-label">Project Notes</label>
-                                                    <textarea name="notes" id="notes" class="form-control textarea-grow" rows="4" placeholder="Write Notes Here..."></textarea>
+                                                    <textarea name="notes" id="notes" class="form-control textarea-grow" rows="4" placeholder="Project Notes"></textarea>
                                                 </div>
                                             </div>
                                             <div class="form-group admin-form">
 
                                                 <div class="col-sm-3">
                                                     <label class="control-label">Start Date*</label>
-                                                    <input type="date" name="startDate" id="startDate" class="form-control" placeholder="Date..." required="required">
+                                                    <input type="date" name="startDate" id="startDate" class="form-control" placeholder="Date..." >
                                                 </div>
                                                 <div class="col-sm-3">
                                                     <label class="control-label">End Date*</label>
-                                                    <input type="date" name="endDate" id="endDate" class="form-control" placeholder="Date..." required="required">
+                                                    <input type="date" name="endDate" id="endDate" class="form-control" placeholder="Date..." >
                                                 </div>
 
                                                 <div class="col-sm-5">

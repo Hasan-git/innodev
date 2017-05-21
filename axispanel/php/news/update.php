@@ -1,13 +1,13 @@
 <?php
 include_once('../includes/connect.php');
 
-if( isset($_POST['title']) && isset($_POST['text']) && isset($_FILES['image']) ) {
+if( isset($_POST['title'])  && isset($_POST['text']) && isset($_POST['newsDate']) && ( isset($_POST['imageName']) || isset($$_FILES['imagefile']) ) ) {
 
 
     $Id = $_POST['Id'];
     $title = $_POST['title'];
     $text = $_POST['text'];
-    $image = $_FILES['image'];
+    $image = $_FILES['imagefile'];
 
     $author       =  isset($_POST['author']) ? $_POST['author'] :'' ;
     $newsDate   =  isset($_POST['startDate']) ? $_POST['startDate'] : date('Y-m-d') ;
@@ -18,12 +18,12 @@ if( isset($_POST['title']) && isset($_POST['text']) && isset($_FILES['image']) )
         $image  =   $_FILES['imagefile'] ;
         $tmp_name = $image["tmp_name"];
         $guid = uniqid();
-        $path = dirname(dirname(__DIR__)).DIRECTORY_SEPARATOR . 'images' .DIRECTORY_SEPARATOR . 'news' . DIRECTORY_SEPARATOR .basename($guid.'@'.$image["name"]);
+        $path = dirname(dirname(dirname(__DIR__))).DIRECTORY_SEPARATOR . 'images' .DIRECTORY_SEPARATOR . 'news' . DIRECTORY_SEPARATOR .basename($guid.'@'.$image["name"]);
         $image_ = $guid.'@'.$image["name"];
 
         move_uploaded_file($tmp_name, $path);
     }else{
-        $image_ =$_POST['image'];
+        $image_ =$_POST['imageName'];
     }
 
     $updateQuery = "UPDATE tblnews SET newsDate='$newsDate', title='$title', author='$author', text='$text', image='$image_', video='$video' WHERE Id='$Id'";
@@ -36,7 +36,7 @@ if( isset($_POST['title']) && isset($_POST['text']) && isset($_FILES['image']) )
             'title' => $title,
             'author' => $author,
             'text' => $text,
-            'image' => $image_,
+            'imageName' => $image_,
             'video' => $video,
         );
 
