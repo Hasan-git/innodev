@@ -96,8 +96,8 @@
                 ],
                 data:data.data,
                 columns:[
-                    {'data':'prname'},
                     {'data':'title'},
+                    {'data':'prname'},
                     {'data':'target'},
                     {'data':'doner'},
                     {'data':'startDate'},

@@ -18,7 +18,7 @@ if( isset($_POST['prName']) && isset($_POST['title']) && isset($_POST['descripti
         $image  =   $_FILES['imagefile'] ;
         $tmp_name = $image["tmp_name"];
         $guid = uniqid();
-        $path = dirname(dirname(__DIR__)).DIRECTORY_SEPARATOR . 'images' .DIRECTORY_SEPARATOR . 'event' . DIRECTORY_SEPARATOR .basename($guid.'@'.$image["name"]);
+        $path = dirname(dirname(dirname(__DIR__))).DIRECTORY_SEPARATOR . 'images' .DIRECTORY_SEPARATOR . 'event' . DIRECTORY_SEPARATOR .basename($guid.'@'.$image["name"]);
         $image_ = $guid.'@'.$image["name"];
 
         move_uploaded_file($tmp_name, $path);

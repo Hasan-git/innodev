@@ -111,6 +111,22 @@
                     });
 
                 },
+        getProjectsInitializer: function() {
+                    $.ajax({
+                        url: 'php/projects/get.php',
+                        method: 'GET',
+                        dataType: 'json',
+                        success: function(data) {
+                            $('#projectFilter').find('option').remove().end().append('<option value="" selected="selected">All</option>').attr("selected", "selected").change()
+
+                            $.each(data.data, function(key, value) {
+                                $('#projectFilter')
+                                .append($("<option></option>").attr("value", value.prname).text(value.prname));
+                            });
+                        }
+                    });
+
+                },
     }
 
 
@@ -118,12 +134,16 @@
     //      CTRL
     //---------------------
 
+    services.getProjectsInitializer();
+    
     //Get all records
     $.ajax({
         url: urlPath + 'get.php',
         method:'GET',
         dataType:'json',
         success:function(data){
+
+
             //Datatable Initializer
              $('#datatable3').dataTable({
                 // With BUTTONS COPY PRINT PDF .....
@@ -141,8 +161,8 @@
                 ],
                 data:data.data,
                 columns:[
-                    {'data':'prName'},
                     {'data':'title'},
+                    {'data':'prName'},
                     {'data':'actDate'},
                     {'data':'location'},
                     {'data':null,
@@ -153,7 +173,27 @@
                         },
                     }
                 ]
-            })     
+            })    
+
+               
+
+            var table = $('#datatable3').DataTable();
+            table.columns().eq(0).each( function () {
+                var that = this;
+
+                $( '#projectFilter' ).on( 'keyup change', function () {
+                    if ( that.search() !== this.value ) {
+                        that.column(1)
+                            .search( this.value )
+                            .draw();
+                    }else if(this.value == '') {
+                        that.search( '' ).columns()
+                            .search( '' )
+                            .draw()
+                    }
+                });
+            });
+
         // Add Placeholder text to datatables filter bar
         $('.dataTables_filter input').attr("placeholder", "Enter Terms...");                  
         }

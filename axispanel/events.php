@@ -207,7 +207,19 @@
                         </div>
 
 
-                        <button class="btn btn-default btn-gradient" scrollto="#newFormContainer" id="openNewRecordForm"><i class="fa fa-plus"></i> Create New Event </button>
+                        
+                        <div class="row">
+                            <div class="col-xs-2">
+                                <button class="btn btn-default btn-gradient" scrollto="#newFormContainer" id="openNewRecordForm"><i class="fa fa-plus"></i> Create New Event </button>
+                            </div>
+                            <div class="col-xs-5 input-group" style="padding-left:50px;">
+                                <span class="input-group-addon" id="basic-addon1">Switch Project</span>            
+                                    <select class="select2-single form-control" id="projectFilter">
+                                    </select>
+                            </div>
+                            <div class="col-xs-1"></div>
+                        </div>
+
                         <!-- TABLE -->
                         <!-- TABLE -->
                         <!-- TABLE -->
