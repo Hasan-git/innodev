@@ -3,7 +3,7 @@
 } ?>
 <?php include_once('includes/auth.php'); ?>
 <?php include_once('includes/logout.php'); ?>
-<?php include_once('includes/connect.php'); ?>
+
 <?php $pagename="Projects"; ?>
 <!DOCTYPE html>
 <html>
@@ -81,7 +81,7 @@
                             <div class="col-md-10">
                                 <div class="panel">
                                     <div class="panel-heading">
-                                        <span>Create New Detail</span>
+                                        <span>Insert New Project</span>
                                     </div>
 
                                     <div class="panel-body">
@@ -89,49 +89,49 @@
                                         <form class="form-horizontal" name="newform" id="newform" method="POST" action="" enctype="multipart/form-data" role="form">
                                             <div class="form-group admin-form">
                                                 <div class="col-sm-6">
-                                                    <label class="control-label">Project Title*</label>
-                                                    <input type="text" data-validation="required" name="title" id="title" class="form-control" placeholder="Project Title ..." required>
+                                                    <label class="control-label">Project Name*</label>
+                                                    <input type="text" data-validation="required" name="prname" id="prname" class="form-control" placeholder="Project Name ..." required>
                                                 </div>
                                                 <div class="col-sm-6">
-                                                    <label class="control-label">Project Name*</label>
-                                                    <input type="text" data-validation="required" name="prname" id="prname" class="form-control" placeholder="Project Title ..." required>
+                                                    <label class="control-label">Project Title*</label>
+                                                    <input type="text" data-validation="required" name="title" id="title" class="form-control" placeholder="Project Title ..." required>
                                                 </div>
                                             </div>
                                             <div class="form-group admin-form">
                                                 <div class="col-sm-6">
                                                     <label class="control-label">Target</label>
-                                                    <input type="text" name="target" id="target" class="form-control" placeholder="Project Target ..." required>
+                                                    <input type="text" name="target" id="target" class="form-control" placeholder="Project Target ...">
                                                 </div>
                                                 <div class="col-sm-6">
                                                     <label class="control-label">Doner</label>
-                                                    <input type="text" name="doner" id="doner" class="form-control" placeholder=" Doner ...">
+                                                    <input type="text" name="doner" id="doner" class="form-control" placeholder="Doner Name...">
                                                 </div>
                                             </div>
                                             <div class="form-group admin-form">
                                                 <div class="col-sm-12">
-                                                    <label class="control-label">Title Description</label>
-                                                    <textarea data-validation="required" name="description" id="description" class="form-control textarea-grow" rows="4" placeholder="Write Description Here..."></textarea>
+                                                    <label class="control-label">Project Description*</label>
+                                                    <textarea data-validation="required" name="description" id="description" class="form-control textarea-grow" rows="4" placeholder="Write Description Here..." required></textarea>
                                                 </div>
                                             </div>
                                             <div class="form-group admin-form">
                                                 <div class="col-sm-12">
                                                     <label class="control-label">Project Notes</label>
-                                                    <textarea name="notes" id="notes" class="form-control textarea-grow" rows="4" placeholder="Write Notes Here..."></textarea>
+                                                    <textarea name="notes" id="notes" class="form-control textarea-grow" rows="4" placeholder="Write Your Own Notes Here..."></textarea>
                                                 </div>
                                             </div>
                                             <div class="form-group admin-form">
 
                                                 <div class="col-sm-3">
-                                                    <label class="control-label">Start Date*</label>
-                                                    <input  type="date" name="startDate" id="startDate" class="form-control" placeholder="Date..." >
+                                                    <label class="control-label">Starting Date*</label>
+                                                    <input  type="date" name="startDate" id="startDate" class="form-control">
                                                 </div>
                                                 <div class="col-sm-3">
                                                     <label class="control-label">End Date*</label>
-                                                    <input  type="date" name="endDate" id="endDate" class="form-control" placeholder="Date..." >
+                                                    <input  type="date" name="endDate" id="endDate" class="form-control">
                                                 </div>
 
-                                                <div class="col-sm-5">
-                                                    <label class="control-label">Upload Image*</label>
+                                                <div class="col-sm-6">
+                                                    <label class="control-label">Upload Project Image*</label>
                                                     <label class="field prepend-icon file">
                                               <span class="button bg-primary" style="color: white;">Choose Image</span>
                                               <input type="file" class="gui-file" name="imagefile" id="imagefile" onChange="document.getElementById('imageName').value = this.value.substr(12);" required>
@@ -166,12 +166,12 @@
                                         <form class="form-horizontal" name="editform" id="editForm" method="POST" action="" enctype="multipart/form-data" role="form">
                                             <div class="form-group admin-form">
                                                 <div class="col-sm-6">
-                                                    <label class="control-label">Project Title*</label>
-                                                    <input type="text" data-validation="required" name="title" id="title" class="form-control" placeholder="Project Title ..." required>
-                                                </div>
-                                                <div class="col-sm-6">
                                                     <label class="control-label">Project Name*</label>
                                                     <input type="text" data-validation="required" name="prname" id="prname" class="form-control" placeholder="Project Name ..." required>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <label class="control-label">Project Title*</label>
+                                                    <input type="text" data-validation="required" name="title" id="title" class="form-control" placeholder="Project Title ..." required>
                                                 </div>
                                             </div>
                                             <div class="form-group admin-form">
@@ -186,7 +186,7 @@
                                             </div>
                                             <div class="form-group admin-form">
                                                 <div class="col-sm-12">
-                                                    <label class="control-label">Title Description</label>
+                                                    <label class="control-label">Project Description</label>
                                                     <textarea data-validation="required" name="description" id="description" class="form-control textarea-grow" rows="4" placeholder="Write Description ..."></textarea>
                                                 </div>
                                             </div>
@@ -199,7 +199,7 @@
                                             <div class="form-group admin-form">
 
                                                 <div class="col-sm-3">
-                                                    <label class="control-label">Start Date*</label>
+                                                    <label class="control-label">Starting Date*</label>
                                                     <input type="date" name="startDate" id="startDate" class="form-control" placeholder="Date..." >
                                                 </div>
                                                 <div class="col-sm-3">
@@ -208,7 +208,7 @@
                                                 </div>
 
                                                 <div class="col-sm-5">
-                                                    <label class="control-label">Upload Image*</label>
+                                                    <label class="control-label">Change Project Image</label>
                                                     <label class="field prepend-icon file">
                               <span class="button bg-primary" style="color: white;">Choose Image</span>
                               <input type="file" class="gui-file" name="imagefile" id="imagefile" onChange="document.getElementById('imageName').value = this.value.substr(12);" required>

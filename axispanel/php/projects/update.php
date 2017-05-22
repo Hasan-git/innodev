@@ -31,8 +31,8 @@ if( isset($_POST['prname']) && isset($_POST['title']) && isset($_POST['Id']) && 
     }
 
     $updateQuery = "UPDATE tblprojects SET prname='$prname', title='$title', target='$target', doner='$doner', startDate='$startDate', endDate='$endDate', image='$image_', description='$description', notes='$notes' WHERE Id='$Id'";
-    if(mysqli_query($conn, $updateQuery)){
 
+    if(mysqli_query($conn, $updateQuery)){
 
         $record['data'] = array(
             'Id' => $Id,

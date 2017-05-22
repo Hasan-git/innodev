@@ -3,7 +3,7 @@
 } ?>
 <?php include_once('includes/auth.php'); ?>
 <?php include_once('includes/logout.php'); ?>
-<?php include_once('includes/connect.php'); ?>
+
 <?php $pagename="Events"; ?>
 <!DOCTYPE html>
 <html>
@@ -81,7 +81,7 @@
                             <div class="col-md-10">
                                 <div class="panel">
                                     <div class="panel-heading">
-                                        <span>Create New Record</span>
+                                        <span>Create New Event</span>
                                     </div>
 
                                     <div class="panel-body">
@@ -89,37 +89,37 @@
                                         <form class="form-horizontal" name="newform" id="newform" method="POST" action="" enctype="multipart/form-data" role="form">
                                             <div class="form-group admin-form">
                                                 <div class="col-sm-4">
-                                                    <label class="control-label">Project*</label>
+                                                    <label class="control-label">Event Title*</label>
+                                                    <input type="text" data-validation="required" name="title" id="title" class="form-control" placeholder="Event Title" required>
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <label class="control-label">Project Name*</label>
                                                     <select data-validation="required" name="prName" id="prName" class="select2-single form-control" required>
                                                         <option>Select Project</option>
                                                     </select>
                                                 </div>
                                                 <div class="col-sm-4">
-                                                    <label class="control-label">Title</label>
-                                                    <input type="text" data-validation="required" name="title" id="title" class="form-control" placeholder="Event Title" >
-                                                </div>
-                                                <div class="col-sm-4">
-                                                    <label class="control-label">Date</label>
-                                                    <input type="date" data-validation="required" name="eDate" id="eDate" class="form-control" placeholder="date..." required>
+                                                    <label class="control-label">Event Date*</label>
+                                                    <input type="date" data-validation="required" name="eDate" id="eDate" class="form-control" required>
                                                 </div>
                                             </div>
                                             <div class="form-group admin-form">
                                                 <div class="col-sm-12">
-                                                    <label class="control-label">Description</label>
-                                                    <textarea data-validation="required" name="description" id="description" class="form-control textarea-grow" rows="4" placeholder="Description" required></textarea>
+                                                    <label class="control-label">Event Description*</label>
+                                                    <textarea data-validation="required" name="description" id="description" class="form-control textarea-grow" rows="4" placeholder="Event Description" required></textarea>
                                                 </div>
                                                 <div class="col-sm-12">
-                                                    <label class="control-label">Location</label>
-                                                    <textarea name="location" id="location" class="form-control textarea-grow" rows="4" placeholder="Location" ></textarea>
+                                                    <label class="control-label">Event Location</label>
+                                                    <textarea name="location" id="location" class="form-control textarea-grow" rows="4" placeholder="Event Location" ></textarea>
                                                 </div>
                                             </div>
                                             <div class="form-group admin-form">
                                               <div class="col-sm-6">
                                                     <label class="control-label">Video Link</label>
-                                                    <input type="text" data-validation-optional="true" data-validation="url" name="video" id="video" class="form-control" placeholder="Video url" >
+                                                    <input type="text" data-validation-optional="true" data-validation="url" name="video" id="video" class="form-control" placeholder="Write Video URl from YoutTube Here..." >
                                                 </div>
                                                 <div class="col-sm-6">
-                                                    <label class="control-label">Upload Image*</label>
+                                                    <label class="control-label">Upload Event Image*</label>
                                                     <label class="field prepend-icon file">
                                                     <span class="button bg-primary" style="color: white;">Choose Image</span>
                                                     <input type="file" class="gui-file" name="imagefile" id="imagefile" onChange="document.getElementById('imageName').value = this.value.substr(12);" required>
@@ -154,37 +154,37 @@
                                         <form class="form-horizontal" name="editform" id="editForm" method="POST" action="" enctype="multipart/form-data" role="form">
                                             <div class="form-group admin-form">
                                                 <div class="col-sm-4">
-                                                    <label class="control-label">Project*</label>
+                                                    <label class="control-label">Event Title</label>
+                                                    <input type="text" data-validation="required" name="title" id="title" class="form-control" placeholder="Event Title" >
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <label class="control-label">Project Name*</label>
                                                     <select data-validation="required" name="prName" id="prName" class="select2-single form-control" required>
                                                         <option>Select Project</option>
                                                     </select>
                                                 </div>
                                                 <div class="col-sm-4">
-                                                    <label class="control-label">Title</label>
-                                                    <input type="text" data-validation="required" name="title" id="title" class="form-control" placeholder="Event Title" >
-                                                </div>
-                                                <div class="col-sm-4">
-                                                    <label class="control-label">Date</label>
+                                                    <label class="control-label">Event Date*</label>
                                                     <input type="date" data-validation="required" name="eDate" id="eDate" class="form-control" placeholder="date..." required>
                                                 </div>
                                             </div>
                                             <div class="form-group admin-form">
                                                 <div class="col-sm-12">
-                                                    <label class="control-label">Description</label>
-                                                    <textarea data-validation="required" name="description" id="description" class="form-control textarea-grow" rows="4" placeholder="Description" required></textarea>
+                                                    <label class="control-label">Event Description*</label>
+                                                    <textarea data-validation="required" name="description" id="description" class="form-control textarea-grow" rows="4" placeholder="Event Description" required></textarea>
                                                 </div>
                                                 <div class="col-sm-12">
-                                                    <label class="control-label">Location</label>
-                                                    <textarea name="location" id="location" class="form-control textarea-grow" rows="4" placeholder="Location" ></textarea>
+                                                    <label class="control-label">Event Location</label>
+                                                    <textarea name="location" id="location" class="form-control textarea-grow" rows="4" placeholder="Event Location" ></textarea>
                                                 </div>
                                             </div>
                                             <div class="form-group admin-form">
                                               <div class="col-sm-6">
                                                     <label class="control-label">Video Link</label>
-                                                    <input type="text" data-validation-optional="true" data-validation="url" name="video" id="video" class="form-control" placeholder="Video url" >
+                                                    <input type="text" data-validation-optional="true" data-validation="url" name="video" id="video" class="form-control" placeholder="Write Video URl from YoutTube Here..." >
                                                 </div>
                                                 <div class="col-sm-6">
-                                                    <label class="control-label">Upload Image*</label>
+                                                    <label class="control-label">Change Event Image</label>
                                                     <label class="field prepend-icon file">
                                                     <span class="button bg-primary" style="color: white;">Choose Image</span>
                                                     <input type="file" class="gui-file" name="imagefile" id="imagefile" onChange="document.getElementById('imageName').value = this.value.substr(12);" required>
@@ -207,7 +207,7 @@
                         </div>
 
 
-                        <button class="btn btn-default btn-gradient" scrollto="#newFormContainer" id="openNewRecordForm"><i class="fa fa-plus"></i> Create New Record </button>
+                        <button class="btn btn-default btn-gradient" scrollto="#newFormContainer" id="openNewRecordForm"><i class="fa fa-plus"></i> Create New Event </button>
                         <!-- TABLE -->
                         <!-- TABLE -->
                         <!-- TABLE -->
@@ -220,21 +220,19 @@
                                     <table class="table table-striped table-hover" id="datatable3" cellspacing="0" width="100%">
                                         <thead>
                                             <tr>
-                                                <th>Project</th>
                                                 <th>Title</th>
+                                                <th>Project</th>
                                                 <th>Date</th>
                                                 <th>Location</th>
-
                                                 <th>Action</th>
                                             </tr>
                                         </thead>
                                         <tfoot>
                                             <tr>
-                                                <th>Project</th>
                                                 <th>Title</th>
+                                                <th>Project</th>
                                                 <th>Date</th>
                                                 <th>Location</th>
-
                                                 <th>Action</th>
                                             </tr>
                                         </tfoot>

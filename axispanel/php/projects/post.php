@@ -43,6 +43,9 @@ if( isset($_POST['prname']) && isset($_POST['title']) && isset($_FILES['imagefil
             header("HTTP/1.0 200 OK");
             echo $response;
         }else {
+
+            //Must unset the image file if record doesn't inserted...
+
             header("HTTP/1.0 500 Internal Server Error");
             // Primary key Duplication
             if(mysqli_errno($conn) == 1062)

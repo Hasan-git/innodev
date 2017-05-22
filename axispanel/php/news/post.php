@@ -40,7 +40,11 @@ if( isset($_POST['title']) && isset($_POST['text']) && isset($_FILES['imagefile'
             echo $response;
         }else {
             header("HTTP/1.0 500 Internal Server Error");
-            echo "An error occurred";
+            // Primary key Duplication
+            if(mysqli_errno($conn) == 1062)
+                echo "$title already reserved. Please, Select a new Title";
+            else
+                echo "An error occurred";
         }
     }else{
         // FILED TO MOVE THE FILE

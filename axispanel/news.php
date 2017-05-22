@@ -3,7 +3,7 @@
 } ?>
 <?php include_once('includes/auth.php'); ?>
 <?php include_once('includes/logout.php'); ?>
-<?php include_once('includes/connect.php'); ?>
+
 <?php $pagename="News"; ?>
 <!DOCTYPE html>
 <html>
@@ -81,7 +81,7 @@
                             <div class="col-md-10">
                                 <div class="panel">
                                     <div class="panel-heading">
-                                        <span>Create New Record</span>
+                                        <span>Create New News</span>
                                     </div>
 
                                     <div class="panel-body">
@@ -89,31 +89,31 @@
                                         <form class="form-horizontal" name="newform" id="newform" method="POST" action="" enctype="multipart/form-data" role="form">
                                             <div class="form-group admin-form">
                                                 <div class="col-sm-4">
-                                                    <label class="control-label">Title*</label>
-                                                    <input type="text" data-validation="required" name="title" id="title" class="form-control" placeholder="Title ..." required>
+                                                    <label class="control-label">News Title*</label>
+                                                    <input type="text" data-validation="required" name="title" id="title" class="form-control" placeholder="News Title..." required>
                                                 </div>
                                                 <div class="col-sm-4">
-                                                    <label class="control-label">Author</label>
+                                                    <label class="control-label">Author Name</label>
                                                     <input type="text" name="author" id="author" class="form-control" placeholder="Author Name" >
                                                 </div>
                                                 <div class="col-sm-4">
-                                                    <label class="control-label">Publish Date</label>
-                                                    <input type="date" data-validation="required" name="newsDate" id="newsDate" class="form-control" placeholder="Author Name" required>
+                                                    <label class="control-label">Publish Date*</label>
+                                                    <input type="date" data-validation="required" name="newsDate" id="newsDate" class="form-control" required>
                                                 </div>
                                             </div>
                                             <div class="form-group admin-form">
                                                 <div class="col-sm-12">
-                                                    <label class="control-label">News Content</label>
-                                                    <textarea data-validation="required" name="text" id="text" class="form-control textarea-grow" rows="4" placeholder="Your content ..." required></textarea>
+                                                    <label class="control-label">News Content*</label>
+                                                    <textarea data-validation="required" name="text" id="text" class="form-control textarea-grow" rows="4" placeholder="Your content..." required></textarea>
                                                 </div>
                                             </div>
                                             <div class="form-group admin-form">
                                               <div class="col-sm-6">
                                                     <label class="control-label">Video Link</label>
-                                                    <input type="text" data-validation-optional="true" data-validation="url" name="video" id="video" class="form-control" placeholder="Video url" >
+                                                    <input type="text" data-validation-optional="true" data-validation="url" name="video" id="video" class="form-control" placeholder="Write Video URl from YoutTube Here..." >
                                                 </div>
                                                 <div class="col-sm-6">
-                                                    <label class="control-label">Upload Image*</label>
+                                                    <label class="control-label">Upload News Image*</label>
                                                     <label class="field prepend-icon file">
                                                     <span class="button bg-primary" style="color: white;">Choose Image</span>
                                                     <input type="file" class="gui-file" name="imagefile" id="imagefile" onChange="document.getElementById('imageName').value = this.value.substr(12);" required>
@@ -125,7 +125,7 @@
                                             <div class="clearfix"><br/></div>
                                             <div align="right" class="">
                                                 <button type="button" class="btn btn-default" role="button" id="cancelNewForm"> Cancel </button>
-                                                <button type="button" name="submitnew" class="btn btn-primary" id="saveNewForm"> Create Record</button>
+                                                <button type="button" name="submitnew" class="btn btn-primary" id="saveNewForm"> Create News</button>
                                             </div>
                                         </form>
                                     </div>
@@ -148,31 +148,31 @@
                                         <form class="form-horizontal" name="editform" id="editForm" method="POST" action="" enctype="multipart/form-data" role="form">
                                             <div class="form-group admin-form">
                                                 <div class="col-sm-4">
-                                                    <label class="control-label">Title*</label>
-                                                    <input type="text" data-validation="required" name="title" id="title" class="form-control" placeholder="Title ..." required>
+                                                    <label class="control-label">News Title*</label>
+                                                    <input type="text" data-validation="required" name="title" id="title" class="form-control" placeholder="News Title ..." required>
                                                 </div>
                                                 <div class="col-sm-4">
-                                                    <label class="control-label">Author</label>
+                                                    <label class="control-label">Author Name</label>
                                                     <input type="text" name="author" id="author" class="form-control" placeholder="Author Name" >
                                                 </div>
                                                 <div class="col-sm-4">
-                                                    <label class="control-label">Publish Date</label>
-                                                    <input type="date" data-validation="required" name="newsDate" id="newsDate" class="form-control" placeholder="Author Name" required>
+                                                    <label class="control-label">Publish Date*</label>
+                                                    <input type="date" data-validation="required" name="newsDate" id="newsDate" class="form-control" required>
                                                 </div>
                                             </div>
                                             <div class="form-group admin-form">
                                                 <div class="col-sm-12">
-                                                    <label class="control-label">News Content</label>
+                                                    <label class="control-label">News Content*</label>
                                                     <textarea data-validation="required" name="text" id="text" class="form-control textarea-grow" rows="4" placeholder="Your content ..." required></textarea>
                                                 </div>
                                             </div>
                                             <div class="form-group admin-form">
                                               <div class="col-sm-6">
                                                     <label class="control-label">Video Link</label>
-                                                    <input type="text" data-validation-optional="true" data-validation="url" name="video" id="video" class="form-control" placeholder="Video url" >
+                                                    <input type="text" data-validation-optional="true" data-validation="url" name="video" id="video" class="form-control" placeholder="Write Video URl from YoutTube Here..." >
                                                 </div>
                                                 <div class="col-sm-6">
-                                                    <label class="control-label">Upload Image*</label>
+                                                    <label class="control-label">Change News Image</label>
                                                     <label class="field prepend-icon file">
                                                     <span class="button bg-primary" style="color: white;">Choose Image</span>
                                                     <input type="file" class="gui-file" name="imagefile" id="imagefile" onChange="document.getElementById('imageName').value = this.value.substr(12);" required>
@@ -195,7 +195,7 @@
                         </div>
 
 
-                        <button class="btn btn-default btn-gradient" scrollto="#newFormContainer" id="openNewRecordForm"><i class="fa fa-plus"></i> Create New Record </button>
+                        <button class="btn btn-default btn-gradient" scrollto="#newFormContainer" id="openNewRecordForm"><i class="fa fa-plus"></i> Create New News </button>
                         <!-- TABLE -->
                         <!-- TABLE -->
                         <!-- TABLE -->

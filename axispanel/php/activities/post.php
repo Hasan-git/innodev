@@ -45,7 +45,7 @@ if( isset($_POST['prName']) && isset($_POST['title']) && isset($_POST['descripti
         header("HTTP/1.0 500 Internal Server Error");
         // Primary key Duplication
         if(mysqli_errno($conn) == 1062)
-            echo "$prName record already reserved. Please, Select a new name";
+            echo "$title record already reserved. Please, Select a new title";
         else
             echo "An error occurred";
         }
