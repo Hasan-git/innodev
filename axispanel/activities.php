@@ -202,8 +202,8 @@
                                                     <label class="control-label">Change Activity Image</label>
                                                     <label class="field prepend-icon file">
                                                     <span class="button bg-primary" style="color: white;">Choose Image</span>
-                                                    <input type="file" class="gui-file" name="imagefile" id="imagefile" onChange="document.getElementById('imageName').value = this.value.substr(12);" >
-                                                    <input data-validation="required" type="text" class="gui-input" name="imageName" id="imageName" placeholder="Please Select An Image">
+                                                    <input type="file" class="gui-file" name="imagefile" id="imagefile" onChange="$('.imgNme').val(this.value.substr(12));" >
+                                                    <input data-validation="required" type="text" class="gui-input imgNme" name="imageName" id="imageName" placeholder="Please Select An Image">
                                                     <label class="field-icon"><i class="fa fa-upload"></i></label>
                                                     </label>
                                                 </div>
