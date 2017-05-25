@@ -244,8 +244,9 @@
                                     <table class="table table-striped table-hover" id="datatable3" cellspacing="0" width="100%">
                                         <thead>
                                             <tr>
-                                                <th>Name</th>
                                                 <th>Title</th>
+                                                <th>Name</th>
+
                                                 <th>Target</th>
                                                 <th>Doner</th>
                                                 <th>Start</th>
@@ -256,8 +257,9 @@
                                         </thead>
                                         <tfoot>
                                             <tr>
-                                                <th>Name</th>
                                                 <th>Title</th>
+                                                <th>Name</th>
+
                                                 <th>Target</th>
                                                 <th>Doner</th>
                                                 <th>Start</th>
