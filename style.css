@@ -8726,6 +8726,11 @@ th.product-name {
   display: inline-block;
   float: left;
 }
+.about-intro .about-intro-text2 {
+  padding-left: 25px;
+  display: inline-block;
+  float: left;
+}
 .item-testimonials-about {
   margin-bottom: 70px;
 }
