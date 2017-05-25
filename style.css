@@ -10981,15 +10981,15 @@ ul.list-link-footer li:hover:before {
        .loader:after {
           content: "Welcome To";
           position: absolute;
-          top: -35px;
-          left: -29px;
+          top: -50px;
+          left: -43px;
           z-index: 99999;
-          font-size: 35px;
+          font-size: 40px;
           font-weight: 600;
-          color: rgba(245, 235, 0, 0.82);
+          color: #ebcd1e;
           font-family: initial;
           text-decoration: none;
-          width: 200px;
+          width: 300px;
         }
 
     .loader:after {
