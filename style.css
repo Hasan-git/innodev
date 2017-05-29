@@ -9507,17 +9507,23 @@ footer {
   width: 100%;
 }
 .footer-v1 .footer-left,
-.footer-v1 nav,
-.footer-v1 .footer-right {
+.footer-v1 nav {
   display: inline-block;
   float: left;
+}
+.footer-v1 .footer-right {
+  display: inline-block;
+  float: right;
+}
+.footer-v1 .footer-right ul.social {
+  float: right;
 }
 .footer-v1 .footer-left,
 .footer-v1 .footer-right {
   width: 20%;
 }
 .footer-v1 nav {
-  width: 60%;
+  width: 80%;
   text-align: center;
 }
 .footer-v1 nav ul {
@@ -9555,9 +9561,7 @@ footer {
 .footer-v1 nav ul li:last-child a:after {
   display: none;
 }
-.footer-v1 .footer-right ul.social {
-  float: right;
-}
+
 .footer-v2 {
   padding: 60px 0;
 }
