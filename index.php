@@ -33,9 +33,44 @@
 		<!-- Favicons
 		  ================================================== -->
 	  	<link rel="shortcut icon" href="favicon.ico">
+		<style rel="stylesheet">
+			.loader:after {
+				content: "Welcome To";
+				position: absolute;
+				top: -50px;
+				left: -95px;
+				z-index: 99999;
+				font-size: 80px;
+				font-weight: 600;
+				color: #ebcd1e;
+				font-family: initial;
+				text-decoration: none;
+				width: 600px;
+			}
 
+			.loader:after {
+				color: rgb(246, 238, 47);
+				transform: translate3d(0, 0, 0);
+				-webkit-animation-name: animatedText,fadeInDown;
+				-webkit-animation-duration: 2s, 1.82s;
+				animation-name: animatedText,fadeInDown;
+				animation-duration: 2s, 1.82s;
+				animation-iteration-count:1,1;
+			}
+
+			@media only screen and (max-width: 767px) {
+				/*welcome to*/
+				.loader:after {
+					top: -50px;
+					left: -60px;
+					font-size: 48px;
+					width: 400px;
+					font-weight: 400;
+				}
+			}
+		</style>
 	</head>
-	<body>
+	<body class="main-page">
 		<?php include_once('includes/mobilemenu.php'); ?>
 
 	    <div id="page">

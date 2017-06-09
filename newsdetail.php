@@ -41,7 +41,7 @@
 								<li>
 									<a href="news.php">News</a>
 								</li>
-								<li class="active">News Details</li>
+								<li class="active">News Detail</li>
 							</ol>
 						</div>
 					</div>
@@ -53,6 +53,8 @@
 						<div class="row">
 							<div class="col-md-9">
 								<main id="main" class="site-main" >
+
+									<!-- the news details from table will go here -->
 									<div class="blog-detail">
 										<h1>News Title News Title News Title</h1>
 										<div class="latest-blog-post-data text-cap">
@@ -94,30 +96,19 @@
 										<h3 class="widget-title text-cap">Archives</h3>
 										<div class="tiny-border"></div>
 										<ul>
-											<li><a href="#">March 2016</a>
+
+											<!-- the archive dates go here -->
+											<li><a href="news.php">March 2017</a>
 												<span class="count">(4)</span>
 											</li>
-											<li><a href="#">Febuary 2016</a>
+											<li><a href="news.php">Febuary 2017</a>
 												<span class="count">(9)</span>
 											</li>
-											<li><a href="#">January 2016</a>
+											<li><a href="news.php">January 2017</a>
 												<span class="count">(34)</span>
 											</li>
-											<li><a href="#">December 2015</a>
-												<span class="count">(22)</span>
-											</li>
-											<li><a href="#">November 2015</a>
-												<span class="count">(35)</span>
-											</li>
-											<li><a href="#">Octorber 2015</a>
-												<span class="count">(4)</span>
-											</li>
-											<li><a href="#">September 2015</a>
-												<span class="count">(26)</span>
-											</li>
-											<li><a href="#">August</a>
-												<span class="count">(11)</span>
-											</li>
+											<!-- the archive dates end here -->
+
 										</ul>
 									</aside>
 

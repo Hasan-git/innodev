@@ -6,9 +6,9 @@ if(isset($_POST['yourEmail'])) {
  
     // EDIT THE 2 LINES BELOW AS REQUIRED
  
-    $email_to = "thememodern86@gmail.com";
+    $email_to = "info@innodevlb.org";
  
-    $email_subject = "Your email subject line";
+    $email_subject = "New Email from the website!";
  
      
  

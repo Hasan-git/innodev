@@ -47,26 +47,46 @@
 			<section class="padding padding-bot-30">
 				<div class="container">
 					<div class="row">
-						<div class="col-md-6">
-							<div class="latest-blog-post-img block-img-full service-item">
-								<a class="img-block">
-									<img src="http://placehold.it/810x451/ccc.jpg" class="img-responsive" alt="Image">
-								</a>
-								<div class="text-box">
-									<h4 class="text-cap">Project Name</h4>
-									<p>
-										Project Definition Project Definition Project Definition Project Definition Project Definition Project Definition Project Definition Project Definition.
-									</p>
-									<a class="ot-btn btn-main-color text-cap mgb0" href="activities.php">View Project Activities</a>
-								</div>
 
-							</div>
-						</div>
-						<div class="col-md-6">
-							<div class="latest-blog-post-img block-img-full service-item">
-								<a class="img-block"><img src="http://placehold.it/810x451/ccc.jpg" class="img-responsive" alt="Image"></a>
-								<div class="text-box">
-									<h4 class="text-cap">Project Name</h4>
+						<!-- the projects rows from table will go here -->
+						<div class="col-md-12">
+							<div class="block-img-full service-item">
+								<div class="latest-blog-post-img col-md-8">
+									<a class="img-block">
+										<img src="http://placehold.it/810x451/ccc.jpg" class="img-responsive" alt="Image">
+									</a>
+								</div>
+								<div class="col-md-4">
+									<table class="table">
+										<tr>
+											<th>Project Name:</th>
+											<td>the Name of the project</td>
+										</tr>
+										<tr>
+											<th>Project Target:</th>
+											<td>target of the project</td>
+										</tr>
+										<tr>
+											<th>Doner Name:</th>
+											<td>project doner name</td>
+										</tr>
+										<tr>
+											<th>Start Date:</th>
+											<td>start date</td>
+										</tr>
+										<tr>
+											<th>End Date:</th>
+											<td>end date</td>
+										</tr>
+										<tr>
+											<td><a class="btn btn-warning" href="events.php">View Events</a></td>
+											<td><a class="btn btn-success" href="activities.php">View Activities</a></td>
+										</tr>
+									</table>
+								</div>
+								<div class="clearfix"></div>
+								<div class="text-box col-md-12">
+									<h4 class="text-cap">Project Title</h4>
 									<p>
 										Project Definition Project Definition Project Definition Project Definition Project Definition Project Definition Project Definition Project Definition.
 									</p>
@@ -74,6 +94,20 @@
 								</div>
 							</div>
 						</div>
+						<!-- end projects rows -->
+
+						<!-- the projects navigation pages start here -->
+						<div class="pagination-ourter text-right">
+							<ul class="pagination">
+								<li><a href="#" class="page-numbers current">1</a></li>
+								<li><a class="page-numbers" href="#">2</a></li>
+								<li><a class="page-numbers" href="#">3</a></li>
+								<li><a class="page-numbers" href="#">...</a></li>
+								<li><a class="page-numbers" href="#">25</a></li>
+								<li><a class="next page-numbers" href="#"><i class="fa fa-angle-right"></i></a></li>
+							</ul>
+						</div>
+						<!-- the projects navigation pages end here -->
 
 					</div>
 				</div>

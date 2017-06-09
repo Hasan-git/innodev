@@ -11,14 +11,9 @@
             <ul>
                 <li><a href="index.html"><span>Home</span></a></li>
                 <li><a href="about.html"><span>About </span></a></li>
-                <li class="has-sub"><a href="projects.php"><span>Projects</span></a>
-                    <ul class="navi-level-2">
-                        <li><a href="activities.php">Project 1</a></li>
-                        <li><a href="activities.php">Project 2</a></li>
-                        <li><a href="activities.php">Project 3</a></li>
-                    </ul>
-                </li>
+                <li><a href="projects.php"><span>Projects</span></a></li>
                 <li><a href="events.php"><span>Events</span></a></li>
+                <li><a href="activities"><span>Activities</span></a></li>
                 <li><a href="news.php"><span>News</span></a></li>
                 <li><a href="hub.php"><span>HUB</span></a></li>
                 <li><a href="contact.php"><span>Contact Us</span></a></li>

@@ -57,6 +57,8 @@
 						</div>
 						<!-- End Title -->
 						<div class="lastest-blog-container">
+
+							<!-- the event rows from table will go here -->
 							<div class="col-md-6">
 								<article class="lastest-blog-item">
 									<figure class="latest-blog-post-img effect-zoe">
@@ -69,35 +71,32 @@
 										</div>
 									</figure>
 									<div class="latest-blog-post-description">
-										<h3>INNODEV Empowering Youth</h3>
-										<p>Currently INNODEV is collaborating with the Lebanese university “Faculty of Health -
-											Fanar ” and Empowering the students on (Communication skills,Waste
-											management,Women Empowerment..) and hosting them for internship.
+										<h3 style="text-decoration: none;">Event title
+											<span class="pull-right"><small>Project name / Location</small></span>
+										</h3>
+										<p>
+											event description goes here.
 										</p>
 									</div>
 								</article>
 							</div>
-							<div class="col-md-6  ">
-								<article class="lastest-blog-item">
-									<figure class="latest-blog-post-img effect-zoe">
+							<!-- end projects rows -->
 
-										<img src="images/activity/2.jpg" class="img-responsive" alt="Image">
+							<div class="clearfix"></div>
 
-										<div class="latest-blog-post-date text-cap">
-											<span class="day">6</span>
-											<span class="month">June</span>
-										</div>
-
-									</figure>
-									<div class="latest-blog-post-description">
-										<h3>Women Empowerment Program</h3>
-										<p>INNODEV implementing a Women Empowerment Program in “Tripoli-Dahr
-											elMoghor”(north) and in ‘Bent Jbeil”(South) in collaboration with the local NGOs and
-											Municipalities.
-										</p>
-									</div>
-								</article>
+							<!-- the events navigation pages start here -->
+							<div class="pagination-ourter text-right">
+								<ul class="pagination">
+									<li><a href="#" class="page-numbers current">1</a></li>
+									<li><a class="page-numbers" href="#">2</a></li>
+									<li><a class="page-numbers" href="#">3</a></li>
+									<li><a class="page-numbers" href="#">...</a></li>
+									<li><a class="page-numbers" href="#">25</a></li>
+									<li><a class="next page-numbers" href="#"><i class="fa fa-angle-right"></i></a></li>
+								</ul>
 							</div>
+							<!-- the events navigation pages end here -->
+
 						</div>
 					</div>
 				</div>

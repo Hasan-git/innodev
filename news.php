@@ -9,12 +9,15 @@
 
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="css/bootstrap.min.css">
+
 		<!-- Font -->
 		<link rel="stylesheet" href="css/font-awesome.min.css">
 		<link rel="stylesheet" href="css/elegant-font.css">
+
 	  	<!-- SCROLL BAR MOBILE MENU
   		================================================== --> 
  		 <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" />
+
 		<!-- Main Style -->
 		<link rel="stylesheet" href="style.css">
 		  
@@ -49,42 +52,32 @@
 						<div class="row">
 							<div class="col-md-9">
 								<div class="blog-list">
+
+									<!-- the news rows from table will go here -->
 									<article>
 										<figure class="latest-blog-post-img effect-zoe">
 											<img src="http://placehold.it/1140x640/ccc.jpg" class="img-responsive" alt="Image">
 											<div class="latest-blog-post-date text-cap">
-												<span class="day">18</span>
-				                                <span class="month">May</span>
+												<span class="day">12</span>
+				                                <span class="month">June</span>
 				                            </div>
 				                        </figure>
 				                        <div class="latest-blog-post-description">
-				                            <a href="newsdetail.php"><h3>The News Title</h3></a>
-				                            <p>some news brief text some news brief text some news brief text some news brief text some news brief text some news brief text some news brief text.</p>
+				                            <h3 style="text-decoration: none;"><a href="newsdetail.php">The News Title</a>
+												<span class="pull-right"><small>Autthor name</small></span>
+											</h3>
+				                            <p>news content text.</p>
 				                            
 				                            <a href="newsdetail.php" class="ot-btn btn-main-color text-cap">
 				                            	Continue Reading...
 				                            </a>
 				                        </div>
 									</article>
-									<article>
-										<figure class="latest-blog-post-img effect-zoe">
-											<img src="http://placehold.it/1140x640/ccc.jpg" class="img-responsive" alt="Image">
-											<div class="latest-blog-post-date text-cap">
-												<span class="day">18</span>
-				                                <span class="month">May</span>
-				                            </div>
-				                        </figure>
-				                        <div class="latest-blog-post-description">
-				                            <a href="newsdetail.php"><h3>The News Title</h3></a>
-				                            <p>some news brief text some news brief text some news brief text some news brief text some news brief text some news brief text some news brief text.</p>
-				                            
-				                            <a href="newsdetail.php" class="ot-btn btn-main-color text-cap">
-				                            	Continue Reading...
-				                            </a>
-				                        </div>
-									</article>
+									<!-- the news rows ends here -->
 
 								</div>
+
+								<!-- the news navigation pages start here -->
 								<div class="pagination-ourter text-left">
 		                            <ul class="pagination">
 		                                <li><a href="#" class="page-numbers current">1</a></li>
@@ -95,6 +88,8 @@
 		                                <li><a class="next page-numbers" href="#"><i class="fa fa-angle-right"></i></a></li>
 		                            </ul>
 		                        </div>
+								<!-- the news navigation pages end here -->
+
 							</div> <!-- End Col -->
 
 							<div class="col-md-3">
@@ -112,31 +107,20 @@
 		                                <h3 class="widget-title text-cap">Archives</h3>
 		                                <div class="tiny-border"></div>    
 		                                <ul>
-							                  <li><a href="#">March 2016</a>
-							                      <span class="count">(4)</span>
-							                  </li>
-							                  <li><a href="#">Febuary 2016</a>
-							                      <span class="count">(9)</span>
-							                  </li>
-							                  <li><a href="#">January 2016</a>
-							                      <span class="count">(34)</span>
-							                  </li>
-							                  <li><a href="#">December 2015</a>
-							                      <span class="count">(22)</span>
-							                  </li>
-							                  <li><a href="#">November 2015</a>
-							                      <span class="count">(35)</span>
-							                  </li>
-							                   <li><a href="#">Octorber 2015</a>
-							                      <span class="count">(4)</span>
-							                  </li>
-							                   <li><a href="#">September 2015</a>
-							                      <span class="count">(26)</span>
-							                  </li>
-							                   <li><a href="#">August</a>
-							                      <span class="count">(11)</span>
-							                  </li>
-							                </ul>
+
+											<!-- the archive dates go here -->
+											<li><a href="news.php">March 2017</a>
+												<span class="count">(4)</span>
+											</li>
+											<li><a href="news.php">Febuary 2017</a>
+												<span class="count">(9)</span>
+											</li>
+											<li><a href="news.php">January 2017</a>
+												<span class="count">(34)</span>
+											</li>
+											<!-- the archive dates end here -->
+
+										</ul>
 		                            </aside>
 
 		                        </div>
