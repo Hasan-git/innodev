@@ -1,7 +1,10 @@
 <?php
 include_once('../connect.php');
 
-$sql = "SELECT YEAR(newsDate) as nyear, MONTH(newsDate) AS nmonth FROM tblnews ORDER BY newsDate DESC";
+$sql = "SELECT YEAR(newsDate) as nyear, MONTH(newsDate) AS nmonth, COUNT(*) AS nb FROM tblnews
+        GROUP BY YEAR(newsDate), MONTH(newsDate)
+        ORDER BY MONTH(newsDate) DESC
+        LIMIT 10";
 $result = mysqli_query($conn, $sql);
 
 if ($result) {
@@ -12,10 +15,12 @@ if ($result) {
 
             $month = $row['nmonth'];
             $year = $row['nyear'];
+            $nb = $row['nb'];
 
             $_dates['data'][] = array(
                 'month' => $month,
                 'year' => $year,
+                'ncount' => $nb,
                  );
         }
 
