@@ -85,7 +85,7 @@
 							<div class="clearfix"></div>
 
 							<!-- the events navigation pages start here -->
-							<div class="pagination-ourter text-right">
+							<div class="pagination-ourter text-center">
 								<ul class="pagination">
 									<li><a href="#" class="page-numbers current">1</a></li>
 									<li><a class="page-numbers" href="#">2</a></li>

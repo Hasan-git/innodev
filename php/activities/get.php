@@ -1,5 +1,5 @@
 <?php
-include_once('../includes/connect.php');
+include_once('../connect.php');
 
 if(isset($_GET['prName'])) {
     $prName = $_GET['prName'];
@@ -14,8 +14,6 @@ elseif(isset($_GET['id'])) {
     $result = mysqli_query($conn, $sql);
 }
 else {
-    $id = $_GET['id'];
-
     $sql = "SELECT * FROM tblactivities ORDER BY Id DESC";
     $result = mysqli_query($conn, $sql);
 }

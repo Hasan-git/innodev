@@ -45,25 +45,28 @@
             <section class="padding bg-grey padding-bottom-0">
                <div class="lastest-project-warp portfolio-grid-2-warp clearfix">
                   <div class="projectFilter project-terms line-effect-2">
+
+                     <!-- types will go here -->
                      <a href="#" data-filter="*" class="current text-cap">
                         <h4>All Projects</h4>
                      </a>
-                     <a href="#" data-filter=".Residential" class="text-cap">
-                        <h4>Residential</h4>
+                     <a href="#" data-filter=".School" class="text-cap">
+                        <h4>School</h4>
                      </a>
-                     <a href="#" data-filter=".Ecommercial" class="text-cap">
-                        <h4>Ecommercial</h4>
+                     <a href="#" data-filter=".Natural" class="text-cap">
+                        <h4>Natural</h4>
                      </a>
-                     <a href="#" data-filter=".Office" class="text-cap">
-                        <h4>Office</h4>
+                     <a href="#" data-filter=".General" class="text-cap">
+                        <h4>General</h4>
                      </a>
-                     <a href="#" data-filter=".Hospital" class="text-cap">
-                        <h4>Hospital</h4>
-                     </a>
+                     <!-- end types -->
+
                   </div>
                   <!-- End Project Fillter -->
                   <div class="clearfix projectContainer portfolio-grid-2-container">
-                     <div class="element-item  Residential">
+
+                     <!-- activities rows will go here -->
+                     <div class="element-item School"><!-- atype go here as class (School) -->
                         <a class="portfolio-img-demo" href="actdetail.php">
                            <img src="http://placehold.it/960x720/ccc.jpg" class="img-responsive" alt="Image">
                         </a>
@@ -71,67 +74,29 @@
                            <a href="actdetail.php">
                               <h4 class="title-project text-cap text-cap">Activity Title</h4>
                            </a>
-                           <a href="actdetail.php" class="cateProject">Type</a>
+                           <a href="actdetail.php" class="cateProject">atype / PrName</a>
                         </div>
                      </div>
-                     <div class="element-item Residential ">
-                        <a class="portfolio-img-demo" href="actdetail.php">
-                           <img src="http://placehold.it/960x720/ccc.jpg" class="img-responsive" alt="Image">
-                        </a>
-                        <div class="project-info">
-                           <a href="actdetail.php">
-                              <h4 class="title-project text-cap text-cap">Activity Title</h4>
-                           </a>
-                           <a href="actdetail.php" class="cateProject">Type</a>
-                        </div>
-                     </div>
-                     <div class="element-item Ecommercial">
-                        <a class="portfolio-img-demo" href="actdetail.php">
-                           <img src="http://placehold.it/960x720/ccc.jpg" class="img-responsive" alt="Image">
-                        </a>
-                        <div class="project-info">
-                           <a href="actdetail.php">
-                              <h4 class="title-project text-cap text-cap">Activity Title</h4>
-                           </a>
-                           <a href="actdetail.php" class="cateProject">Type</a>
-                        </div>
-                     </div>
-                     <div class="element-item Ecommercial ">
-                        <a class="portfolio-img-demo" href="actdetail.php">
-                           <img src="http://placehold.it/960x720/ccc.jpg" class="img-responsive" alt="Image">
-                        </a>
-                        <div class="project-info">
-                           <a href="actdetail.php">
-                              <h4 class="title-project text-cap text-cap">Activity Title</h4>
-                           </a>
-                           <a href="actdetail.php" class="cateProject">Type</a>
-                        </div>
-                     </div>
-                     <div class="element-item Office">
-                        <a class="portfolio-img-demo" href="actdetail.php">
-                           <img src="http://placehold.it/960x720/ccc.jpg" class="img-responsive" alt="Image">
-                        </a>
-                        <div class="project-info">
-                           <a href="actdetail.php">
-                              <h4 class="title-project text-cap text-cap">Activity Title</h4>
-                           </a>
-                           <a href="actdetail.php" class="cateProject">Type</a>
-                        </div>
-                     </div>
-                     <div class="element-item Office">
-                        <a class="portfolio-img-demo" href="actdetail.php">
-                           <img src="http://placehold.it/960x720/ccc.jpg" class="img-responsive" alt="Image">
-                        </a>
-                        <div class="project-info">
-                           <a href="actdetail.php">
-                              <h4 class="title-project text-cap text-cap">Activity Title</h4>
-                           </a>
-                           <a href="actdetail.php" class="cateProject">Type</a>
-                        </div>
-                     </div>
+                     <!-- end activities -->
 
                   </div>
                   <!-- End project Container -->
+
+                  <div class="clearfix"></div>
+
+                  <!-- the activities navigation pages start here -->
+                  <div class="pagination-ourter text-center">
+                     <ul class="pagination">
+                        <li><a href="#" class="page-numbers current">1</a></li>
+                        <li><a class="page-numbers" href="#">2</a></li>
+                        <li><a class="page-numbers" href="#">3</a></li>
+                        <li><a class="page-numbers" href="#">...</a></li>
+                        <li><a class="page-numbers" href="#">25</a></li>
+                        <li><a class="next page-numbers" href="#"><i class="fa fa-angle-right"></i></a></li>
+                     </ul>
+                  </div>
+                  <!-- the activities navigation pages end here -->
+
                </div>
                <!-- End  -->
                <div class="overlay-arc">

@@ -65,6 +65,8 @@
                               <a class="btn next-detail-services"><i class="fa fa-angle-right"></i></a>
                            </div>
                            <div id="sync3" class="owl-carousel owl-detail-services clearfix">
+
+                              <!-- Images of activities will loop here. view the number of images uploaded -->
                               <div class="item ">
                                  <img src="http://placehold.it/850x478/ccc.jpg" class="img-responsive" alt="Image">
                               </div>
@@ -85,14 +87,30 @@
                                  <img src="http://placehold.it/850x478/ccc.jpg" class="img-responsive" alt="Image">
                               </div>
                               <!-- end item -->
+                              <!-- Images of activities goes here -->
+
                            </div>
                            <!-- End Main Sync owl -->
                            <div id="sync4" class="owl-carousel thumb-service-slide">
-                              <div class="item"><img src="http://placehold.it/850x478/ccc.jpg" class="img-responsive" alt="Image"></div>
-                              <div class="item"> <img src="http://placehold.it/850x478/ccc.jpg" class="img-responsive" alt="Image"></div>
-                              <div class="item"><img src="http://placehold.it/850x478/ccc.jpg" class="img-responsive" alt="Image"></div>
-                              <div class="item"><img src="http://placehold.it/850x478/ccc.jpg" class="img-responsive" alt="Image"></div>
-                              <div class="item"><img src="http://placehold.it/850x478/ccc.jpg" class="img-responsive" alt="Image"></div>
+
+                              <!-- Images of activities will loop here. view the number of images uploaded -->
+                              <div class="item">
+                                 <img src="http://placehold.it/850x478/ccc.jpg" class="img-responsive" alt="Image">
+                              </div>
+                              <div class="item">
+                                 <img src="http://placehold.it/850x478/ccc.jpg" class="img-responsive" alt="Image">
+                              </div>
+                              <div class="item">
+                                 <img src="http://placehold.it/850x478/ccc.jpg" class="img-responsive" alt="Image">
+                              </div>
+                              <div class="item">
+                                 <img src="http://placehold.it/850x478/ccc.jpg" class="img-responsive" alt="Image">
+                              </div>
+                              <div class="item">
+                                 <img src="http://placehold.it/850x478/ccc.jpg" class="img-responsive" alt="Image">
+                              </div>
+                              <!-- Images of activities goes here -->
+
                            </div>
                            <!-- End Navithumbnail Owl Sync -->
                         </div>
@@ -100,7 +118,8 @@
                            <div class="row">
                               <div class="col-md-12">
                                  <h3>Activity Title Activity Title</h3>
-                                 <p>Activity Description text text text Activity Description text text text Activity Description text text text Activity Description text text text Activity Description text text text Activity Description text text text Activity Description text text text Activity Description text text text Activity Description text text text Activity Description text text text Activity Description text text text Activity Description text text text Activity Description text text text Activity Description text text text Activity Description text text text Activity Description text text text Activity Description text text text Activity Description text text text Activity Description text text text Activity Description text text text Activity Description text text text Activity Description text text text .
+                                 <span class="text-info">prName / atype / location / actDate</span>
+                                 <p>Activity Description text text text Activity Description.
                                  </p>
                               </div>
                            </div>
