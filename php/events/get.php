@@ -2,14 +2,16 @@
 include_once('../connect.php');
 
 if(isset($_GET['prName'])) {
-
 	$prName = $_GET['prName'];
-	$sql = "SELECT * FROM tblevents WHERE active = 1 AND prName = '$prName' ORDER BY Id DESC";
+	$edate = date('Y-m-d');
+
+	$sql = "SELECT * FROM tblevents WHERE active = 1 AND eDate >= '$edate' AND prName = '$prName' ORDER BY Id DESC";
 	$result = mysqli_query($conn, $sql);
 
 } else {
+	$edate = date('Y-m-d');
 
-	$sql = "SELECT * FROM tblevents WHERE active = 1 ORDER BY Id DESC";
+	$sql = "SELECT * FROM tblevents WHERE active = 1 AND eDate >= '$edate' ORDER BY Id DESC";
 	$result = mysqli_query($conn, $sql);
 }
 
