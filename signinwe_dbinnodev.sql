@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 09, 2017 at 12:03 PM
+-- Generation Time: Jun 10, 2017 at 11:28 AM
 -- Server version: 5.7.14
 -- PHP Version: 5.6.25
 
@@ -49,6 +49,7 @@ INSERT INTO `tblactimages` (`Id`, `actTitle`, `imageName`) VALUES
 CREATE TABLE `tblactivities` (
   `Id` int(11) NOT NULL,
   `prName` varchar(250) NOT NULL,
+  `atype` enum('School','Natural','General') NOT NULL DEFAULT 'General',
   `actDate` date NOT NULL,
   `title` varchar(250) NOT NULL,
   `location` varchar(250) DEFAULT NULL,
@@ -61,9 +62,9 @@ CREATE TABLE `tblactivities` (
 -- Dumping data for table `tblactivities`
 --
 
-INSERT INTO `tblactivities` (`Id`, `prName`, `actDate`, `title`, `location`, `description`, `image`, `video`) VALUES
-(1, 'First Project', '2017-05-17', 'First Activity', 'LOcation', 'First activity for the first Project', '5922943e97a9d@img.jpg', ''),
-(3, 'name', '2017-05-24', 'title', '', 'dgb', '5922b8fee9d0f@blacklogo.png', '');
+INSERT INTO `tblactivities` (`Id`, `prName`, `atype`, `actDate`, `title`, `location`, `description`, `image`, `video`) VALUES
+(1, 'First Project', 'General', '2017-05-17', 'First Activity', 'LOcation', 'First activity for the first Project', '5922943e97a9d@img.jpg', ''),
+(3, 'name', 'General', '2017-05-24', 'title', '', 'dgb', '5922b8fee9d0f@blacklogo.png', '');
 
 -- --------------------------------------------------------
 
@@ -112,7 +113,9 @@ CREATE TABLE `tblnews` (
 --
 
 INSERT INTO `tblnews` (`Id`, `newsDate`, `title`, `author`, `text`, `image`, `video`) VALUES
-(1, '2017-05-22', 'First News Title', 'Alaa Bachir', 'cdkvjdrg kudrg d ldb ldiub dbd', '5922b9935ad69@img.jpg', '');
+(1, '2017-05-22', 'First News Title', 'Alaa Bachir', 'cdkvjdrg kudrg d ldb ldiub dbd', '5922b9935ad69@img.jpg', ''),
+(2, '2017-06-10', 'jhbh', NULL, 'hbhb', '', NULL),
+(5, '2017-06-12', 'jhbhj', NULL, 'hjbhjb', 'hh', NULL);
 
 -- --------------------------------------------------------
 
@@ -237,7 +240,7 @@ ALTER TABLE `tblevents`
 -- AUTO_INCREMENT for table `tblnews`
 --
 ALTER TABLE `tblnews`
-  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 --
 -- AUTO_INCREMENT for table `tblprojects`
 --

@@ -108,13 +108,19 @@
                                                 </div>
                                             </div>
                                             <div class="form-group admin-form">
+                                                <div class="col-sm-4">
+                                                    <label class="control-label">Activity Type*</label>
+                                                    <input type="text" data-validation="required" name="atype" id="atype" class="form-control" placeholder="atype..." required>
+                                                </div>
+                                                <div class="col-sm-8">
+                                                    <label class="control-label">Activity Location</label>
+                                                    <textarea name="location" id="location" class="form-control textarea-grow" rows="4" placeholder="Activity Location" ></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="form-group admin-form">
                                                 <div class="col-sm-12">
                                                     <label class="control-label">Activity Description*</label>
                                                     <textarea data-validation="required" name="description" id="description" class="form-control textarea-grow" rows="4" placeholder="Activity Description" required></textarea>
-                                                </div>
-                                                <div class="col-sm-12">
-                                                    <label class="control-label">Activity Location</label>
-                                                    <textarea name="location" id="location" class="form-control textarea-grow" rows="4" placeholder="Activity Location" ></textarea>
                                                 </div>
                                             </div>
                                             <div class="form-group admin-form">
@@ -184,13 +190,19 @@
                                                 </div>
                                             </div>
                                             <div class="form-group admin-form">
+                                                <div class="col-sm-4">
+                                                    <label class="control-label">Activity Type*</label>
+                                                    <input type="text" data-validation="required" name="atype" id="atype" class="form-control" placeholder="atype..." required>
+                                                </div>
+                                                <div class="col-sm-8">
+                                                    <label class="control-label">Activity Location</label>
+                                                    <textarea name="location" id="location" class="form-control textarea-grow" rows="4" placeholder="Location" ></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="form-group admin-form">
                                                 <div class="col-sm-12">
                                                     <label class="control-label">Activity Description*</label>
                                                     <textarea data-validation="required" name="description" id="description" class="form-control textarea-grow" rows="4" placeholder="Activity Description" required></textarea>
-                                                </div>
-                                                <div class="col-sm-12">
-                                                    <label class="control-label">Activity Location</label>
-                                                    <textarea name="location" id="location" class="form-control textarea-grow" rows="4" placeholder="Location" ></textarea>
                                                 </div>
                                             </div>
                                             <div class="form-group admin-form">

@@ -380,30 +380,41 @@
 							</div>
 							<!-- End Title -->
 							<div class="row">
+
+								<!-- only 2 projects -->
+								<!-- get the last project added-->
 								<div class="block-img-full-width">
 									<div class="block-img-left ">
 										<div class="text-box">
-											<h3 class="text-cap">School Students</h3>
+											<h3 class="text-cap">Project title</h3>
 											<p>
-												INNODEV is implementing an Environmental Awareness Program in Public Schools, We aim to Increase Environmental Awareness among Students, develop environmental literacy among students—the environmental knowledge, ethical, values, skills, attitudes and behaviors they need to become environmental stewards.
+												project description 3 lines only.
 											</p>
-											<a class="ot-btn btn-main-color text-cap mgb0" href="activities.php">View Project Activities</a>
+											<a class="ot-btn btn-info text-cap mgb0" href="activities.php">View Activities</a>
+											<a class="ot-btn btn-main-color text-cap mgb0" href="activities.php">View Events</a>
 										</div>
 										<div class="img-block"><img src="images/news/1.jpg" class="img-responsive" alt="Image"></div>
 									</div>
 								</div>
+
+								<!-- get before the last project added-->
 								<div class="block-img-full-width">
 									<div class="block-img-right mgb0">
 										<div class="text-box">
-											<h3 class="text-cap">Empowering Youth</h3>
+											<h3 class="text-cap">Project title</h3>
 											<p>
-												Currently INNODEV is collaborating with the Lebanese university “Faculty of Health - Fanar ” and Empowering the students on (Communication skills,Waste management,Women Empowerment..) and hosting them for internship.
+												project description 3 lines only.
 											</p>
-											<a class="ot-btn btn-main-color text-cap" href="activities.php">View Project Activities</a>
+											<a class="ot-btn btn-info text-cap mgb0" href="activities.php">View Activities</a>
+											<a class="ot-btn btn-main-color text-cap mgb0" href="activities.php">View Events</a>
 										</div>
-										<div class="img-block"><img src="images/news/2.jpg" class="img-responsive" alt="Image"></div>
+										<div class="img-block">
+											<img src="images/news/2.jpg" class="img-responsive" alt="Image">
+										</div>
 									</div>
 								</div>
+
+
 							</div>
 						</div>
 					</div>
@@ -423,6 +434,9 @@
 							</div>
 							<!-- End Title -->
 							<div class="lastest-blog-container">
+
+
+								<!-- get the last 2 events added only -->
 								<div class="col-md-6">
 									<article class="lastest-blog-item">
 										<figure class="latest-blog-post-img effect-zoe">
@@ -435,35 +449,16 @@
 											</div>
 										</figure>
 										<div class="latest-blog-post-description">
-											<h3>INNODEV Empowering Youth</h3>
-											<p>Currently INNODEV is collaborating with the Lebanese university “Faculty of Health -
-												Fanar ” and Empowering the students on (Communication skills,Waste
-												management,Women Empowerment..) and hosting them for internship.
+											<h3>event title</h3>
+											<p>
+												event text description.
 											</p>
 										</div>
 									</article>
 								</div>
-								<div class="col-md-6  ">
-									<article class="lastest-blog-item">
-										<figure class="latest-blog-post-img effect-zoe">
+								<!-- end events-->
 
-											<img src="images/activity/2.jpg" class="img-responsive" alt="Image">
 
-											<div class="latest-blog-post-date text-cap">
-												<span class="day">6</span>
-												<span class="month">June</span>
-											</div>
-
-										</figure>
-										<div class="latest-blog-post-description">
-											<h3>Women Empowerment Program</h3>
-											<p>INNODEV implementing a Women Empowerment Program in “Tripoli-Dahr
-												elMoghor”(north) and in ‘Bent Jbeil”(South) in collaboration with the local NGOs and
-												Municipalities.
-											</p>
-										</div>
-									</article>
-								</div>
 							</div>
 						</div>
 					</div>
@@ -495,48 +490,23 @@
 							</div>
 							<!-- End Title -->
 							<div class="row">
+
+								<!-- get the last 3 news added -->
+					<!-- NOTE the data-wow-delay must be .25 for the first row and then .5 for the second, .75 for the last -->
 								<div class="col-sm-6 col-md-4 wow fadeInRight" data-wow-delay=".25s">
 									<div class="block-img-full">
 										<a class="img-block"><img src="images/news/1.jpg" class="img-responsive" alt="Image"></a>
 										<div class="text-box">
-											<h4 class="text-cap">NGOs Are Stronger Together</h4>
+											<h4 class="text-cap">News title</h4>
 											<p>
-												INNODEV is a member at “NGOs Are Stronger Together” a civil society coalition that
-												fosters stronger coordination, communication and collaboration between NGOS in the
-												purpose of achieving rests and provoking reform.
+												news text content.
 											</p>
 										</div>
 										<a class="ot-btn btn-main-color text-cap" href="newsdetail.php">Read more</a>
 									</div>
 								</div>
-								<div class="col-sm-6 col-md-4 wow fadeInRight" data-wow-delay=".5s">
-									<div class="block-img-full">
-										<a class="img-block"><img src="images/news/2.jpg" class="img-responsive" alt="Image"></a>
-										<div class="text-box">
-											<h4 class="text-cap">Volunteer For Lebanon</h4>
-											<p>
-												INNODEV became in 2016 a member at “Volunteer For Lebanon”, Empowering
-												youth groups to encourage volunteer service projects and how to plan and implement a
-												projects that are environmentally friendly, to be able to do service projects for their
-												schools, youth groups or community.
-											</p>
-										</div>
-										<a class="ot-btn btn-main-color text-cap" href="newsdetail.php">Read more</a>
-									</div>
-								</div>
-								<div class="col-sm-6 col-md-4 wow fadeInRight" data-wow-delay=".75s">
-									<div class="block-img-full">
-										<a class="img-block"><img src="images/news/3.jpg" class="img-responsive" alt="Image"></a>
-										<div class="text-box">
-											<h4 class="text-cap">Program in Public</h4>
-											<p>
-												INNODEV is implementing an Environmental Awareness Program in Public
-												Schools, We aim to Increase Environmental Awareness among Students, develop environmental literacy among students—the environmental knowledge, ethical, values, skills, attitudes and behaviors they need to become environmental stewards.
-											</p>
-										</div>
-										<a class="ot-btn btn-main-color text-cap" href="newsdetail.php">Read more</a>
-									</div>
-								</div>
+
+
 								<!-- End Col -->
 							</div>
 							<!-- End Row -->
@@ -557,97 +527,36 @@
 					<!-- End Title -->
 				    <div class="lastest-project-warp clearfix">
 						<div class="projectFilter project-terms line-effect-2">
-								<a href="#" data-filter="*" class="current text-cap"><h4>All Projects</h4></a>
-								<a href="#" data-filter=".Creative" class="text-cap"><h4>Creative</h4></a>
-								<a href="#" data-filter=".School" class="text-cap"><h4>School</h4></a>
-								<a href="#" data-filter=".Natural" class="text-cap"><h4>Natural</h4></a>
+
+							<!-- types will go here -->
+							<a href="#" data-filter="*" class="current text-cap"><h4>All Projects</h4></a>
+							<a href="#" data-filter=".General" class="text-cap"><h4>General</h4></a>
+							<a href="#" data-filter=".School" class="text-cap"><h4>School</h4></a>
+							<a href="#" data-filter=".Natural" class="text-cap"><h4>Natural</h4></a>
+
+
 						</div> <!-- End Project Fillter -->
 
 						<div class="clearfix projectContainer">
 
-						  <div class="element-item  Creative">
 
-							  <img src="images/activity/1.jpg" class="img-responsive" alt="Image">
-							<div class="project-info">
-								<a href="actdetail.php"><h4 class="title-project text-cap text-cap">Trainings on Communication skills</h4></a>
-								<a href="" class="cateProject">Creative</a>
-							</div>
-						  </div>
-
-						  <div class="element-item Creative ">
-
-							<img src="images/activity/2.jpg" class="img-responsive" alt="Image">
-
-							<div class="project-info">
-							   <a href="actdetail.php"><h4 class="title-project text-cap">Communication and Collaboration</h4></a>
-								<a href="" class="cateProject">Creative</a>
-						  </div>
-						  </div>
-
-						  <div class="element-item Creative">
-							<a class="img-contain-isotope" href="">
-							   <img src="images/news/1.jpg" class="img-responsive" alt="Image">
-							   </a>
-							   <div class="project-info">
-							   <a href=""><h4 class="title-project text-cap">Empowering
-								   youth groups</h4></a>
-							  <a href="" class="cateProject">Creative</a>
-							</div>
-						  </div>
-
-						  <div class="element-item School ">
-							<a class="img-contain-isotope" href="">
-							  <img src="images/news/2.jpg" class="img-responsive" alt="Image">
-							  </a>
-							  <div class="project-info">
-							  <a href=""><h4 class="title-project text-cap">Increase Environmental Awareness</h4></a>
-								  <a href="" class="cateProject">School</a>
-							</div>
-						  </div>
-
-						  <div class="element-item School">
-								<a class="img-contain-isotope" href="">
-								 <img src="images/news/3.jpg" class="img-responsive" alt="Image">
-								 </a>
+							<!-- activities rows will go here -->
+							<div class="element-item Natural"><!-- atype go here as class (Natural) -->
+								 <img src="images/activity/1.jpg" class="img-responsive" alt="Image">
 								 <div class="project-info">
-								 <a href=""><h4 class="title-project text-cap">Campaigns for students</h4></a>
-									  <a href="" class="cateProject">School</a>
-								</div>
-						  </div>
+									 <a href="actdetail.php">
+										<h4 class="title-project text-cap text-cap">Activity title</h4>
+									 </a>
+									 <a href="" class="cateProject">atype / prName</a>
+								 </div>
+							</div>
 
-						  <div class="element-item School">
-								<a class="img-contain-isotope" href="">
-								  <img src="images/activity/2.jpg" class="img-responsive" alt="Image">
-								  </a>
-								  <div class="project-info">
-								  <a href=""><h4 class="title-project text-cap">Educational and awareness</h4></a>
-									  <a href="" class="cateProject">School</a>
-								</div>
-						  </div>
 
-						  <div class="element-item Natural ">
-								<a class="img-contain-isotope" href="">
-								   <img src="images/activity/1.jpg" class="img-responsive" alt="Image">
-								   </a>
-								   <div class="project-info">
-								   <a href=""><h4 class="title-project text-cap">Recycling Trash</h4></a>
-									  <a href="" class="cateProject">Natural</a>
-								</div>
-						  </div>
-
-						  <div class="element-item Natural">
-
-								  <img src="images/news/1.jpg" class="img-responsive" alt="Image">
-								<div class="project-info">
-								 <a href=""><h4 class="title-project text-cap">Creative recycling</h4></a>
-									  <a href="" class="cateProject">Natural</a>
-								</div>
-						  </div>
 						</div>  <!-- End project Container -->
 				    </div> <!-- End  -->
 					<div class="overlay-arc">
 						<div class="layer-1">
-							<a href="" class="ot-btn btn-dark-color text-cap">View all project</a>
+							<a href="activities.php" class="ot-btn btn-dark-color text-cap">View all Activities</a>
 						</div>
 					</div>
 				</section>
