@@ -48,7 +48,7 @@
           "showMethod": "fadeIn",
           "hideMethod": "fadeOut"
         }
-    //VALIDATION CONFIGURATION    
+    //VALIDATION CONFIGURATION
     var conf = $.formUtils.defaultConfig();
     conf.language = 'en';
     conf.modules =  'security, date';
@@ -135,7 +135,7 @@
     //---------------------
 
     services.getProjectsInitializer();
-    
+
     //Get all records
     $.ajax({
         url: urlPath + 'get.php',
@@ -173,9 +173,9 @@
                         },
                     }
                 ]
-            })    
+            })
 
-               
+
 
             var table = $('#datatable3').DataTable();
             table.columns().eq(0).each( function () {
@@ -195,7 +195,7 @@
             });
 
         // Add Placeholder text to datatables filter bar
-        $('.dataTables_filter input').attr("placeholder", "Enter Terms...");                  
+        $('.dataTables_filter input').attr("placeholder", "Enter Terms...");
         }
     })
 
@@ -220,19 +220,19 @@
 
         $('#newFormContainer').hide(700);
         $('#editFormContainer').show(700);
-        
-                    
-        
-        //var product = JSON.parse($(this).attr('record-id')) 
+
+
+
+        //var product = JSON.parse($(this).attr('record-id'))
         var mainRecord = $(this).attr('data-record');
         mainRecord = JSON.parse(mainRecord);
-       
+
        console.log(mainRecord)
         //INIT
         services.getProjectsEditForm(mainRecord.prName)
 
         var datatableRow = $(this).attr('data-row');
-        
+
         //set datatable row in data-row attr to for saveEditForm(Save button) to have the access for datatable row
         $('#editFormContainer').find('#saveEditForm').attr("data-row",datatableRow)
         // $('#editFormContainer').find('#nfBoxName').html(datatableRow)
@@ -260,8 +260,8 @@
                     data: fd,
                     processData: false, // tell jQuery not to process the data
                     contentType: false, // tell jQuery not to set contentType
-                    success:function(data){ 
-                    // Serialize the form to Json 
+                    success:function(data){
+                    // Serialize the form to Json
                     var localRecord = $('#editForm').serializeFormJSON()
 
                     var response = JSON.parse(data)
@@ -314,7 +314,7 @@
                     var idz;
                     var actTitle;
 
-                    //GET FILES FROM SERVER -> FILES TO DROPZONE 
+                    //GET FILES FROM SERVER -> FILES TO DROPZONE
                     $('#datatable3 tbody').on('click', '#editRecord', function(event) {
                         myDropzoneEdit.removeAllFiles(true);
 
@@ -357,7 +357,7 @@
 
                                 var response = JSON.parse(data)
 
-                                // // Serialize the form to Json 
+                                // // Serialize the form to Json
                                 var localRecord = $('#editForm').serializeFormJSON()
 
                                 //Get the datatable row from the button attr and emit changes
@@ -418,9 +418,9 @@
                     myDropzoneEdit.removeAllFiles(true);
                     $('#editForm').find("input[type=text],input[type=file],select, textarea").val("").change()
                 }
-            });        
+            });
 
-            // LOOP OVER QUEUE -> Good when parallelUploads is less than max files 
+            // LOOP OVER QUEUE -> Good when parallelUploads is less than max files
             myDropzoneEdit.on('success', myDropzoneEdit.processQueue.bind(myDropzoneEdit));
 
             // ADD  REMOVE BTN MANUALLY
@@ -505,10 +505,10 @@
         $('#newFormContainer').hide(700);
     });
 
-        
+
     //CREATE NEW brand IN PROCESS
     $('#saveNewForm0').click(function(){
-            
+
             var frm = $('#newform').serializeFormJSON();
             // console.log(frm.prdetailsType)
            if( !$('#newform').isValid(conf.language, conf, true) ) {
@@ -525,13 +525,13 @@
                 data: fd,
                 processData: false, // tell jQuery not to process the data
                 contentType: false, // tell jQuery not to set contentType
-                success:function(data){ 
+                success:function(data){
 
                     var _newRecord = JSON.parse(data);
 
                     // if(_newRecord.prdetailsType == typeParam){
                         // _newRecord.new = _newRecord.new==1 ? true : false;
-                        var myDataTable= $('#datatable3').DataTable();                        
+                        var myDataTable= $('#datatable3').DataTable();
                         myDataTable.row.add(_newRecord ).draw( false )
                     // }
 
@@ -545,7 +545,7 @@
                             toastr.error("Something went wrong", 'Notification', {timeOut: 5000})
                        }
                 }
-            });    
+            });
            }
     });
 
@@ -602,7 +602,7 @@
                                     formData.append("actTitle", actTitle);
                                 });
 
-                                
+
                                 if (myDropzone.getQueuedFiles().length > 0) {
                                     myDropzone.processQueue(); //tell Dropzone to process all queued files
                                 } else {
@@ -643,7 +643,7 @@
         });
 
 
-            // LOOP OVER QUEUE -> Good when parallelUploads is less than max files 
+            // LOOP OVER QUEUE -> Good when parallelUploads is less than max files
             myDropzone.on('success', myDropzone.processQueue.bind(myDropzone));
 
             // ADD  REMOVE BTN MANUALLY
@@ -691,16 +691,16 @@
         var thisDeleteBtn = $(this);
         var RecordId = $(this).attr('record-id');
         var inst = $('[data-remodal-id=modal]').remodal();
-                
+
         inst.open();
 
         $(document).on('confirmation', '.remodal', function () {
-            
+
             $.ajax({
                     url: urlPath + 'delete.php',
                     method:'POST',
                     data: {Id:RecordId},
-                    success:function(data){ 
+                    success:function(data){
 
                     //get the dt instance
                     var myDataTable= $('#datatable3').DataTable();
@@ -709,7 +709,7 @@
                     var row = myDataTable.row($(thisDeleteBtn).parents('tr')).remove().draw();
                     $('#newFormContainer').hide(700);
                     $('#editFormContainer').hide(700);
-                    
+
                     inst.close();
                     toastr.success('Record deleted successfully', 'Notification', {timeOut: 5000})
                     } ,

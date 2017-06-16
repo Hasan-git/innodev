@@ -13,11 +13,11 @@
 		<link rel="stylesheet" href="css/font-awesome.min.css">
 		<link rel="stylesheet" href="css/elegant-font.css">
 	  	<!-- SCROLL BAR MOBILE MENU
-  		================================================== --> 
+  		================================================== -->
  		 <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" />
 		<!-- Main Style -->
 		<link rel="stylesheet" href="style.css">
-		  
+
 		<!-- Favicons
 		  ================================================== -->
 	  	<link rel="shortcut icon" href="favicon.png">
@@ -28,7 +28,7 @@
 	<div id="page">
 		<div id="skrollr-body">
 			<?php include_once('includes/header.php'); ?>
-	
+
 			<section>
 				<div class="sub-header sub-header-1 sub-header-our-services fake-position">
 					<div class="sub-header-content">
@@ -90,8 +90,6 @@
 									<li><a href="#" class="page-numbers current">1</a></li>
 									<li><a class="page-numbers" href="#">2</a></li>
 									<li><a class="page-numbers" href="#">3</a></li>
-									<li><a class="page-numbers" href="#">...</a></li>
-									<li><a class="page-numbers" href="#">25</a></li>
 									<li><a class="next page-numbers" href="#"><i class="fa fa-angle-right"></i></a></li>
 								</ul>
 							</div>
@@ -119,8 +117,8 @@
 			</div>
 		</div>
 		<!-- End page -->
-	     
-		<a id="to-the-top"><i class="fa fa-angle-up"></i></a> 
+
+		<a id="to-the-top"><i class="fa fa-angle-up"></i></a>
 		<!-- Back To Top -->
 		<!-- SCRIPT -->
 	    <script src="js/vendor/jquery.min.js"></script>
@@ -128,13 +126,13 @@
 	    <script src="js/plugins/jquery.mCustomScrollbar.concat.min.js"></script>
 	    <script src="js/plugins/wow.min.js"></script>
 	    <script type="text/javascript" src="js/plugins/skrollr.min.js"></script>
-	    
+
 
 		 <!-- Mobile Menu
-	    ================================================== --> 
-	     <script src="js/plugins/jquery.mobile-menu.js"></script>  
+	    ================================================== -->
+	     <script src="js/plugins/jquery.mobile-menu.js"></script>
 	     <!-- PreLoad
-	    ================================================== --> 
+	    ================================================== -->
 	    <script type="text/javascript" src="js/plugins/royal_preloader.min.js"></script>
 		<script type="text/javascript">
 		(function($) { "use strict";
@@ -150,7 +148,7 @@
 		</script>
 
 	 	<!-- Global Js
-	    ================================================== --> 
+	    ================================================== -->
 	    <script src="js/plugins/custom.js"></script>
 	</body>
 </html>

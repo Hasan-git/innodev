@@ -13,11 +13,11 @@
 		<link rel="stylesheet" href="css/font-awesome.min.css">
 		<link rel="stylesheet" href="css/elegant-font.css">
 	  	<!-- SCROLL BAR MOBILE MENU
-  		================================================== --> 
+  		================================================== -->
  		 <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" />
 		<!-- Main Style -->
 		<link rel="stylesheet" href="style.css">
-		  
+
 		<!-- Favicons
 		  ================================================== -->
 	  	<link rel="shortcut icon" href="favicon.png">
@@ -28,7 +28,7 @@
 	<div id="page">
 		<div id="skrollr-body">
 			<?php include_once('includes/header.php'); ?>
-	
+
 			<section>
 				<div class="sub-header sub-header-1 sub-header-our-services fake-position">
 					<div class="sub-header-content">
@@ -43,51 +43,51 @@
 				</div>
 			</section>
 			<!-- End Section Sub Header -->
-			
+
 			<section class="padding padding-bot-30">
 				<div class="container">
 					<div class="row">
 
 						<!-- the projects rows from table will go here -->
 						<div class="col-md-12">
-							<div class="block-img-full service-item">
-								<div class="latest-blog-post-img col-md-8">
+							<div class="block-img-full service-item records_article">
+								<div class="latest-blog-post-img col-md-8 ">
 									<a class="img-block">
-										<img src="http://placehold.it/810x451/ccc.jpg" class="img-responsive" alt="Image">
+										<img id="imageName" src="http://placehold.it/810x451/ccc.jpg" class="img-responsive" alt="Image">
 									</a>
 								</div>
 								<div class="col-md-4">
 									<table class="table">
 										<tr>
 											<th>Project Name:</th>
-											<td>the Name of the project</td>
+											<td id="projectName">the Name of the project</td>
 										</tr>
 										<tr>
 											<th>Project Target:</th>
-											<td>target of the project</td>
+											<td id="target">target of the project</td>
 										</tr>
 										<tr>
 											<th>Doner Name:</th>
-											<td>project doner name</td>
+											<td id="doner">project doner name</td>
 										</tr>
 										<tr>
 											<th>Start Date:</th>
-											<td>start date</td>
+											<td id="startDate">start date</td>
 										</tr>
 										<tr>
 											<th>End Date:</th>
-											<td>end date</td>
+											<td id="endDate">end date</td>
 										</tr>
 										<tr>
-											<td><a class="btn btn-warning" href="events.php">View Events</a></td>
-											<td><a class="btn btn-success" href="activities.php">View Activities</a></td>
+											<td><a class="btn btn-warning" id="eventsLink" href="#">View Events</a></td>
+											<td><a class="btn btn-success" id="activitiesLink" href="#">View Activities</a></td>
 										</tr>
 									</table>
 								</div>
 								<div class="clearfix"></div>
 								<div class="text-box col-md-12">
-									<h4 class="text-cap">Project Title</h4>
-									<p>
+									<h4 class="text-cap" id="title">Project Title</h4>
+									<p id="description">
 										Project Definition Project Definition Project Definition Project Definition Project Definition Project Definition Project Definition Project Definition.
 									</p>
 									<a class="ot-btn btn-main-color text-cap mgb0" href="activities.php">View Project Activities</a>
@@ -97,13 +97,8 @@
 						<!-- end projects rows -->
 
 						<!-- the projects navigation pages start here -->
-						<div class="pagination-ourter text-right">
+						<div class="pagination-ourter text-right records_article_paginaton">
 							<ul class="pagination">
-								<li><a href="#" class="page-numbers current">1</a></li>
-								<li><a class="page-numbers" href="#">2</a></li>
-								<li><a class="page-numbers" href="#">3</a></li>
-								<li><a class="page-numbers" href="#">...</a></li>
-								<li><a class="page-numbers" href="#">25</a></li>
 								<li><a class="next page-numbers" href="#"><i class="fa fa-angle-right"></i></a></li>
 							</ul>
 						</div>
@@ -130,22 +125,24 @@
 			</div>
 		</div>
 		<!-- End page -->
-	     
-		<a id="to-the-top"><i class="fa fa-angle-up"></i></a> 
+
+		<a id="to-the-top"><i class="fa fa-angle-up"></i></a>
 		<!-- Back To Top -->
 		<!-- SCRIPT -->
 	    <script src="js/vendor/jquery.min.js"></script>
+	    <script src="js/vendor/jquery-ui-1.12.1.js"></script>
 	    <script src="js/vendor/bootstrap.min.js"></script>
 	    <script src="js/plugins/jquery.mCustomScrollbar.concat.min.js"></script>
 	    <script src="js/plugins/wow.min.js"></script>
 	    <script type="text/javascript" src="js/plugins/skrollr.min.js"></script>
-	    
+	    <script type="text/javascript" src="js/controllers/projects.js"></script>
+
 
 		 <!-- Mobile Menu
-	    ================================================== --> 
-	     <script src="js/plugins/jquery.mobile-menu.js"></script>  
+	    ================================================== -->
+	     <script src="js/plugins/jquery.mobile-menu.js"></script>
 	     <!-- PreLoad
-	    ================================================== --> 
+	    ================================================== -->
 	    <script type="text/javascript" src="js/plugins/royal_preloader.min.js"></script>
 		<script type="text/javascript">
 		(function($) { "use strict";
@@ -161,7 +158,7 @@
 		</script>
 
 	 	<!-- Global Js
-	    ================================================== --> 
+	    ================================================== -->
 	    <script src="js/plugins/custom.js"></script>
 	</body>
 </html>
