@@ -13,11 +13,11 @@
 		<link rel="stylesheet" href="css/font-awesome.min.css">
 		<link rel="stylesheet" href="css/elegant-font.css">
 	  	<!-- SCROLL BAR MOBILE MENU
-  		================================================== --> 
+  		================================================== -->
  		 <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" />
 		<!-- Main Style -->
 		<link rel="stylesheet" href="style.css">
-		   
+
 		<!-- Favicons
 		  ================================================== -->
 	  	<link rel="shortcut icon" href="favicon.png">
@@ -29,7 +29,7 @@
 	<div id="page">
 		<div id="skrollr-body">
 			<?php include_once('includes/header.php'); ?>
-		
+
 				<section>
 					<div class="sub-header sub-header-1 sub-header-blog-grid fake-position">
 						<div class="sub-header-content">
@@ -47,7 +47,7 @@
 					</div>
 				</section>
 				<!-- End Section Sub Header -->
-				
+
 				<section id="content" class="padding">
 					<div class="container">
 						<div class="row">
@@ -55,20 +55,20 @@
 								<main id="main" class="site-main" >
 
 									<!-- the news details from table will go here -->
-									<div class="blog-detail">
-										<h1>News Title News Title News Title</h1>
+									<div class="blog-detail news_article">
+										<h1 id="title"></h1>
 										<div class="latest-blog-post-data text-cap">
-											<span class="tags"><a href="#">Author name</a></span>
+											<span class="tags"><a href="#" id="author"></a></span>
 										</div>
 										<div class="latest-blog-post-date-2  text-cap">
-											<span class="month">May</span>
-											<span class="day">21,</span>
-											<span class="year">2016</span>
+											<span class="month" id="month">May</span>
+											<span class="day" id="day">21</span>,
+											<span class="year" id="year">2016</span>
 										</div>
 										<div class="lastest-news-detail">
-											<img src="http://placehold.it/1140x640/ccc.jpg" class="img-responsive" alt="Image">
-											<h4>Content of News</h4>
-											<p>news text news text news text news text news text news text news text news text news text news text news text news text news text news text news text news text news text news text news text news text news text news text news text news text news text news text news text news text news text news text news text news text news text news text news text news text news text news text news text news text news text news text </p>
+											<img id="img_" src="http://placehold.it/1140x640/ccc.jpg" class="img-responsive" alt="Image">
+											<h4 id="content">Content of News</h4>
+											<p id="text"> </p>
 										</div>
 										<div class="footer-data text-cap">
 											<div class="share">
@@ -78,8 +78,8 @@
 										<div class="divider-line"></div>
 
 				                    </div>
-				              </main> 
-									
+				              </main>
+
 							</div> <!-- End Col -->
 							<div class="col-md-3">
 								<div class="main-sidebar">
@@ -95,19 +95,7 @@
 									<aside class="widget widget_archive">
 										<h3 class="widget-title text-cap">Archives</h3>
 										<div class="tiny-border"></div>
-										<ul>
-
-											<!-- the archive dates go here -->
-											<li><a href="news.php">March 2017</a>
-												<span class="count">(4)</span>
-											</li>
-											<li><a href="news.php">Febuary 2017</a>
-												<span class="count">(9)</span>
-											</li>
-											<li><a href="news.php">January 2017</a>
-												<span class="count">(34)</span>
-											</li>
-											<!-- the archive dates end here -->
+										<ul id="archive">
 
 										</ul>
 									</aside>
@@ -123,23 +111,26 @@
 			</div>
 		</div>
 		<!-- End page -->
-	     
-		<a id="to-the-top"><i class="fa fa-angle-up"></i></a> 
+
+		<a id="to-the-top"><i class="fa fa-angle-up"></i></a>
 		<!-- Back To Top -->
 		<!-- SCRIPT -->
 	    <script src="js/vendor/jquery.min.js"></script>
+	    <script src="js/vendor/jquery-ui-1.12.1.js"></script>
 	    <script src="js/vendor/bootstrap.min.js"></script>
 	    <script src="js/plugins/jquery.mCustomScrollbar.concat.min.js"></script>
 	    <script src="js/plugins/wow.min.js"></script>
 	    <script type="text/javascript" src="js/plugins/skrollr.min.js"></script>
+	    <script type="text/javascript" src="js/controllers/factory.js"></script>
+	    <script type="text/javascript" src="js/controllers/newsDetails.js"></script>
 
 		 <!-- Mobile Menu
-	    ================================================== --> 
-	 	<script src="js/plugins/jquery.mobile-menu.js"></script>  
+	    ================================================== -->
+	 	<script src="js/plugins/jquery.mobile-menu.js"></script>
 
-	    
+
 	  	<!-- PreLoad
-	    ================================================== --> 
+	    ================================================== -->
 	    <script type="text/javascript" src="js/plugins/royal_preloader.min.js"></script>
 		<script type="text/javascript">
 		(function($) { "use strict";
@@ -155,8 +146,8 @@
 		</script>
 
 	 	<!-- Global Js
-	    ================================================== --> 
+	    ================================================== -->
 	    <script src="js/plugins/custom.js"></script>
-   
+
 	</body>
 </html>

@@ -59,22 +59,20 @@
 						<div class="lastest-blog-container">
 
 							<!-- the event rows from table will go here -->
-							<div class="col-md-6">
+							<div class="col-md-6 records_article">
 								<article class="lastest-blog-item">
 									<figure class="latest-blog-post-img effect-zoe">
-
-										<img src="images/activity/1.jpg" class="img-responsive" alt="Image">
-
+										<img id="img" src="images/activity/1.jpg" class="img-responsive" alt="Image">
 										<div class="latest-blog-post-date text-cap">
-											<span class="day">29</span>
-											<span class="month">May</span>
+											<span class="day"></span>
+											<span class="month"></span>
 										</div>
 									</figure>
 									<div class="latest-blog-post-description">
-										<h3 style="text-decoration: none;">Event title
-											<span class="pull-right"><small>Project name / Location</small></span>
+										<h3 style="text-decoration: none;" ><span id="title">Event title</span>
+											<span class="pull-right"><small><span id="projectName"></span> / <span id="location"></span></small></span>
 										</h3>
-										<p>
+										<p id="description">
 											event description goes here.
 										</p>
 									</div>
@@ -85,11 +83,11 @@
 							<div class="clearfix"></div>
 
 							<!-- the events navigation pages start here -->
-							<div class="pagination-ourter text-center">
+							<div class="pagination-ourter text-center records_article_paginaton">
 								<ul class="pagination">
-									<li><a href="#" class="page-numbers current">1</a></li>
-									<li><a class="page-numbers" href="#">2</a></li>
-									<li><a class="page-numbers" href="#">3</a></li>
+									<li><a class="pre page-numbers" href="#"><i class="fa fa-angle-left"></i></a></li>
+
+
 									<li><a class="next page-numbers" href="#"><i class="fa fa-angle-right"></i></a></li>
 								</ul>
 							</div>
@@ -126,6 +124,8 @@
 	    <script src="js/plugins/jquery.mCustomScrollbar.concat.min.js"></script>
 	    <script src="js/plugins/wow.min.js"></script>
 	    <script type="text/javascript" src="js/plugins/skrollr.min.js"></script>
+	    <script type="text/javascript" src="js/controllers/factory.js"></script>
+	    <script type="text/javascript" src="js/controllers/events.js"></script>
 
 
 		 <!-- Mobile Menu

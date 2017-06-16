@@ -28,6 +28,7 @@ if(isset($_GET['prName'])) {
                 $description = $row['description'];
                 $image = $row['image'];
                 $video = $row['video'];
+                $atype = $row['atype'];
 
                 $activity['data'][] = array(
                     'Id' => $Id,
@@ -37,6 +38,7 @@ if(isset($_GET['prName'])) {
                     'location' => $location,
                     'description' => $description,
                     'imageName' => $image,
+                    'atype' => $atype,
                     'video' => $video);
             }
 

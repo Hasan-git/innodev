@@ -66,13 +66,9 @@
                            <!-- the news rows ends here -->
                         </div>
                         <!-- the news navigation pages start here -->
-                        <div class="pagination-ourter text-left news_article_paginaton">
+                        <div class="pagination-ourter text-left records_article_paginaton">
                            <ul class="pagination">
-                              <!-- <li><a href="#" class="page-numbers current">1</a></li> -->
-                              <!-- <li><a class="page-numbers" href="#">2</a></li>
-                                 <li><a class="page-numbers" href="#">3</a></li>
-                                 <li><a class="page-numbers" href="#">...</a></li>
-                                 <li><a class="page-numbers" href="#">25</a></li> -->
+                              <li><a class="pre page-numbers" href="#"><i class="fa fa-angle-left"></i></a></li>
                               <li><a class="next page-numbers" href="#"><i class="fa fa-angle-right"></i></a></li>
                            </ul>
                         </div>

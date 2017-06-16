@@ -99,6 +99,7 @@
 						<!-- the projects navigation pages start here -->
 						<div class="pagination-ourter text-right records_article_paginaton">
 							<ul class="pagination">
+								<li><a class="pre page-numbers" href="#"><i class="fa fa-angle-left"></i></a></li>
 								<li><a class="next page-numbers" href="#"><i class="fa fa-angle-right"></i></a></li>
 							</ul>
 						</div>

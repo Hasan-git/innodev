@@ -31,6 +31,7 @@ else {
                 $location = $row['location'];
                 $description = $row['description'];
                 $image = $row['image'];
+                $atype = $row['atype'];
                 $video = $row['video'];
 
                 $activity['data'][] = array(
@@ -41,6 +42,7 @@ else {
                     'location' => $location,
                     'description' => $description,
                     'imageName' => $image,
+                    'atype' => $atype,
                     'video' => $video);
             }
 

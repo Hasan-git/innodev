@@ -244,6 +244,8 @@
         $('#editFormContainer').find('#video').val(mainRecord.video)
         $('#editFormContainer').find('#imageName').val(mainRecord.imageName )
         $('#editFormContainer').find('#Id').val(mainRecord.Id)
+        $('#editFormContainer').find('#atype').val(mainRecord.atype).prop("selected","selected").change()
+
         // $('#editFormContainer').find('#prName').val(mainRecord.prName).prop("selected","selected").change()
     });
 

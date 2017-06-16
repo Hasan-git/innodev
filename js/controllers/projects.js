@@ -21,11 +21,8 @@
 
           //////////////////
 
-          $.each(records, function(key, value) {
-            var current = key==0 ? "current" :" " ;
-              $('.records_article_paginaton .pagination').find('.next').parent()
-                  .before('<li><a class="page-numbers '+ current +'" key="'+key+'" href="#">'+(key+1)+'</a></li>');
-          });
+          actions.paginate(records,0,'initial')
+
 
           $('.records_article').find("#startDate").html(startDate);
           $('.records_article').find("#endDate").html(endDate);
@@ -46,6 +43,8 @@
 
           actions.newDetailsClicked(records);
           actions.nextClicked(records);
+          actions.preClicked(records);
+
 
         },
         error: function(error) {
@@ -57,7 +56,7 @@
     var actions = {
       //Pagination btns
       newDetailsClicked : function (records){
-          $('.page-numbers:not(.next)').click(function(){
+          $('.page-numbers:not(.next,.pre)').click(function(){
 
           var _this = $(this);
 
@@ -93,16 +92,14 @@
            }
         })
       },
-      //Pagination next btn
-      nextClicked :  function (records){
-          $('.page-numbers.next').click(function(){
+      newAttach : function (records,preferedKey){
 
-          var _this = $(this);
+          var key = preferedKey ;
 
-          var key = $(".page-numbers.current").attr("key");
-              key = parseInt(key)+1;
+          var recordsObject = records[parseInt(key)];
 
-          var recordsObject = records[key];
+          console.log($('.page-numbers key['+key+']'),recordsObject);
+
 
           var startDate = $.datepicker.formatDate('M d,yy', new Date(recordsObject.startDate));
           var endDate = $.datepicker.formatDate('M d,yy', new Date(recordsObject.endDate));
@@ -120,8 +117,27 @@
           $('.records_article').find("#activitiesLink").attr('href','activities.php?prName='+recordsObject.prname );
           $('.records_article').find("#eventsLink").attr('href','events.php?prName='+recordsObject.prname );
 
-          $(".page-numbers.current").removeClass("current");
-          var a = $("a[key='"+key+"']" ).addClass("current");
+          // $(".page-numbers.current").removeClass("current");
+          // $('.page-numbers key['+key+']').addClass("current");
+
+          var target = $('.records_article') ;
+          if( target.length ) {
+               event.preventDefault();
+               $('html, body').stop().animate({
+                   scrollTop: target.offset().top-140
+               }, 1000);
+           }
+      },
+      //Pagination next btn
+      nextClicked :  function (records){
+          $('.page-numbers.next').click(function(){
+
+          var _this = $(this);
+
+          var key = $('.page-numbers:not(.next)').last().attr("key");
+              key = (parseInt(key) + 1 ); // sum with 2 -> one for array shift and 1 increment for the next key
+
+          actions.paginate(records,key,'next');
 
           var target = $('.records_article') ;
           if( target.length ) {
@@ -132,6 +148,62 @@
            }
         })
       },
+      //Pagination pre btn
+      preClicked :  function (records){
+          $('.page-numbers.pre').click(function(){
+
+          var _this = $(this);
+
+          var key = $('.page-numbers:not(.pre)').first().attr("key");
+              key = (parseInt(key) - 1 );
+
+          actions.paginate(records,key,'pre');
+
+
+          var target = $('.records_article') ;
+          if( target.length ) {
+               event.preventDefault();
+               $('html, body').stop().animate({
+                   scrollTop: target.offset().top-140
+               }, 1000);
+           }
+        })
+      },
+      paginate: function(records,fnKey,status){
+
+        //pagination limit
+        var limit = 2;
+
+        if(fnKey> records.length-1 || fnKey < 0)
+          return false;
+
+          $('.records_article_paginaton .page-numbers:not(.next,.pre) ').remove();
+          $(".page-numbers.current").removeClass("current");
+          $.each(records, function(key, value) {
+
+            if( (status == 'next' || status == 'initial' ) && key >=fnKey && key < fnKey+limit ){
+              if(parseInt(key) === parseInt(fnKey))
+                  actions.newAttach(records,fnKey)
+
+              var current = parseInt(key) === parseInt(fnKey) ? "current" :" " ;
+              $('.records_article_paginaton .pagination').find('.next').parent()
+                  .before('<li><a class="page-numbers '+ current +' " key="'+key+'" href="#">'+(key+1)+'</a></li>');
+            }else if( status == 'pre' && key <= fnKey && key > fnKey-limit ){
+
+                if(parseInt(key) === parseInt(fnKey))
+                    actions.newAttach(records,fnKey)
+
+               var current = parseInt(key) === parseInt(fnKey) ? "current" :" " ;
+              $('.records_article_paginaton .pagination').find('.next').parent()
+                  .before('<li><a class="page-numbers '+ current +' " key="'+key+'" href="#">'+(key+1)+'</a></li>');
+            }
+            actions.newDetailsClicked(records);
+            actions.nextClicked(records);
+            actions.preClicked(records);
+
+
+          });
+      }
 
     }
 

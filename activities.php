@@ -12,11 +12,11 @@
       <link rel="stylesheet" href="css/font-awesome.min.css">
       <link rel="stylesheet" href="css/elegant-font.css">
       <!-- SCROLL BAR MOBILE MENU
-         ================================================== --> 
+         ================================================== -->
       <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" />
       <!-- Main Style -->
       <link rel="stylesheet" href="style.css">
-      
+
       <!-- Favicons
          ================================================== -->
       <link rel="shortcut icon" href="favicon.png">
@@ -66,7 +66,7 @@
                   <div class="clearfix projectContainer portfolio-grid-2-container">
 
                      <!-- activities rows will go here -->
-                     <div class="element-item School"><!-- atype go here as class (School) -->
+  <!--                    <div class="element-item School">
                         <a class="portfolio-img-demo" href="actdetail.php">
                            <img src="http://placehold.it/960x720/ccc.jpg" class="img-responsive" alt="Image">
                         </a>
@@ -76,7 +76,7 @@
                            </a>
                            <a href="actdetail.php" class="cateProject">atype / PrName</a>
                         </div>
-                     </div>
+                     </div> -->
                      <!-- end activities -->
 
                   </div>
@@ -111,7 +111,7 @@
          </div>
       </div>
       <!-- End page -->
-      <a id="to-the-top"><i class="fa fa-angle-up"></i></a> 
+      <a id="to-the-top"><i class="fa fa-angle-up"></i></a>
       <!-- Back To Top -->
       <!-- SCRIPT -->
       <script src="js/vendor/jquery.min.js"></script>
@@ -119,16 +119,17 @@
       <script src="js/plugins/jquery.mCustomScrollbar.concat.min.js"></script>
       <script src="js/plugins/wow.min.js"></script>
       <script type="text/javascript" src="js/plugins/skrollr.min.js"></script>
-      
+      <script type="text/javascript" src="js/controllers/activities.js"></script>
+
       <!-- Mobile Menu
-         ================================================== --> 
-      <script src="js/plugins/jquery.mobile-menu.js"></script>  
+         ================================================== -->
+      <script src="js/plugins/jquery.mobile-menu.js"></script>
       <!-- Initializing the isotope
-         ================================================== --> 
+         ================================================== -->
       <script src="js/plugins/isotope.pkgd.min.js"></script>
       <script src="js/plugins/custom-isotope.js"></script>
       <!-- PreLoad
-       ================================================== --> 
+       ================================================== -->
       <script type="text/javascript" src="js/plugins/royal_preloader.min.js"></script>
       <script type="text/javascript">
       (function($) { "use strict";
@@ -144,7 +145,7 @@
       </script>
 
       <!-- Global Js
-       ================================================== --> 
+       ================================================== -->
       <script src="js/plugins/custom.js"></script>
    </body>
 </html>

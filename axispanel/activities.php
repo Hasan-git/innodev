@@ -110,7 +110,14 @@
                                             <div class="form-group admin-form">
                                                 <div class="col-sm-4">
                                                     <label class="control-label">Activity Type*</label>
-                                                    <input type="text" data-validation="required" name="atype" id="atype" class="form-control" placeholder="atype..." required>
+                                                    <!-- <input type="text" data-validation="required" name="atype" id="atype" class="form-control" placeholder="atype..." required> -->
+
+                                                    <select data-validation="required" name="atype" id="atype" id="atype" class="select2-singl form-control" required>
+                                                            <option>School</option>
+                                                            <option>General</option>
+                                                            <option>Natural</option>
+                                                    </select>
+
                                                 </div>
                                                 <div class="col-sm-8">
                                                     <label class="control-label">Activity Location</label>
@@ -192,7 +199,12 @@
                                             <div class="form-group admin-form">
                                                 <div class="col-sm-4">
                                                     <label class="control-label">Activity Type*</label>
-                                                    <input type="text" data-validation="required" name="atype" id="atype" class="form-control" placeholder="atype..." required>
+                                                    <!-- <input type="text" data-validation="required" name="atype" id="atype" class="form-control" placeholder="atype..." required> -->
+                                                    <select data-validation="required" name="atype" id="atype" class="select2-singl form-control" required>
+                                                            <option>School</option>
+                                                            <option>General</option>
+                                                            <option>Natural</option>
+                                                    </select>
                                                 </div>
                                                 <div class="col-sm-8">
                                                     <label class="control-label">Activity Location</label>
@@ -244,20 +256,20 @@
                             </div>
                         </div>
 
-                        
+
 
                          <div class="row">
                             <div class="col-xs-2">
                                 <button class="btn btn-default btn-gradient" scrollto="#newFormContainer" id="openNewRecordForm"><i class="fa fa-plus"></i> Create New Activity </button>
                             </div>
                             <div class="col-xs-5 input-group" style="padding-left:50px;">
-                                <span class="input-group-addon" id="basic-addon1">Switch Project</span>            
+                                <span class="input-group-addon" id="basic-addon1">Switch Project</span>
                                     <select class="select2-single form-control" id="projectFilter">
                                     </select>
                             </div>
                             <div class="col-xs-1"></div>
                         </div>
-                        
+
                         <!-- TABLE -->
                         <!-- TABLE -->
                         <!-- TABLE -->
