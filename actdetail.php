@@ -1,35 +1,35 @@
 <!DOCTYPE html>
 <html lang="">
-   <head>
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>INNODEV - Activities</title>
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>INNODEV - Activities</title>
 
-      <!-- Bootstrap CSS -->
-      <link rel="stylesheet" href="css/bootstrap.min.css">
-      <!-- Font -->
-      <link rel="stylesheet" href="css/font-awesome.min.css">
-      <link rel="stylesheet" href="css/elegant-font.css">
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <!-- Font -->
+   <link rel="stylesheet" href="css/font-awesome.min.css">
+   <link rel="stylesheet" href="css/elegant-font.css">
       <!-- SCROLL BAR MOBILE MENU
-         ================================================== --> 
+      ================================================== -->
       <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" />
       <!-- OWL CAROUSEL
-         ================================================== --> 
+      ================================================== -->
       <link rel="stylesheet" href="css/owl.carousel.css">
       <!-- Main Style -->
       <link rel="stylesheet" href="style.css">
-      
+
       <!-- Favicons
-         ================================================== -->
+      ================================================== -->
       <link rel="shortcut icon" href="favicon.png">
    </head>
    <body>
-   <?php include_once('includes/mobilemenu.php'); ?>
+      <?php include_once('includes/mobilemenu.php'); ?>
 
-   <div id="page">
-      <div id="skrollr-body">
-         <?php include_once('includes/header.php'); ?>
+      <div id="page">
+         <div id="skrollr-body">
+            <?php include_once('includes/header.php'); ?>
 
             <section>
                <div class="sub-header sub-header-1 sub-header-our-services-2 fake-position">
@@ -52,7 +52,6 @@
                <div class="container">
                   <div class="row">
                      <div class="sidebar-services sidebar-right">
-
                         <div class="box-question-sidebar text-center">
                            <p>Have questions about our activities?</p>
                            <a href="contact.php" class="ot-btn btn-main-color text-cap">Contact Us</a>
@@ -66,50 +65,9 @@
                            </div>
                            <div id="sync3" class="owl-carousel owl-detail-services clearfix">
 
-                              <!-- Images of activities will loop here. view the number of images uploaded -->
-                              <div class="item ">
-                                 <img src="http://placehold.it/850x478/ccc.jpg" class="img-responsive" alt="Image">
-                              </div>
-                              <!-- end item -->
-                              <div class="item ">
-                                 <img src="http://placehold.it/850x478/ccc.jpg" class="img-responsive" alt="Image">
-                              </div>
-                              <!-- end item -->
-                              <div class="item ">
-                                 <img src="http://placehold.it/850x478/ccc.jpg" class="img-responsive" alt="Image">
-                              </div>
-                              <!-- end item -->
-                              <div class="item ">
-                                 <img src="http://placehold.it/850x478/ccc.jpg" class="img-responsive" alt="Image">
-                              </div>
-                              <!-- end item -->
-                              <div class="item ">
-                                 <img src="http://placehold.it/850x478/ccc.jpg" class="img-responsive" alt="Image">
-                              </div>
-                              <!-- end item -->
-                              <!-- Images of activities goes here -->
-
                            </div>
                            <!-- End Main Sync owl -->
                            <div id="sync4" class="owl-carousel thumb-service-slide">
-
-                              <!-- Images of activities will loop here. view the number of images uploaded -->
-                              <div class="item">
-                                 <img src="http://placehold.it/850x478/ccc.jpg" class="img-responsive" alt="Image">
-                              </div>
-                              <div class="item">
-                                 <img src="http://placehold.it/850x478/ccc.jpg" class="img-responsive" alt="Image">
-                              </div>
-                              <div class="item">
-                                 <img src="http://placehold.it/850x478/ccc.jpg" class="img-responsive" alt="Image">
-                              </div>
-                              <div class="item">
-                                 <img src="http://placehold.it/850x478/ccc.jpg" class="img-responsive" alt="Image">
-                              </div>
-                              <div class="item">
-                                 <img src="http://placehold.it/850x478/ccc.jpg" class="img-responsive" alt="Image">
-                              </div>
-                              <!-- Images of activities goes here -->
 
                            </div>
                            <!-- End Navithumbnail Owl Sync -->
@@ -117,9 +75,9 @@
                         <div class="content-text-services">
                            <div class="row">
                               <div class="col-md-12">
-                                 <h3>Activity Title Activity Title</h3>
-                                 <span class="text-info">prName / atype / location / actDate</span>
-                                 <p>Activity Description text text text Activity Description.
+                                 <h3 id="title"></h3>
+                                 <span class="text-info"><span id="prName"></span>  / <span id="atype"></span> / <span id="location"></span> / <span id="actDate"></span></span>
+                                 <p id="description">
                                  </p>
                               </div>
                            </div>
@@ -134,7 +92,7 @@
          </div>
       </div>
       <!-- End page -->
-      <a id="to-the-top"><i class="fa fa-angle-up"></i></a> 
+      <a id="to-the-top"><i class="fa fa-angle-up"></i></a>
       <!-- Back To Top -->
       <!-- SCRIPT -->
       <script src="js/vendor/jquery.min.js"></script>
@@ -142,33 +100,43 @@
       <script src="js/plugins/jquery.mCustomScrollbar.concat.min.js"></script>
       <script src="js/plugins/wow.min.js"></script>
       <script type="text/javascript" src="js/plugins/skrollr.min.js"></script>
-      
+
+      <script type="text/javascript" src="js/controllers/factory.js"></script>
+      <script type="text/javascript" src="js/controllers/actDetails.js"></script>
+
+
+
       <!-- Initializing Owl Carousel
-         ================================================== -->
+      ================================================== -->
       <script src="js/plugins/owl.carousel.js"></script>
       <script src="js/plugins/custom-owl.js"></script>
+
       <!-- Mobile Menu
-         ================================================== --> 
-      <script src="js/plugins/jquery.mobile-menu.js"></script>  
+      ================================================== -->
+      <script src="js/plugins/jquery.mobile-menu.js"></script>
+
+
+
       <!-- PreLoad
-       ================================================== --> 
-       <script type="text/javascript" src="js/plugins/royal_preloader.min.js"></script>
+      ================================================== -->
+      <script type="text/javascript" src="js/plugins/royal_preloader.min.js"></script>
       <script type="text/javascript">
-      (function($) { "use strict";
-                  Royal_Preloader.config({
+
+         (function($) { "use strict";
+            Royal_Preloader.config({
                       mode:           'logo', // 'number', "text" or "logo"
                       logo:           'images/logo/loader.jpg',
                       timeout:       1,
                       showInfo:       false,
                       opacity:        1,
                       background:     ['#FFFFFF']
-                  });
-      })(jQuery);
+                   });
+         })(jQuery);
       </script>
 
       <!-- Global Js
-       ================================================== --> 
-       <script src="js/plugins/custom.js"></script>
+      ================================================== -->
+      <script src="js/plugins/custom.js"></script>
    </body>
-</html>
+   </html>
 

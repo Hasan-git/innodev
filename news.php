@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="">
-   <head>
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>INNODEV - News</title>
-      <!-- Bootstrap CSS -->
-      <link rel="stylesheet" href="css/bootstrap.min.css">
-      <!-- Font -->
-      <link rel="stylesheet" href="css/font-awesome.min.css">
-      <link rel="stylesheet" href="css/elegant-font.css">
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>INNODEV - News</title>
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <!-- Font -->
+   <link rel="stylesheet" href="css/font-awesome.min.css">
+   <link rel="stylesheet" href="css/elegant-font.css">
       <!-- SCROLL BAR MOBILE MENU
-         ================================================== -->
+      ================================================== -->
       <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" />
       <!-- Main Style -->
       <link rel="stylesheet" href="style.css">
       <!-- Favicons
-         ================================================== -->
+      ================================================== -->
       <link rel="shortcut icon" href="favicon.png">
    </head>
    <body>
@@ -59,7 +59,7 @@
                                  </h3>
                                  <p class="content"></p>
                                  <a href="newsdetail.php" class="ot-btn btn-main-color text-cap nxt-href" >
-                                 Continue Reading...
+                                    Continue Reading...
                                  </a>
                               </div>
                            </article>
@@ -120,25 +120,25 @@
       <script src="js/controllers/factory.js"></script>
       <script src="js/controllers/news.js"></script>
       <!-- Mobile Menu
-         ================================================== -->
+      ================================================== -->
       <script src="js/plugins/jquery.mobile-menu.js"></script>
       <!-- PreLoad
-         ================================================== -->
+      ================================================== -->
       <script type="text/javascript" src="js/plugins/royal_preloader.min.js"></script>
       <script type="text/javascript">
          (function($) { "use strict";
-                     Royal_Preloader.config({
+            Royal_Preloader.config({
                          mode:           'logo', // 'number', "text" or "logo"
                          logo:           'images/logo/loader.jpg',
                          timeout:       1,
                          showInfo:       false,
                          opacity:        1,
                          background:     ['#FFFFFF']
-                     });
+                      });
          })(jQuery);
       </script>
       <!-- Global Js
-         ================================================== -->
+      ================================================== -->
       <script src="js/plugins/custom.js"></script>
    </body>
-</html>
+   </html>

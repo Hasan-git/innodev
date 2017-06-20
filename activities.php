@@ -1,32 +1,32 @@
 <!DOCTYPE html>
 <html lang="">
-   <head>
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>INNODEV - Activities</title>
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>INNODEV - Activities</title>
 
-      <!-- Bootstrap CSS -->
-      <link rel="stylesheet" href="css/bootstrap.min.css">
-      <!-- Font -->
-      <link rel="stylesheet" href="css/font-awesome.min.css">
-      <link rel="stylesheet" href="css/elegant-font.css">
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <!-- Font -->
+   <link rel="stylesheet" href="css/font-awesome.min.css">
+   <link rel="stylesheet" href="css/elegant-font.css">
       <!-- SCROLL BAR MOBILE MENU
-         ================================================== -->
+      ================================================== -->
       <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" />
       <!-- Main Style -->
       <link rel="stylesheet" href="style.css">
 
       <!-- Favicons
-         ================================================== -->
+      ================================================== -->
       <link rel="shortcut icon" href="favicon.png">
    </head>
    <body>
-   <?php include_once('includes/mobilemenu.php'); ?>
+      <?php include_once('includes/mobilemenu.php'); ?>
 
-   <div id="page">
-      <div id="skrollr-body">
-         <?php include_once('includes/header.php'); ?>
+      <div id="page">
+         <div id="skrollr-body">
+            <?php include_once('includes/header.php'); ?>
 
             <section>
                <div class="sub-header sub-header-1 sub-header-portfolio-grid-1 fake-position">
@@ -63,21 +63,9 @@
 
                   </div>
                   <!-- End Project Fillter -->
-                  <div class="clearfix projectContainer portfolio-grid-2-container">
+                  <div class="clearfix projectContainer portfolio-grid-2-container records_article">
 
-                     <!-- activities rows will go here -->
-  <!--                    <div class="element-item School">
-                        <a class="portfolio-img-demo" href="actdetail.php">
-                           <img src="http://placehold.it/960x720/ccc.jpg" class="img-responsive" alt="Image">
-                        </a>
-                        <div class="project-info">
-                           <a href="actdetail.php">
-                              <h4 class="title-project text-cap text-cap">Activity Title</h4>
-                           </a>
-                           <a href="actdetail.php" class="cateProject">atype / PrName</a>
-                        </div>
-                     </div> -->
-                     <!-- end activities -->
+
 
                   </div>
                   <!-- End project Container -->
@@ -85,14 +73,13 @@
                   <div class="clearfix"></div>
 
                   <!-- the activities navigation pages start here -->
-                  <div class="pagination-ourter text-center">
+                  <div class="pagination-ourter text-center records_article_paginaton" >
                      <ul class="pagination">
-                        <li><a href="#" class="page-numbers current">1</a></li>
-                        <li><a class="page-numbers" href="#">2</a></li>
-                        <li><a class="page-numbers" href="#">3</a></li>
-                        <li><a class="page-numbers" href="#">...</a></li>
-                        <li><a class="page-numbers" href="#">25</a></li>
+                        <li><a class="first page-numbers" href="#"><i class="fa fa-angle-double-left"></i></a></li>
+                        <li><a class="pre page-numbers" href="#"><i class="fa fa-angle-left"></i></a></li>
+                        <li class=""> <a class=" page-numbers page" href="#"></a></li>
                         <li><a class="next page-numbers" href="#"><i class="fa fa-angle-right"></i></a></li>
+                        <li><a class="last page-numbers" href="#"><i class="fa fa-angle-double-right"></i></a></li>
                      </ul>
                   </div>
                   <!-- the activities navigation pages end here -->
@@ -119,34 +106,36 @@
       <script src="js/plugins/jquery.mCustomScrollbar.concat.min.js"></script>
       <script src="js/plugins/wow.min.js"></script>
       <script type="text/javascript" src="js/plugins/skrollr.min.js"></script>
-      <script type="text/javascript" src="js/controllers/activities.js"></script>
 
       <!-- Mobile Menu
-         ================================================== -->
+      ================================================== -->
       <script src="js/plugins/jquery.mobile-menu.js"></script>
       <!-- Initializing the isotope
-         ================================================== -->
+      ================================================== -->
       <script src="js/plugins/isotope.pkgd.min.js"></script>
       <script src="js/plugins/custom-isotope.js"></script>
+
+      <script type="text/javascript" src="js/controllers/activities.js"></script>
+
       <!-- PreLoad
-       ================================================== -->
+      ================================================== -->
       <script type="text/javascript" src="js/plugins/royal_preloader.min.js"></script>
       <script type="text/javascript">
-      (function($) { "use strict";
-                  Royal_Preloader.config({
+         (function($) { "use strict";
+            Royal_Preloader.config({
                       mode:           'logo', // 'number', "text" or "logo"
                       logo:           'images/logo/loader.jpg',
                       timeout:       1,
                       showInfo:       false,
                       opacity:        1,
                       background:     ['#FFFFFF']
-                  });
-      })(jQuery);
+                   });
+         })(jQuery);
       </script>
 
       <!-- Global Js
-       ================================================== -->
+      ================================================== -->
       <script src="js/plugins/custom.js"></script>
    </body>
-</html>
+   </html>
 

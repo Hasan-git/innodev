@@ -1,34 +1,34 @@
 <!DOCTYPE html>
 <html lang="">
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<title>INNODEV - News</title>
+	<title>INNODEV - News</title>
 
-		<!-- Bootstrap CSS -->
-		<link rel="stylesheet" href="css/bootstrap.min.css">
-		<!-- Font -->
-		<link rel="stylesheet" href="css/font-awesome.min.css">
-		<link rel="stylesheet" href="css/elegant-font.css">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- Font -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/elegant-font.css">
 	  	<!-- SCROLL BAR MOBILE MENU
-  		================================================== -->
- 		 <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" />
-		<!-- Main Style -->
-		<link rel="stylesheet" href="style.css">
+	  	================================================== -->
+	  	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" />
+	  	<!-- Main Style -->
+	  	<link rel="stylesheet" href="style.css">
 
 		<!-- Favicons
-		  ================================================== -->
-	  	<link rel="shortcut icon" href="favicon.png">
+		================================================== -->
+		<link rel="shortcut icon" href="favicon.png">
 	</head>
 	<body>
 
-	<?php include_once('includes/mobilemenu.php'); ?>
+		<?php include_once('includes/mobilemenu.php'); ?>
 
-	<div id="page">
-		<div id="skrollr-body">
-			<?php include_once('includes/header.php'); ?>
+		<div id="page">
+			<div id="skrollr-body">
+				<?php include_once('includes/header.php'); ?>
 
 				<section>
 					<div class="sub-header sub-header-1 sub-header-blog-grid fake-position">
@@ -77,8 +77,8 @@
 										</div>
 										<div class="divider-line"></div>
 
-				                    </div>
-				              </main>
+									</div>
+								</main>
 
 							</div> <!-- End Col -->
 							<div class="col-md-3">
@@ -115,39 +115,39 @@
 		<a id="to-the-top"><i class="fa fa-angle-up"></i></a>
 		<!-- Back To Top -->
 		<!-- SCRIPT -->
-	    <script src="js/vendor/jquery.min.js"></script>
-	    <script src="js/vendor/jquery-ui-1.12.1.js"></script>
-	    <script src="js/vendor/bootstrap.min.js"></script>
-	    <script src="js/plugins/jquery.mCustomScrollbar.concat.min.js"></script>
-	    <script src="js/plugins/wow.min.js"></script>
-	    <script type="text/javascript" src="js/plugins/skrollr.min.js"></script>
-	    <script type="text/javascript" src="js/controllers/factory.js"></script>
-	    <script type="text/javascript" src="js/controllers/newsDetails.js"></script>
+		<script src="js/vendor/jquery.min.js"></script>
+		<script src="js/vendor/jquery-ui-1.12.1.js"></script>
+		<script src="js/vendor/bootstrap.min.js"></script>
+		<script src="js/plugins/jquery.mCustomScrollbar.concat.min.js"></script>
+		<script src="js/plugins/wow.min.js"></script>
+		<script type="text/javascript" src="js/plugins/skrollr.min.js"></script>
+		<script type="text/javascript" src="js/controllers/factory.js"></script>
+		<script type="text/javascript" src="js/controllers/newsDetails.js"></script>
 
 		 <!-- Mobile Menu
-	    ================================================== -->
-	 	<script src="js/plugins/jquery.mobile-menu.js"></script>
+		 ================================================== -->
+		 <script src="js/plugins/jquery.mobile-menu.js"></script>
 
 
 	  	<!-- PreLoad
-	    ================================================== -->
-	    <script type="text/javascript" src="js/plugins/royal_preloader.min.js"></script>
-		<script type="text/javascript">
-		(function($) { "use strict";
-		            Royal_Preloader.config({
+	  	================================================== -->
+	  	<script type="text/javascript" src="js/plugins/royal_preloader.min.js"></script>
+	  	<script type="text/javascript">
+	  		(function($) { "use strict";
+	  			Royal_Preloader.config({
 		                mode:           'logo', // 'number', "text" or "logo"
 		                logo:           'images/logo/loader.jpg',
 		                timeout:       1,
 		                showInfo:       false,
 		                opacity:        1,
 		                background:     ['#FFFFFF']
-		            });
-		})(jQuery);
-		</script>
+		              });
+	  		})(jQuery);
+	  	</script>
 
 	 	<!-- Global Js
-	    ================================================== -->
-	    <script src="js/plugins/custom.js"></script>
+	 	================================================== -->
+	 	<script src="js/plugins/custom.js"></script>
 
-	</body>
-</html>
+	 </body>
+	 </html>

@@ -1,7 +1,7 @@
     jQuery(document).ready(function() {
 
-    "use strict";
-    var urlPath   = "php/projects/";
+      "use strict";
+      var urlPath   = "php/projects/";
 
 
 
@@ -10,14 +10,14 @@
     var records;
 
     $.ajax({
-        url: urlPath + 'get.php',
-        method:'GET',
-        dataType:'json',
-        success:function(data){
+      url: urlPath + 'get.php',
+      method:'GET',
+      dataType:'json',
+      success:function(data){
 
-          var records = data.data;
-          var startDate = $.datepicker.formatDate('M d,yy', new Date(records[0].startDate));
-          var endDate = $.datepicker.formatDate('M d,yy', new Date(records[0].endDate));
+        var records = data.data;
+        var startDate = $.datepicker.formatDate('M d,yy', new Date(records[0].startDate));
+        var endDate = $.datepicker.formatDate('M d,yy', new Date(records[0].endDate));
 
           //////////////////
 
@@ -56,7 +56,7 @@
     var actions = {
       //Pagination btns
       newDetailsClicked : function (records){
-          $('.page-numbers:not(.next,.pre)').click(function(){
+        $('.page-numbers:not(.next,.pre)').click(function(){
 
           var _this = $(this);
 
@@ -85,24 +85,24 @@
 
           var target = $('.records_article') ;
           if( target.length ) {
-               event.preventDefault();
-               $('html, body').stop().animate({
-                   scrollTop: target.offset().top-140
-               }, 1000);
-           }
-        })
-      },
-      newAttach : function (records,preferedKey){
+           event.preventDefault();
+           $('html, body').stop().animate({
+             scrollTop: target.offset().top-140
+           }, 1000);
+         }
+       })
+  },
+  newAttach : function (records,preferedKey){
 
-          var key = preferedKey ;
+    var key = preferedKey ;
 
-          var recordsObject = records[parseInt(key)];
+    var recordsObject = records[parseInt(key)];
 
-          console.log($('.page-numbers key['+key+']'),recordsObject);
+    console.log($('.page-numbers key['+key+']'),recordsObject);
 
 
-          var startDate = $.datepicker.formatDate('M d,yy', new Date(recordsObject.startDate));
-          var endDate = $.datepicker.formatDate('M d,yy', new Date(recordsObject.endDate));
+    var startDate = $.datepicker.formatDate('M d,yy', new Date(recordsObject.startDate));
+    var endDate = $.datepicker.formatDate('M d,yy', new Date(recordsObject.endDate));
 
           ////////////////////////
 
@@ -122,52 +122,52 @@
 
           var target = $('.records_article') ;
           if( target.length ) {
-               event.preventDefault();
-               $('html, body').stop().animate({
-                   scrollTop: target.offset().top-140
-               }, 1000);
-           }
-      },
+           event.preventDefault();
+           $('html, body').stop().animate({
+             scrollTop: target.offset().top-140
+           }, 1000);
+         }
+       },
       //Pagination next btn
       nextClicked :  function (records){
-          $('.page-numbers.next').click(function(){
+        $('.page-numbers.next').click(function(){
 
           var _this = $(this);
 
           var key = $('.page-numbers:not(.next)').last().attr("key");
               key = (parseInt(key) + 1 ); // sum with 2 -> one for array shift and 1 increment for the next key
 
-          actions.paginate(records,key,'next');
+              actions.paginate(records,key,'next');
 
-          var target = $('.records_article') ;
-          if( target.length ) {
+              var target = $('.records_article') ;
+              if( target.length ) {
                event.preventDefault();
                $('html, body').stop().animate({
-                   scrollTop: target.offset().top-140
+                 scrollTop: target.offset().top-140
                }, 1000);
-           }
-        })
+             }
+           })
       },
       //Pagination pre btn
       preClicked :  function (records){
-          $('.page-numbers.pre').click(function(){
+        $('.page-numbers.pre').click(function(){
 
           var _this = $(this);
 
           var key = $('.page-numbers:not(.pre)').first().attr("key");
-              key = (parseInt(key) - 1 );
+          key = (parseInt(key) - 1 );
 
           actions.paginate(records,key,'pre');
 
 
           var target = $('.records_article') ;
           if( target.length ) {
-               event.preventDefault();
-               $('html, body').stop().animate({
-                   scrollTop: target.offset().top-140
-               }, 1000);
-           }
-        })
+           event.preventDefault();
+           $('html, body').stop().animate({
+             scrollTop: target.offset().top-140
+           }, 1000);
+         }
+       })
       },
       paginate: function(records,fnKey,status){
 
@@ -177,36 +177,36 @@
         if(fnKey> records.length-1 || fnKey < 0)
           return false;
 
-          $('.records_article_paginaton .page-numbers:not(.next,.pre) ').remove();
-          $(".page-numbers.current").removeClass("current");
-          $.each(records, function(key, value) {
+        $('.records_article_paginaton .page-numbers:not(.next,.pre) ').remove();
+        $(".page-numbers.current").removeClass("current");
+        $.each(records, function(key, value) {
 
-            if( (status == 'next' || status == 'initial' ) && key >=fnKey && key < fnKey+limit ){
-              if(parseInt(key) === parseInt(fnKey))
-                  actions.newAttach(records,fnKey)
+          if( (status == 'next' || status == 'initial' ) && key >=fnKey && key < fnKey+limit ){
+            if(parseInt(key) === parseInt(fnKey))
+              actions.newAttach(records,fnKey)
 
-              var current = parseInt(key) === parseInt(fnKey) ? "current" :" " ;
-              $('.records_article_paginaton .pagination').find('.next').parent()
-                  .before('<li><a class="page-numbers '+ current +' " key="'+key+'" href="#">'+(key+1)+'</a></li>');
-            }else if( status == 'pre' && key <= fnKey && key > fnKey-limit ){
+            var current = parseInt(key) === parseInt(fnKey) ? "current" :" " ;
+            $('.records_article_paginaton .pagination').find('.next').parent()
+            .before('<li><a class="page-numbers '+ current +' " key="'+key+'" href="#">'+(key+1)+'</a></li>');
+          }else if( status == 'pre' && key <= fnKey && key > fnKey-limit ){
 
-                if(parseInt(key) === parseInt(fnKey))
-                    actions.newAttach(records,fnKey)
+            if(parseInt(key) === parseInt(fnKey))
+              actions.newAttach(records,fnKey)
 
-               var current = parseInt(key) === parseInt(fnKey) ? "current" :" " ;
-              $('.records_article_paginaton .pagination').find('.next').parent()
-                  .before('<li><a class="page-numbers '+ current +' " key="'+key+'" href="#">'+(key+1)+'</a></li>');
-            }
-            actions.newDetailsClicked(records);
-            actions.nextClicked(records);
-            actions.preClicked(records);
-
-
-          });
-      }
-
-    }
+            var current = parseInt(key) === parseInt(fnKey) ? "current" :" " ;
+            $('.records_article_paginaton .pagination').find('.next').parent()
+            .before('<li><a class="page-numbers '+ current +' " key="'+key+'" href="#">'+(key+1)+'</a></li>');
+          }
+          actions.newDetailsClicked(records);
+          actions.nextClicked(records);
+          actions.preClicked(records);
 
 
+        });
+  }
 
-    });
+}
+
+
+
+});
