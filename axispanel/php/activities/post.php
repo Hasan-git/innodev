@@ -12,6 +12,7 @@ if( isset($_POST['prName']) && isset($_POST['title']) && isset($_POST['descripti
     $location       =  isset($_POST['location']) ? $_POST['location'] : '' ;
     $actDate        =  isset($_POST['actDate']) ? $_POST['actDate'] : date('Y-m-d') ;
     $video          =  isset($_POST['video']) ? $_POST['video'] : '' ;
+    $atype          =  isset($_POST['atype']) ? $_POST['atype'] : '' ;
 
 
     $tmp_name = $image["tmp_name"];
@@ -22,8 +23,8 @@ if( isset($_POST['prName']) && isset($_POST['title']) && isset($_POST['descripti
 
     if(move_uploaded_file($tmp_name, $name)){
 
-        $sqlnew = "INSERT INTO tblactivities (prName, actDate, title, location, description, image, video)
-                    VALUES ('$prName', '$actDate', '$title', '$location', '$description', '$image_', '$video')";
+        $sqlnew = "INSERT INTO tblactivities (prName, actDate, title, location, description, image, video,atype)
+                    VALUES ('$prName', '$actDate', '$title', '$location', '$description', '$image_', '$video','$atype')";
 
         if (mysqli_query($conn, $sqlnew)) {
 
@@ -36,6 +37,7 @@ if( isset($_POST['prName']) && isset($_POST['title']) && isset($_POST['descripti
                 'description' => $description,
                 'imageName' => $image_,
                 'video' => $video,
+                'atype' => $atype,
             );
             $response = json_encode($record);
 

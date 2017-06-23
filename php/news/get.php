@@ -11,8 +11,10 @@ elseif(isset($_GET['month']) && isset($_GET['year'])) {
     $month = $_GET['month'];
     $year = $_GET['year'];
 
-    $sql = "SELECT * FROM tblnews WHERE MONTH(newsDate) = '$month' AND YEAR(newsDate) = '$year'";
+
+    $sql = "SELECT * FROM tblnews WHERE MONTHNAME(newsDate) = '$month' AND YEAR(newsDate) = '$year'";
     $result = mysqli_query($conn, $sql);
+
 }
 else {
     $sql = "SELECT * FROM tblnews ORDER BY newsDate DESC";

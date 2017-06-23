@@ -12,6 +12,7 @@ if( isset($_POST['prName']) && isset($_POST['title']) && isset($_POST['descripti
     $location       =  isset($_POST['location']) ? $_POST['location'] : '' ;
     $actDate        =  isset($_POST['actDate']) ? $_POST['actDate'] : date('Y-m-d') ;
     $video          =  isset($_POST['video']) ? $_POST['video'] : '' ;
+    $atype          =  isset($_POST['atype']) ? $_POST['atype'] : '' ;
 
 
     if(isset($_FILES['imagefile']) && $_FILES['imagefile']['size'] > 0){
@@ -26,7 +27,7 @@ if( isset($_POST['prName']) && isset($_POST['title']) && isset($_POST['descripti
         $image_ =$_POST['imageName'];
     }
 
-    $updateQuery = "UPDATE tblactivities SET prName='$prName', actDate='$actDate', title='$title', location='$location', description='$description', image='$image_', video='$video' WHERE Id='$Id'";
+    $updateQuery = "UPDATE tblactivities SET prName='$prName', actDate='$actDate', title='$title', location='$location', description='$description', image='$image_', video='$video', atype='$atype' WHERE Id='$Id'";
 
     if(mysqli_query($conn, $updateQuery)){
 
@@ -40,6 +41,7 @@ if( isset($_POST['prName']) && isset($_POST['title']) && isset($_POST['descripti
             'description' => $description,
             'imageName' => $image_,
             'video' => $video,
+            'atype' => $atype,
         );
 
         $response = json_encode($record);

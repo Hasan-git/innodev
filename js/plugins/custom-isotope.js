@@ -1,6 +1,8 @@
 $(window).load(function(){
     "use strict";
+
             var $container = $('.projectContainer');
+
             $container.isotope({
                 filter: '*',
 
@@ -11,15 +13,15 @@ $(window).load(function(){
 
                 }
             });
-         
+
             $('.projectFilter a').click(function(){
                 $('.projectFilter .current').removeClass('current');
                 $(this).addClass('current');
-         
+
                 var selector = $(this).attr('data-filter');
                 $container.isotope({
                     filter: selector,
-                    
+
                     animationOptions: {
                         duration: 750,
                         easing: 'linear',
@@ -27,7 +29,7 @@ $(window).load(function(){
                     }
                  });
                  return false;
-            }); 
+            });
             // End isotope Home 1
 
             var $containerPortfolioGrid1 = $('.portfolio-grid-1-container');
@@ -41,7 +43,7 @@ $(window).load(function(){
 
                 }
             });
-         
+
          // Isotope Blog
          var $containerBlog = $('.blogContainer');
             $containerBlog.isotope({
@@ -54,15 +56,15 @@ $(window).load(function(){
 
                 }
             });
-         
+
             $('.blogFilter a').click(function(){
                 $('.blogFilter .current').removeClass('current');
                 $(this).addClass('current');
-         
+
                 var selector = $(this).attr('data-filter');
                 $containerBlog.isotope({
                     filter: selector,
-                    
+
                     animationOptions: {
                         duration: 750,
                         easing: 'linear',
@@ -70,7 +72,8 @@ $(window).load(function(){
                     }
                  });
                  return false;
-            }); 
-           
+            });
+
+
 
 });

@@ -1,10 +1,10 @@
 <?php
 include_once('../connect.php');
 
-$sql = "SELECT YEAR(newsDate) as nyear, MONTH(newsDate) AS nmonth, COUNT(*) AS nb FROM tblnews
-        GROUP BY YEAR(newsDate), MONTH(newsDate)
-        ORDER BY MONTH(newsDate) DESC
-        LIMIT 10";
+$sql = "SELECT YEAR(newsDate) as year, MONTHNAME(newsDate) as month, count(*) count  FROM tblnews
+        GROUP BY month,year
+        ORDER BY year,month DESC";
+
 $result = mysqli_query($conn, $sql);
 
 if ($result) {
@@ -13,14 +13,14 @@ if ($result) {
 
         while($row = mysqli_fetch_assoc($result)) {
 
-            $month = $row['nmonth'];
-            $year = $row['nyear'];
-            $nb = $row['nb'];
+            $month = $row['month'];
+            $year = $row['year'];
+            $count = $row['count'];
 
             $_dates['data'][] = array(
                 'month' => $month,
                 'year' => $year,
-                'ncount' => $nb,
+                'count' => $count,
                  );
         }
 
@@ -37,6 +37,6 @@ if ($result) {
     header("HTTP/1.0 500 Internal Server Error");
 }
 
-
+// mysqli_free_result($result);
 mysqli_close($conn);
 ?>
