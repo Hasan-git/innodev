@@ -53,7 +53,7 @@
 							<div class="block-img-full service-item">
 								<div class="latest-blog-post-img col-md-8">
 									<a class="img-block">
-										<img src="http://placehold.it/810x451/ccc.jpg" class="img-responsive" alt="Image">
+										<img src="http://placehold.it/850x478/ccc.jpg" class="img-responsive" alt="Image">
 									</a>
 								</div>
 								<div class="col-md-4">

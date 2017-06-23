@@ -68,7 +68,7 @@
                      <!-- activities rows will go here -->
                      <div class="element-item School"><!-- atype go here as class (School) -->
                         <a class="portfolio-img-demo" href="actdetail.php">
-                           <img src="http://placehold.it/960x720/ccc.jpg" class="img-responsive" alt="Image">
+                           <img src="http://placehold.it/1140x640/ccc.jpg" class="img-responsive" alt="Image">
                         </a>
                         <div class="project-info">
                            <a href="actdetail.php">
@@ -77,6 +77,29 @@
                            <a href="actdetail.php" class="cateProject">atype / PrName</a>
                         </div>
                      </div>
+                     <div class="element-item School"><!-- atype go here as class (School) -->
+                        <a class="portfolio-img-demo" href="actdetail.php">
+                           <img src="http://placehold.it/1140x640/ccc.jpg" class="img-responsive" alt="Image">
+                        </a>
+                        <div class="project-info">
+                           <a href="actdetail.php">
+                              <h4 class="title-project text-cap text-cap">Activity Title</h4>
+                           </a>
+                           <a href="actdetail.php" class="cateProject">atype / PrName</a>
+                        </div>
+                     </div>
+                     <div class="element-item School"><!-- atype go here as class (School) -->
+                        <a class="portfolio-img-demo" href="actdetail.php">
+                           <img src="http://placehold.it/1140x640/ccc.jpg" class="img-responsive" alt="Image">
+                        </a>
+                        <div class="project-info">
+                           <a href="actdetail.php">
+                              <h4 class="title-project text-cap text-cap">Activity Title</h4>
+                           </a>
+                           <a href="actdetail.php" class="cateProject">atype / PrName</a>
+                        </div>
+                     </div>
+
                      <!-- end activities -->
 
                   </div>

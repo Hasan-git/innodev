@@ -63,7 +63,28 @@
 								<article class="lastest-blog-item">
 									<figure class="latest-blog-post-img effect-zoe">
 
-										<img src="images/activity/1.jpg" class="img-responsive" alt="Image">
+										<img src="http://placehold.it/850x478/ccc.jpg" class="img-responsive" alt="Image">
+
+										<div class="latest-blog-post-date text-cap">
+											<span class="day">29</span>
+											<span class="month">May</span>
+										</div>
+									</figure>
+									<div class="latest-blog-post-description">
+										<h3 style="text-decoration: none;">Event title
+											<span class="pull-right"><small>Project name / Location</small></span>
+										</h3>
+										<p>
+											event description goes here.
+										</p>
+									</div>
+								</article>
+							</div>
+							<div class="col-md-6">
+								<article class="lastest-blog-item">
+									<figure class="latest-blog-post-img effect-zoe">
+
+										<img src="http://placehold.it/850x478/ccc.jpg" class="img-responsive" alt="Image">
 
 										<div class="latest-blog-post-date text-cap">
 											<span class="day">29</span>

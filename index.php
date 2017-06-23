@@ -384,7 +384,7 @@
 								<!-- only 2 projects -->
 								<!-- get the last project added-->
 								<div class="block-img-full-width">
-									<div class="block-img-left ">
+									<div class="latest-blog-post-img block-img-left ">
 										<div class="text-box">
 											<h3 class="text-cap">Project title</h3>
 											<p>
@@ -393,13 +393,13 @@
 											<a class="ot-btn btn-info text-cap mgb0" href="activities.php">View Activities</a>
 											<a class="ot-btn btn-main-color text-cap mgb0" href="activities.php">View Events</a>
 										</div>
-										<div class="img-block"><img src="images/news/1.jpg" class="img-responsive" alt="Image"></div>
+										<div class="img-block"><img src="http://placehold.it/850x478/ccc.jpg" class="img-responsive" alt="Image"></div>
 									</div>
 								</div>
 
 								<!-- get before the last project added-->
 								<div class="block-img-full-width">
-									<div class="block-img-right mgb0">
+									<div class="latest-blog-post-img block-img-right mgb0">
 										<div class="text-box">
 											<h3 class="text-cap">Project title</h3>
 											<p>
@@ -409,7 +409,7 @@
 											<a class="ot-btn btn-main-color text-cap mgb0" href="activities.php">View Events</a>
 										</div>
 										<div class="img-block">
-											<img src="images/news/2.jpg" class="img-responsive" alt="Image">
+											<img src="http://placehold.it/850x478/ccc.jpg" class="img-responsive" alt="Image">
 										</div>
 									</div>
 								</div>
@@ -441,7 +441,26 @@
 									<article class="lastest-blog-item">
 										<figure class="latest-blog-post-img effect-zoe">
 
-											<img src="images/activity/1.jpg" class="img-responsive" alt="Image">
+											<img src="http://placehold.it/850x478/ccc.jpg" class="img-responsive" alt="Image">
+
+											<div class="latest-blog-post-date text-cap">
+												<span class="day">29</span>
+												<span class="month">May</span>
+											</div>
+										</figure>
+										<div class="latest-blog-post-description">
+											<h3>event title</h3>
+											<p>
+												event text description.
+											</p>
+										</div>
+									</article>
+								</div>
+								<div class="col-md-6">
+									<article class="lastest-blog-item">
+										<figure class="latest-blog-post-img effect-zoe">
+
+											<img src="http://placehold.it/850x478/ccc.jpg" class="img-responsive" alt="Image">
 
 											<div class="latest-blog-post-date text-cap">
 												<span class="day">29</span>
@@ -494,8 +513,32 @@
 								<!-- get the last 3 news added -->
 					<!-- NOTE the data-wow-delay must be .25 for the first row and then .5 for the second, .75 for the last -->
 								<div class="col-sm-6 col-md-4 wow fadeInRight" data-wow-delay=".25s">
+									<div class="latest-blog-post-img block-img-full">
+										<a class="img-block"><img src="http://placehold.it/1140x640/ccc.jpg" class="img-responsive" alt="Image"></a>
+										<div class="text-box">
+											<h4 class="text-cap">News title</h4>
+											<p>
+												news text content.
+											</p>
+										</div>
+										<a class="ot-btn btn-main-color text-cap" href="newsdetail.php">Read more</a>
+									</div>
+								</div>
+								<div class="col-sm-6 col-md-4 wow fadeInRight" data-wow-delay=".25s">
+									<div class="latest-blog-post-img block-img-full">
+										<a class="img-block"><img src="http://placehold.it/1140x640/ccc.jpg" class="img-responsive" alt="Image"></a>
+										<div class="text-box">
+											<h4 class="text-cap">News title</h4>
+											<p>
+												news text content.
+											</p>
+										</div>
+										<a class="ot-btn btn-main-color text-cap" href="newsdetail.php">Read more</a>
+									</div>
+								</div>
+								<div class="col-sm-6 col-md-4 wow fadeInRight" data-wow-delay=".25s">
 									<div class="block-img-full">
-										<a class="img-block"><img src="images/news/1.jpg" class="img-responsive" alt="Image"></a>
+										<a class="img-block"><img src="http://placehold.it/1140x640/ccc.jpg" class="img-responsive" alt="Image"></a>
 										<div class="text-box">
 											<h4 class="text-cap">News title</h4>
 											<p>
@@ -542,13 +585,40 @@
 
 							<!-- activities rows will go here -->
 							<div class="element-item Natural"><!-- atype go here as class (Natural) -->
-								 <img src="images/activity/1.jpg" class="img-responsive" alt="Image">
+								 <img src="http://placehold.it/1140x640/ccc.jpg" class="img-responsive" alt="Image">
 								 <div class="project-info">
 									 <a href="actdetail.php">
 										<h4 class="title-project text-cap text-cap">Activity title</h4>
 									 </a>
 									 <a href="" class="cateProject">atype / prName</a>
 								 </div>
+							</div>
+							<div class="element-item Natural"><!-- atype go here as class (Natural) -->
+								<img src="http://placehold.it/1140x640/ccc.jpg" class="img-responsive" alt="Image">
+								<div class="project-info">
+									<a href="actdetail.php">
+										<h4 class="title-project text-cap text-cap">Activity title</h4>
+									</a>
+									<a href="" class="cateProject">atype / prName</a>
+								</div>
+							</div>
+							<div class="element-item Natural"><!-- atype go here as class (Natural) -->
+								<img src="http://placehold.it/1140x640/ccc.jpg" class="img-responsive" alt="Image">
+								<div class="project-info">
+									<a href="actdetail.php">
+										<h4 class="title-project text-cap text-cap">Activity title</h4>
+									</a>
+									<a href="" class="cateProject">atype / prName</a>
+								</div>
+							</div>
+							<div class="element-item Natural"><!-- atype go here as class (Natural) -->
+								<img src="http://placehold.it/1140x640/ccc.jpg" class="img-responsive" alt="Image">
+								<div class="project-info">
+									<a href="actdetail.php">
+										<h4 class="title-project text-cap text-cap">Activity title</h4>
+									</a>
+									<a href="" class="cateProject">atype / prName</a>
+								</div>
 							</div>
 
 

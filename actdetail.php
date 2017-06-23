@@ -68,23 +68,23 @@
 
                               <!-- Images of activities will loop here. view the number of images uploaded -->
                               <div class="item ">
-                                 <img src="http://placehold.it/850x478/ccc.jpg" class="img-responsive" alt="Image">
+                                 <img src="http://placehold.it/1140x640/ccc.jpg" class="img-responsive" alt="Image">
                               </div>
                               <!-- end item -->
                               <div class="item ">
-                                 <img src="http://placehold.it/850x478/ccc.jpg" class="img-responsive" alt="Image">
+                                 <img src="http://placehold.it/1140x640/ccc.jpg" class="img-responsive" alt="Image">
                               </div>
                               <!-- end item -->
                               <div class="item ">
-                                 <img src="http://placehold.it/850x478/ccc.jpg" class="img-responsive" alt="Image">
+                                 <img src="http://placehold.it/1140x640/ccc.jpg" class="img-responsive" alt="Image">
                               </div>
                               <!-- end item -->
                               <div class="item ">
-                                 <img src="http://placehold.it/850x478/ccc.jpg" class="img-responsive" alt="Image">
+                                 <img src="http://placehold.it/1140x640/ccc.jpg" class="img-responsive" alt="Image">
                               </div>
                               <!-- end item -->
                               <div class="item ">
-                                 <img src="http://placehold.it/850x478/ccc.jpg" class="img-responsive" alt="Image">
+                                 <img src="http://placehold.it/1140x640/ccc.jpg" class="img-responsive" alt="Image">
                               </div>
                               <!-- end item -->
                               <!-- Images of activities goes here -->
@@ -95,19 +95,19 @@
 
                               <!-- Images of activities will loop here. view the number of images uploaded -->
                               <div class="item">
-                                 <img src="http://placehold.it/850x478/ccc.jpg" class="img-responsive" alt="Image">
+                                 <img src="http://placehold.it/1140x640/ccc.jpg" class="img-responsive" alt="Image">
                               </div>
                               <div class="item">
-                                 <img src="http://placehold.it/850x478/ccc.jpg" class="img-responsive" alt="Image">
+                                 <img src="http://placehold.it/1140x640/ccc.jpg" class="img-responsive" alt="Image">
                               </div>
                               <div class="item">
-                                 <img src="http://placehold.it/850x478/ccc.jpg" class="img-responsive" alt="Image">
+                                 <img src="http://placehold.it/1140x640/ccc.jpg" class="img-responsive" alt="Image">
                               </div>
                               <div class="item">
-                                 <img src="http://placehold.it/850x478/ccc.jpg" class="img-responsive" alt="Image">
+                                 <img src="http://placehold.it/1140x640/ccc.jpg" class="img-responsive" alt="Image">
                               </div>
                               <div class="item">
-                                 <img src="http://placehold.it/850x478/ccc.jpg" class="img-responsive" alt="Image">
+                                 <img src="http://placehold.it/1140x640/ccc.jpg" class="img-responsive" alt="Image">
                               </div>
                               <!-- Images of activities goes here -->
 

@@ -129,7 +129,7 @@
                                                     <input type="text" data-validation-optional="true" data-validation="url" name="video" id="video" class="form-control" placeholder="Write Video URl from YoutTube Here..." >
                                                 </div>
                                                 <div class="col-sm-6">
-                                                    <label class="control-label">Upload Activity Image*</label>
+                                                    <label class="control-label">Upload Activity Image* (1140*640)</label>
                                                     <label class="field prepend-icon file">
                                                     <span class="button bg-primary" style="color: white;">Choose Image</span>
                                                     <input type="file" class="gui-file" name="imagefile" id="imagefile" onChange="document.getElementById('imageName').value = this.value.substr(12);" required>
@@ -140,7 +140,7 @@
 
                                                 <div class="col-xs-12 text-center" style="padding: 30px 15px;">
                                                   <div class="col-xs-12">
-                                                      <label>Drag More Activity Images here</label>
+                                                      <label>Drag More Activity Images here (1140*640)</label>
                                                   </div>
                                                   <div class="col-xs-12">
                                                       <div id="myId" class="dropzone" style="min-height: 200px;"></div>
