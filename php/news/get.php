@@ -4,7 +4,7 @@ include_once('../connect.php');
 if(isset($_GET['id'])) {
     $id = $_GET['id'];
 
-    $sql = "SELECT * FROM tblnews WHERE Id = '$id'";
+    $sql = "SELECT * FROM tblnews WHERE Id = '$id' ORDER BY newsDate DESC";
     $result = mysqli_query($conn, $sql);
 }
 elseif(isset($_GET['month']) && isset($_GET['year'])) {
@@ -12,7 +12,7 @@ elseif(isset($_GET['month']) && isset($_GET['year'])) {
     $year = $_GET['year'];
 
 
-    $sql = "SELECT * FROM tblnews WHERE MONTHNAME(newsDate) = '$month' AND YEAR(newsDate) = '$year'";
+    $sql = "SELECT * FROM tblnews WHERE MONTHNAME(newsDate) = '$month' AND YEAR(newsDate) = '$year' ORDER BY newsDate DESC";
     $result = mysqli_query($conn, $sql);
 
 }

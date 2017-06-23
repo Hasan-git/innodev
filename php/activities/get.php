@@ -12,8 +12,6 @@ elseif(isset($_GET['id'])) {
 
     $sql = "SELECT * FROM tblactivities WHERE Id = '$id'";
     $result = mysqli_query($conn, $sql);
-
-
 }
 else {
     $sql = "SELECT * FROM tblactivities ORDER BY Id DESC";
