@@ -21,8 +21,13 @@ jQuery(document).ready(function() {
     //////////////////////////////////////
 
     var fullRecords;
-    var records;
-    // var perView = 2;
+    var records, _data;
+
+    if ($.urlParam('prName')) {
+        _data = {
+            prName: $.urlParam('prName'),
+        }
+    }
 
     var current_page = 1;
     var records_per_page = 3; // activities per page
@@ -31,6 +36,7 @@ jQuery(document).ready(function() {
         url: urlPath + 'get.php',
         method: 'GET',
         dataType: 'json',
+        data: _data,
         success: function(data) {
 
             fullRecords = data.data;
@@ -39,8 +45,8 @@ jQuery(document).ready(function() {
             //////////////////
 
             actions.categoryBtnClicked();
-            actions.nextClicked(records);
-            actions.preClicked(records);
+            actions.nextClicked();
+            actions.preClicked();
             actions.firstClicked();
             actions.lastClicked();
             actions.changePage(1)
@@ -54,39 +60,22 @@ jQuery(document).ready(function() {
 
     var actions = {
         //Pagination next btn
-        nextClicked: function(records) {
+        nextClicked: function() {
             $('.page-numbers.next').click(function() {
 
                 if (current_page < numPages()) {
                     current_page++;
                     actions.changePage(current_page);
                 }
-
-                var target = $('.records_article');
-                if (target.length) {
-                    event.preventDefault();
-                    $('html, body').stop().animate({
-                        scrollTop: target.offset().top - 140
-                    }, 1000);
-                }
             })
         },
         //Pagination pre btn
-        preClicked: function(records) {
+        preClicked: function() {
             $('.page-numbers.pre').click(function() {
 
                 if (current_page > 1) {
                     current_page--;
                     actions.changePage(current_page);
-                }
-
-
-                var target = $('.records_article');
-                if (target.length) {
-                    event.preventDefault();
-                    $('html, body').stop().animate({
-                        scrollTop: target.offset().top - 140
-                    }, 1000);
                 }
             })
         },
@@ -96,29 +85,13 @@ jQuery(document).ready(function() {
                 current_page = 1;
                 actions.changePage(current_page);
 
-                var target = $('.records_article');
-                if (target.length) {
-                    event.preventDefault();
-                    $('html, body').stop().animate({
-                        scrollTop: target.offset().top - 140
-                    }, 1000);
-                }
             })
         },
         lastClicked: function() {
             $('.page-numbers.last').click(function() {
 
-
                 current_page = numPages();
                 actions.changePage(current_page);
-
-                var target = $('.records_article');
-                if (target.length) {
-                    event.preventDefault();
-                    $('html, body').stop().animate({
-                        scrollTop: target.offset().top - 140
-                    }, 1000);
-                }
             })
         },
         changePage: function(page) {
@@ -132,22 +105,20 @@ jQuery(document).ready(function() {
             if (page < 1) page = 1;
             if (page > numPages()) page = numPages();
 
-            console.log(numPages());
-
 
             $('.records_article').children().remove()
             for (var i = (page - 1) * records_per_page; i < (page * records_per_page); i++) {
                 if (records[i]) {
                     var value = records[i];
                     var $a = $('<div class="element-item ' + value.atype + '">' +
-                        '<a class="portfolio-img-demo" href="actdetail.php?id='+value.Id+'">' +
+                        '<a class="portfolio-img-demo" href="actdetail.php?id=' + value.Id + '">' +
                         '<img src="images/activity/' + value.imageName + '" class="img-responsive" alt="Image">' +
                         '</a>' +
                         '<div class="project-info">' +
-                        '<a href="actdetail.php?id='+value.Id+'">' +
+                        '<a href="actdetail.php?id=' + value.Id + '">' +
                         '<h4 class="title-project text-cap text-cap">' + value.title + ' </h4>' +
                         '</a>' +
-                        '<a href="actdetail.php?id='+value.Id+'" class="cateProject">' + value.atype + ' / ' + value.prName + '</a>' +
+                        '<a href="actdetail.php?id=' + value.Id + '" class="cateProject">' + value.atype + ' / ' + value.prName + '</a>' +
                         '</div>' +
                         '</div>');
                     var di = $a;
@@ -156,6 +127,14 @@ jQuery(document).ready(function() {
                 }
             }
             $(".projectContainer").isotope('layout');
+
+            var target = $('.records_article');
+            if (target.length) {
+                event.preventDefault();
+                $('html, body').stop().animate({
+                    scrollTop: target.offset().top - 140
+                }, 1000);
+            }
 
             page_span.html(page);
 
@@ -175,15 +154,14 @@ jQuery(document).ready(function() {
                 btn_last.css('visibility', 'visible');
             }
 
-            setInterval(function(){
-                if($('.projectContainer').height() < 400){
-                    $('.records_article_paginaton').css('margin-top' , 280+'px')
-                }else{
-                    $('.records_article_paginaton').css('margin-top' , 0+'px')
+            setInterval(function() {
+                if ($('.projectContainer').height() < 400) {
+                    $('.records_article_paginaton').css('margin-top', 280 + 'px')
+                } else {
+                    $('.records_article_paginaton').css('margin-top', 0 + 'px')
                 }
 
             }, 1000);
-
         },
 
         categoryBtnClicked: function() {
@@ -195,16 +173,16 @@ jQuery(document).ready(function() {
 
                 switch (filter) {
                     case '.School':
-                    filterBy = "School";
-                    break;
+                        filterBy = "School";
+                        break;
                     case '.Natural':
-                    filterBy = "Natural";
-                    break;
+                        filterBy = "Natural";
+                        break;
                     case '.General':
-                    filterBy = "General";
-                    break;
+                        filterBy = "General";
+                        break;
                     default:
-                    filterBy = "Any";
+                        filterBy = "Any";
                 }
                 $.map(fullRecords, function(val, key) {
                     if (val.atype == filterBy) {
@@ -224,12 +202,12 @@ jQuery(document).ready(function() {
                     }, 1000);
                 }
             });
-}
-}
+        }
+    }
 
 
-function numPages() {
-    return Math.ceil(records.length / records_per_page);
-}
+    function numPages() {
+        return Math.ceil(records.length / records_per_page);
+    }
 
 });

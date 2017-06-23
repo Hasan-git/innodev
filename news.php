@@ -42,9 +42,9 @@
                <div class="container">
                   <div class="row">
                      <div class="col-md-9">
-                        <div class="blog-list">
+                        <div class="blog-list articles">
                            <!-- the news rows from table will go here -->
-                           <article class="news_article" id="article">
+                           <article class="records_article" id="article">
                               <figure class="latest-blog-post-img effect-zoe">
                                  <img src="http://placehold.it/1140x640/ccc.jpg" class="img-responsive" alt="Image">
                                  <div class="latest-blog-post-date text-cap">
@@ -68,8 +68,11 @@
                         <!-- the news navigation pages start here -->
                         <div class="pagination-ourter text-left records_article_paginaton">
                            <ul class="pagination">
+                              <li><a class="first page-numbers" href="#"><i class="fa fa-angle-double-left"></i></a></li>
                               <li><a class="pre page-numbers" href="#"><i class="fa fa-angle-left"></i></a></li>
+                              <li class=""> <a class="page-numbers page" href=""></a></li>
                               <li><a class="next page-numbers" href="#"><i class="fa fa-angle-right"></i></a></li>
+                              <li><a class="last page-numbers" href="#"><i class="fa fa-angle-double-right"></i></a></li>
                            </ul>
                         </div>
                         <!-- the news navigation pages end here -->
