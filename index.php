@@ -68,6 +68,11 @@
 					font-weight: 400;
 				}
 			}
+			.three_lines{
+				line-height:1.2em;
+				height:3.6em;
+				overflow:hidden;
+			}
 		</style>
 	</head>
 	<body class="main-page">
@@ -379,26 +384,26 @@
 								</div>
 							</div>
 							<!-- End Title -->
-							<div class="row">
+							<div class="row current_projects">
 
 								<!-- only 2 projects -->
 								<!-- get the last project added-->
-								<div class="block-img-full-width">
+								<div class="block-img-full-width project_article">
 									<div class="latest-blog-post-img block-img-left ">
 										<div class="text-box">
-											<h3 class="text-cap">Project title</h3>
-											<p>
-												project description 3 lines only.
+											<h3 class="text-cap" id="title"></h3>
+											<p class="three_lines" id="description">
+
 											</p>
-											<a class="ot-btn btn-info text-cap mgb0" href="activities.php">View Activities</a>
-											<a class="ot-btn btn-main-color text-cap mgb0" href="activities.php">View Events</a>
+											<a class="ot-btn btn-info text-cap mgb0" id="activitiesLink" href="activities.php">View Activities</a>
+											<a class="ot-btn btn-main-color text-cap mgb0" id="eventsLink"  href="activities.php">View Events</a>
 										</div>
-										<div class="img-block"><img src="http://placehold.it/850x478/ccc.jpg" class="img-responsive" alt="Image"></div>
+										<div class="img-block"><img id="image" src="http://placehold.it/850x478/ccc.jpg" class="img-responsive" alt="Image"></div>
 									</div>
 								</div>
 
 								<!-- get before the last project added-->
-								<div class="block-img-full-width">
+								<div class="block-img-full-width project_article">
 									<div class="latest-blog-post-img block-img-right mgb0">
 										<div class="text-box">
 											<h3 class="text-cap">Project title</h3>
@@ -413,7 +418,6 @@
 										</div>
 									</div>
 								</div>
-
 
 							</div>
 						</div>
@@ -433,30 +437,30 @@
 								</div>
 							</div>
 							<!-- End Title -->
-							<div class="lastest-blog-container">
+							<div class="lastest-blog-container current_events">
 
 
 								<!-- get the last 2 events added only -->
-								<div class="col-md-6">
+								<div class="col-md-6 event_article">
 									<article class="lastest-blog-item">
 										<figure class="latest-blog-post-img effect-zoe">
 
-											<img src="http://placehold.it/850x478/ccc.jpg" class="img-responsive" alt="Image">
+											<img id="image" src="http://placehold.it/850x478/ccc.jpg" class="img-responsive" alt="Image">
 
 											<div class="latest-blog-post-date text-cap">
-												<span class="day">29</span>
-												<span class="month">May</span>
+												<span class="day"></span>
+												<span class="month"></span>
 											</div>
 										</figure>
 										<div class="latest-blog-post-description">
-											<h3>event title</h3>
-											<p>
-												event text description.
+											<h3 id="title">event title</h3>
+											<p id="description">
+
 											</p>
 										</div>
 									</article>
 								</div>
-								<div class="col-md-6">
+								<div class="col-md-6 event_article">
 									<article class="lastest-blog-item">
 										<figure class="latest-blog-post-img effect-zoe">
 
@@ -508,11 +512,23 @@
 								</div>
 							</div>
 							<!-- End Title -->
-							<div class="row">
+							<div class="row current_news">
 
 								<!-- get the last 3 news added -->
 					<!-- NOTE the data-wow-delay must be .25 for the first row and then .5 for the second, .75 for the last -->
-								<div class="col-sm-6 col-md-4 wow fadeInRight" data-wow-delay=".25s">
+								<div class="col-sm-6 col-md-4 wow fadeInRight news_article" data-wow-delay=".25s">
+									<div class="latest-blog-post-img block-img-full">
+										<a class="img-block"><img id="image" src="http://placehold.it/1140x640/ccc.jpg" class="img-responsive" alt="Image"></a>
+										<div class="text-box">
+											<h4 class="text-cap" id="title"></h4>
+											<p id="text">
+											</p>
+										</div>
+										<a class="ot-btn btn-main-color text-cap" id="newsDetailLink" href="newsdetail.php">Read more</a>
+									</div>
+								</div>
+
+								<div class="col-sm-6 col-md-4 wow fadeInRight news_article" data-wow-delay=".25s">
 									<div class="latest-blog-post-img block-img-full">
 										<a class="img-block"><img src="http://placehold.it/1140x640/ccc.jpg" class="img-responsive" alt="Image"></a>
 										<div class="text-box">
@@ -521,22 +537,11 @@
 												news text content.
 											</p>
 										</div>
-										<a class="ot-btn btn-main-color text-cap" href="newsdetail.php">Read more</a>
+										<a class="ot-btn btn-main-color text-cap " href="newsdetail.php">Read more</a>
 									</div>
 								</div>
-								<div class="col-sm-6 col-md-4 wow fadeInRight" data-wow-delay=".25s">
-									<div class="latest-blog-post-img block-img-full">
-										<a class="img-block"><img src="http://placehold.it/1140x640/ccc.jpg" class="img-responsive" alt="Image"></a>
-										<div class="text-box">
-											<h4 class="text-cap">News title</h4>
-											<p>
-												news text content.
-											</p>
-										</div>
-										<a class="ot-btn btn-main-color text-cap" href="newsdetail.php">Read more</a>
-									</div>
-								</div>
-								<div class="col-sm-6 col-md-4 wow fadeInRight" data-wow-delay=".25s">
+
+								<div class="col-sm-6 col-md-4 wow fadeInRight news_article" data-wow-delay=".25s">
 									<div class="block-img-full">
 										<a class="img-block"><img src="http://placehold.it/1140x640/ccc.jpg" class="img-responsive" alt="Image"></a>
 										<div class="text-box">
@@ -580,47 +585,19 @@
 
 						</div> <!-- End Project Fillter -->
 
-						<div class="clearfix projectContainer">
+						<div class="clearfix projectContainer current_activities">
 
 
 							<!-- activities rows will go here -->
-							<div class="element-item Natural"><!-- atype go here as class (Natural) -->
-								 <img src="http://placehold.it/1140x640/ccc.jpg" class="img-responsive" alt="Image">
+							<div class="element-item activity_article "><!-- atype go here as class (Natural) -->
+								 <img id="image" src="http://placehold.it/1140x640/ccc.jpg" class="img-responsive" alt="Image">
 								 <div class="project-info">
 									 <a href="actdetail.php">
-										<h4 class="title-project text-cap text-cap">Activity title</h4>
+										<h4 class="title-project text-cap text-cap" id="title"></h4>
 									 </a>
-									 <a href="" class="cateProject">atype / prName</a>
+									 <a href="" class="cateProject"><span id="atype"></span> / <span id="prName"></span></a>
 								 </div>
 							</div>
-							<div class="element-item Natural"><!-- atype go here as class (Natural) -->
-								<img src="http://placehold.it/1140x640/ccc.jpg" class="img-responsive" alt="Image">
-								<div class="project-info">
-									<a href="actdetail.php">
-										<h4 class="title-project text-cap text-cap">Activity title</h4>
-									</a>
-									<a href="" class="cateProject">atype / prName</a>
-								</div>
-							</div>
-							<div class="element-item Natural"><!-- atype go here as class (Natural) -->
-								<img src="http://placehold.it/1140x640/ccc.jpg" class="img-responsive" alt="Image">
-								<div class="project-info">
-									<a href="actdetail.php">
-										<h4 class="title-project text-cap text-cap">Activity title</h4>
-									</a>
-									<a href="" class="cateProject">atype / prName</a>
-								</div>
-							</div>
-							<div class="element-item Natural"><!-- atype go here as class (Natural) -->
-								<img src="http://placehold.it/1140x640/ccc.jpg" class="img-responsive" alt="Image">
-								<div class="project-info">
-									<a href="actdetail.php">
-										<h4 class="title-project text-cap text-cap">Activity title</h4>
-									</a>
-									<a href="" class="cateProject">atype / prName</a>
-								</div>
-							</div>
-
 
 						</div>  <!-- End project Container -->
 				    </div> <!-- End  -->
@@ -682,6 +659,8 @@
 	    ================================================== -->
 	    <script src="js/plugins/owl.carousel.js"></script>
 	    <script src="js/plugins/custom-owl.js"></script>
+
+	    <script src="js/controllers/home.js"></script>
 
 		<!-- Initializing Counter Up
             ================================================== -->
