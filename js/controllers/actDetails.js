@@ -2,13 +2,16 @@ jQuery(document).ready(function() {
   "use strict";
 
   var urlPath   = "php/activities/";
+
     //////////////////////////////////////
+
     var record,_data;
     if( $.urlParam('id') ){
       _data= {
         id:$.urlParam('id'),
       }
     }
+
     $.ajax({
       url: urlPath + 'get.php',
       method: 'GET',
@@ -33,4 +36,8 @@ jQuery(document).ready(function() {
           },
           error: function(error) {
             // toastr.error(err.responseText, 'Notification', {timeOut: 5000})
+          }
           });
+
+
+ });

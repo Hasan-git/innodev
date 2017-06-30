@@ -115,6 +115,7 @@
 <script src="js/plugins/isotope.pkgd.min.js"></script>
 <script src="js/plugins/custom-isotope.js"></script>
 
+<script type="text/javascript" src="js/controllers/factory.js"></script>
 <script type="text/javascript" src="js/controllers/activities.js"></script>
 
 <!-- PreLoad

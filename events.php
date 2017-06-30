@@ -56,7 +56,7 @@
 						</div>
 					</div>
 					<!-- End Title -->
-					<div class="lastest-blog-container">
+					<div class="lastest-blog-container articles" >
 
 						<!-- the event rows from table will go here -->
 						<div class="col-md-6 records_article">
@@ -85,10 +85,11 @@
 						<!-- the events navigation pages start here -->
 						<div class="pagination-ourter text-center records_article_paginaton">
 							<ul class="pagination">
-								<li><a class="pre page-numbers" href="#"><i class="fa fa-angle-left"></i></a></li>
-
-
-								<li><a class="next page-numbers" href="#"><i class="fa fa-angle-right"></i></a></li>
+                  <li><a class="first page-numbers" href="#"><i class="fa fa-angle-double-left"></i></a></li>
+                  <li><a class="pre page-numbers" href="#"><i class="fa fa-angle-left"></i></a></li>
+                  <li class=""> <a class="page-numbers page" href=""></a></li>
+                  <li><a class="next page-numbers" href="#"><i class="fa fa-angle-right"></i></a></li>
+                  <li><a class="last page-numbers" href="#"><i class="fa fa-angle-double-right"></i></a></li>
 							</ul>
 						</div>
 						<!-- the events navigation pages end here -->
@@ -126,7 +127,6 @@
 <script type="text/javascript" src="js/plugins/skrollr.min.js"></script>
 <script type="text/javascript" src="js/controllers/factory.js"></script>
 <script type="text/javascript" src="js/controllers/events.js"></script>
-
 
 <!-- Mobile Menu
 ================================================== -->
