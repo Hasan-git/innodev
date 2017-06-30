@@ -64,11 +64,12 @@ jQuery(document).ready(function() {
 
                         var eventDate = new Date(val.eDate)
                         var eventMonth = eventDate.getMonth()+1;
+                        eventMonth = $.datepicker.formatDate('M ', eventDate)
                         var eventDay = eventDate.getDate();
 
 
-                        eventArticle.find(".day").html(eventMonth);
-                        eventArticle.find(".month").html(eventDay);
+                        eventArticle.find(".day").html(eventDay);
+                        eventArticle.find(".month").html( eventMonth);
                         eventArticle.find('#description').html(val.description);
                         eventArticle.find('#title').html(val.title);
                         eventArticle.find("#image").attr('src', "images/event/" + val.imageName);

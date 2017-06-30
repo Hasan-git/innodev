@@ -714,4 +714,6 @@ $(document).ready(function(){
         // End Owl Testimonial Sync
 // =====================================================
   }// end funciton
+
+   initOwl()
 });

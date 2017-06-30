@@ -107,14 +107,15 @@
                     var recordsObject = records[i];
                     var eventDate = new Date(recordsObject.eDate)
                     var eventMonth = eventDate.getMonth()+1;
+                    eventMonth = $.datepicker.formatDate('M ', eventDate)
                     var eventDay = eventDate.getDate();
 
                         ////////////////////////
 
                         var article = articleHtml.clone()
 
-                        article.find(".day").html(eventMonth);
-                        article.find(".month").html(eventDay);
+                        article.find(".day").html(eventDay);
+                        article.find(".month").html( eventMonth);
                         article.find("#projectName").html(records[0].prName);
                         article.find("#title").html(records[0].title);
                         article.find("#img").attr('src',"images/event/" + records[0].imageName);

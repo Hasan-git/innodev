@@ -448,7 +448,7 @@
 											<img id="image" src="http://placehold.it/850x478/ccc.jpg" class="img-responsive" alt="Image">
 
 											<div class="latest-blog-post-date text-cap">
-												<span class="day"></span>
+												<span class="day" ></span>
 												<span class="month"></span>
 											</div>
 										</figure>
@@ -467,7 +467,7 @@
 											<img src="http://placehold.it/850x478/ccc.jpg" class="img-responsive" alt="Image">
 
 											<div class="latest-blog-post-date text-cap">
-												<span class="day">29</span>
+												<span class="day" style="font-size:18px;">29</span>
 												<span class="month">May</span>
 											</div>
 										</figure>
@@ -660,6 +660,7 @@
 	    <script src="js/plugins/owl.carousel.js"></script>
 	    <script src="js/plugins/custom-owl.js"></script>
 
+	    <script src="js/vendor/jquery-ui-1.12.1.js"></script>
 	    <script src="js/controllers/home.js"></script>
 
 		<!-- Initializing Counter Up
