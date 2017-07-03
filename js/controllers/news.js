@@ -107,6 +107,7 @@
                     var recordsObject = records[i];
                     var eventDate = new Date(recordsObject.newsDate);
                     var newsMonth = eventDate.getMonth() + 1;
+                    newsMonth = $.datepicker.formatDate('M ', eventDate)
                     var newsDay = eventDate.getDate();
 
                         ////////////////////////

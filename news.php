@@ -48,7 +48,7 @@
                               <figure class="latest-blog-post-img effect-zoe">
                                  <img src="http://placehold.it/1140x640/ccc.jpg" class="img-responsive" alt="Image">
                                  <div class="latest-blog-post-date text-cap">
-                                    <span class="day"></span>
+                                    <span class="day" ></span>
                                     <span class="month"></span>
                                  </div>
                               </figure>
@@ -121,6 +121,7 @@
       <script type="text/javascript" src="js/plugins/skrollr.min.js"></script>
       <script src="js/plugins/jquery.mCustomScrollbar.concat.min.js"></script>
       <script src="js/controllers/factory.js"></script>
+      <script src="js/vendor/jquery-ui-1.12.1.js"></script>
       <script src="js/controllers/news.js"></script>
       <!-- Mobile Menu
       ================================================== -->

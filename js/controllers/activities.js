@@ -23,6 +23,7 @@ jQuery(document).ready(function() {
     var fullRecords;
     var records, _data;
 
+
     if ($.urlParam('prName')) {
         _data = {
             prName: $.urlParam('prName'),

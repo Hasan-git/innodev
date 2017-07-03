@@ -64,7 +64,7 @@
 								<figure class="latest-blog-post-img effect-zoe">
 									<img id="img" src="" class="img-responsive" alt="Image">
 									<div class="latest-blog-post-date text-cap">
-										<span class="day"></span>
+										<span class="day" ></span>
 										<span class="month"></span>
 									</div>
 								</figure>
@@ -126,6 +126,7 @@
 <script src="js/plugins/wow.min.js"></script>
 <script type="text/javascript" src="js/plugins/skrollr.min.js"></script>
 <script type="text/javascript" src="js/controllers/factory.js"></script>
+<script src="js/vendor/jquery-ui-1.12.1.js"></script>
 <script type="text/javascript" src="js/controllers/events.js"></script>
 
 <!-- Mobile Menu
