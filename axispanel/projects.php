@@ -208,7 +208,7 @@
                                                 </div>
 
                                                 <div class="col-sm-5">
-                                                    <label class="control-label">Change Project Image</label>
+                                                    <label class="control-label">Change Project Image(850x478)</label>
                                                     <label class="field prepend-icon file">
                               <span class="button bg-primary" style="color: white;">Choose Image</span>
                               <input type="file" class="gui-file" name="imagefile" id="imagefile" onChange="$('.imgNme').val(this.value.substr(12));" required>
