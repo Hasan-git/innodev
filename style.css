@@ -3772,6 +3772,22 @@ header ul {
 header .left-header .navi-level-1 li a.logo {
   padding: 0;
 }
+.navi-level-1 > li a img {
+  margin: 0;
+  padding: 0;
+  margin-top:-3px;
+  width:40px;
+  height:12px;
+}
+.navi-level-1.hover-style-6 li a img {
+  -webkit-transition: all 0.6s ease 0s;
+  transition: all 0.6s ease 0s;
+}
+.navi-level-1 > li a:hover img {
+  width:48px;
+  height:15px;
+}
+
 .navi-level-1 > li {
   position: relative;
   display: inline-block;
@@ -3840,6 +3856,7 @@ header .left-header .navi-level-1 li a.logo {
   -webkit-animation-duration: .4s;
           animation-duration: .4s;
 }
+
 @keyframes fadeInUp {
   from {
     opacity: 0;

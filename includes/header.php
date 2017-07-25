@@ -18,7 +18,9 @@
             <li <?php if($pagename=='about'){ echo 'class="active"'; } ?> ><a href="about.php"><span>About </span></a></li>
             <li <?php if($pagename=='projects'){ echo 'class="active"'; } ?> ><a href="projects.php"><span>Projects</span></a></li>
             <li <?php if($pagename=='news'){ echo 'class="active"'; } ?> ><a href="news.php"><span>News</span></a></li>
-            <li <?php if($pagename=='hub'){ echo 'class="active"'; } ?> ><a href="hub.php"><span>HUB</span></a></li>
+            <li <?php if($pagename=='hub'){ echo 'class="active"'; } ?> ><a href="hub.php">
+                <span><img src="images\logo\HUB.png" alt="HUB"></span>
+            </a></li>
             <li <?php if($pagename=='action'){ echo 'class="active"'; } ?> ><a href="action.php"><span>Take Action</span></a></li>
             <li <?php if($pagename=='contact'){ echo 'class="active"'; } ?> ><a href="contact.php"><span>Contact Us</span></a></li>
         </ul>
