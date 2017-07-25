@@ -64,9 +64,10 @@
 				.loader:after {
 					top: -25px;
 					left: -60px;
-					font-size: 54px;
-					width: 500px;
+					font-size: 50px;
+					width: 460px;
 					font-weight: 400;
+					margin: 0 auto;
 				}
 			}
 			.three_lines{

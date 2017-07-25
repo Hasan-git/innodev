@@ -13,7 +13,7 @@
                 <li><a href="about.php"><span>About </span></a></li>
                 <li><a href="projects.php"><span>Projects</span></a></li>
                 <li><a href="news.php"><span>News</span></a></li>
-                <li><a href="hub.php"><span>HUB</span></a></li>
+                <li><a href="hub.php"><span><img src="images\logo\HUB.png" alt="HUB" style="max-width: 50px;"></span></a></li>
                 <li><a href="action.php"><span>Take Action</span></a></li>
                 <li><a href="contact.php"><span>Contact Us</span></a></li>
             </ul>
