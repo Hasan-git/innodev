@@ -1,4 +1,53 @@
-<section class="padding padding-bottom-0">
+<section class="padding">
+    <div class="container">
+        <div class="row">
+            <div class="title-block">
+                <h2 class="title text-cap ">Our Board</h2>
+                <div class="divider divider-1">
+                    <svg class="svg-triangle-icon-container">
+                        <polygon class="svg-triangle-icon" points="6 11,12 0,0 0"></polygon>
+                    </svg>
+                </div>
+            </div>
+            <!-- End Title -->
+            <div class="ourteamGrid-warp">
+                <div class="team-grid-item">
+                    <img src="http://placehold.it/780x780/ccc.jpg" class="img-responsive" alt="Image">
+                    <div class="grid-team-overlay">
+                        <h5 class="text-cap">Ronald Long</h5>
+                        <p class="member-job">Creative Director</p>
+                        <p class="description-member">
+                            Sed malesuada aliquam aliquet. Etiam rutrum semper neque vitae elementum. Nullam tempor pulvinar nunc ac pretium. Quisque scelerisque vestibulum pulvinar. Praesent eros urna, ullamcorper ac suscipit eget, pulvinar sit amet ligula. Maecenas finibus dictum quam fringilla hendrerit. Curabitur tempor mauris non elit ullamcorper maximus. Phasellus faucibus libero eu enim tincidunt laoreet.
+                        </p>
+                    </div>
+                </div>
+                <div class="team-grid-item">
+                    <img src="http://placehold.it/780x780/ccc.jpg" class="img-responsive" alt="Image">
+                    <div class="grid-team-overlay">
+                        <h5 class="text-cap">Jennifer Aguila</h5>
+                        <p class="member-job">Lead Designer</p>
+                        <p class="description-member">
+                            Sed malesuada aliquam aliquet. Etiam rutrum semper neque vitae elementum. Nullam tempor pulvinar nunc ac pretium. Quisque scelerisque vestibulum pulvinar. Praesent eros urna, ullamcorper ac suscipit eget, pulvinar sit amet ligula. Maecenas finibus dictum quam fringilla hendrerit. Curabitur tempor mauris non elit ullamcorper maximus. Phasellus faucibus libero eu enim tincidunt laoreet.
+                        </p>
+                    </div>
+                </div>
+                <div class="team-grid-item">
+                    <img src="http://placehold.it/780x780/ccc.jpg" class="img-responsive" alt="Image">
+                    <div class="grid-team-overlay">
+                        <h5 class="text-cap">Henry Hernandez</h5>
+                        <p class="member-job">Photograper</p>
+                        <p class="description-member">
+                            Sed malesuada aliquam aliquet. Etiam rutrum semper neque vitae elementum. Nullam tempor pulvinar nunc ac pretium. Quisque scelerisque vestibulum pulvinar. Praesent eros urna, ullamcorper ac suscipit eget, pulvinar sit amet ligula. Maecenas finibus dictum quam fringilla hendrerit. Curabitur tempor mauris non elit ullamcorper maximus. Phasellus faucibus libero eu enim tincidunt laoreet.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Our Team Grid -->
+
+<section class="padding padding-bottom-0 bg-grey">
     <div class="container">
         <div class="row">
             <div class="title-block">
@@ -107,82 +156,6 @@
     </div>
 </section>
 <!-- End Section Owl Our Team -->
-
-<section class="padding bg-grey">
-    <div class="container">
-        <div class="row">
-            <div class="title-block">
-                <h2 class="title text-cap">Our Partners</h2>
-                <div class="divider divider-1">
-                    <svg class="svg-triangle-icon-container">
-                        <polygon class="svg-triangle-icon" points="6 11,12 0,0 0"></polygon>
-                    </svg>
-                </div>
-            </div>
-            <!-- End Title -->
-            <div class="owl-partner-warp" >
-                <div class="customNavigation">
-                    <a class="btn prev-partners"><i class="fa fa-angle-left"></i></a>
-                    <a class="btn next-partners"><i class="fa fa-angle-right"></i></a>
-                </div><!-- End owl button -->
-
-                <div id="owl-partners" class="owl-carousel owl-theme owl-partners clearfix">
-                    <div class="item">
-                        <a href="#">
-                            <img src="http://placehold.it/96x95/ccc.jpg" class="img-responsive" alt="Image">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="#">
-                            <img src="http://placehold.it/163x94/ccc.jpg" class="img-responsive" alt="Image">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="#">
-                            <img src="http://placehold.it/125x104/ccc.jpg" class="img-responsive" alt="Image">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="#">
-                            <img src="http://placehold.it/154x109/ccc.jpg" class="img-responsive" alt="Image">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="#">
-                            <img src="http://placehold.it/144x94/ccc.jpg" class="img-responsive" alt="Image">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="#">
-                            <img src="http://placehold.it/96x95/ccc.jpg" class="img-responsive" alt="Image">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="#">
-                            <img src="http://placehold.it/163x94/ccc.jpg" class="img-responsive" alt="Image">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="#">
-                            <img src="http://placehold.it/125x104/ccc.jpg" class="img-responsive" alt="Image">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="#">
-                            <img src="http://placehold.it/154x109/ccc.jpg" class="img-responsive" alt="Image">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="#">
-                            <img src="http://placehold.it/144x94/ccc.jpg" class="img-responsive" alt="Image">
-                        </a>
-                    </div>
-                </div>
-            </div><!-- End row partners -->
-        </div>
-    </div>
-</section>
-<!-- End Section Owl Partners -->
 
 <section class="padding bg-parallax section-dark-testimonials">
     <div class="container">

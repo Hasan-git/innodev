@@ -1,3 +1,4 @@
+<?php $pagename='about'; ?>
 <!DOCTYPE html>
 <html lang="">
 <head>
@@ -99,11 +100,11 @@
 								<div class="col-md-6">
 									<article class="media-style left-icon-item">
 										<div class="media">
-											<div class="media-left">
+											<!--<div class="media-left">
 												<i class="fa fa-diamond alert-info" aria-hidden="true"></i>
-											</div>
+											</div>-->
 											<div class="media-body">
-												<h4 class="text-info">Empowering Youth</h4>
+												<h4>Empowering Youth</h4>
 												<p>
 													INNODEV Empowering Youth and providing trainings on communication skills, volunteering,
 													Activism, Waste management.
@@ -115,11 +116,8 @@
 								<div class="col-md-6">
 									<article class="media-style left-icon-item">
 										<div class="media">
-											<div class="media-left">
-												<i class="fa fa-diamond alert-danger" aria-hidden="true"></i>
-											</div>
 											<div class="media-body">
-												<h4 class="text-danger">Member at NGOs Are Stronger Together</h4>
+												<h4>Member at NGOs Are Stronger Together</h4>
 												<p>
 													a civil society coalition that
 													fosters stronger coordination, communication and collaboration between NGOS in the
@@ -133,11 +131,8 @@
 								<div class="col-md-6">
 									<article class="media-style left-icon-item">
 										<div class="media">
-											<div class="media-left">
-												<i class="fa fa-diamond alert-success" aria-hidden="true"></i>
-											</div>
 											<div class="media-body">
-												<h4 class="text-success">Member at Volunteer For Lebanon</h4>
+												<h4>Member at Volunteer For Lebanon</h4>
 												<p>
 													Empowering
 													youth groups to encourage volunteer service projects and how to plan and implement a
@@ -150,11 +145,8 @@
 								<div class="col-md-6">
 									<article class="media-style left-icon-item">
 										<div class="media">
-											<div class="media-left">
-												<i class="fa fa-diamond alert-warning" aria-hidden="true"></i>
-											</div>
 											<div class="media-body">
-												<h4 class=" text-warning">Women Empowerment Program</h4>
+												<h4>Women Empowerment Program</h4>
 												<p>
 													Implementing a Women Empowerment Program in “Tripoli-Dahr
 													elMoghor”(north) and in ‘Bent Jbeil”(South) in collaboration with the local NGOs and
@@ -167,11 +159,8 @@
 								<div class="col-md-6">
 									<article class="media-style left-icon-item">
 										<div class="media">
-											<div class="media-left">
-												<i class="fa fa-diamond alert-danger" aria-hidden="true"></i>
-											</div>
 											<div class="media-body">
-												<h4 class="text-danger">Environmental Awareness Program</h4>
+												<h4>Environmental Awareness Program</h4>
 												<p>
 													INNODEV is implementing an Environmental Awareness Program in Public
 													Schools, the program started in April 2015 till date for up to 18 schools in different areas.
@@ -183,11 +172,8 @@
 								<div class="col-md-6">
 									<article class="media-style left-icon-item">
 										<div class="media">
-											<div class="media-left">
-												<i class="fa fa-diamond alert-info" aria-hidden="true"></i>
-											</div>
 											<div class="media-body">
-												<h4 class="text-info">Beirut Synergy Hub</h4>
+												<h4>Beirut Synergy Hub</h4>
 												<p>
 													Founded in August 2016, to create the best local
 													resource ,open to our Youth and community, that allows them to feel safe in order to
@@ -209,12 +195,14 @@
 						<div class="layer-1 text-center ">
 							<div class="box-content-overlay-3">
 								<h2 class=" wow fadeInDown" data-wow-delay=".15s">We aim for a society with active and responsible citizens capable<br> of making positive differences in their communities</h2>
-								<a href="contact.php" class="ot-btn btn-dark-color btn-long text-cap wow fadeInUp2" data-wow-delay=".25s">Contact Us</a>
+								<a href="action.php" class="ot-btn btn-dark-color btn-long text-cap wow fadeInUp2" data-wow-delay=".25s">Work with us</a>
 							</div>
 						</div>
 					</div>
 				</section>
 				<!-- End Section Overlay -->
+
+
 
 				<?php include_once('includes/team.php'); ?>
 
@@ -248,7 +236,7 @@
     		Royal_Preloader.config({
 	                mode:           'logo', // 'number', "text" or "logo"
 	                logo:           'images/logo/loader.jpg',
-	                timeout:        1,
+	                timeout:        0.5,
 	                showInfo:       false,
 	                opacity:        1,
 	                background:     ['#FFFFFF']

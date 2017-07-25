@@ -1,3 +1,4 @@
+<?php $pagename='projects'; ?>
 <!DOCTYPE html>
 <html lang="">
 	<head>
@@ -78,10 +79,6 @@
 											<th>End Date:</th>
 											<td id="endDate"></td>
 										</tr>
-										<tr>
-											<td><a class="btn btn-warning" id="eventsLink" href="events.php">View Events</a></td>
-											<td><a class="btn btn-success" id="activitiesLink"  href="activities.php">View Activities</a></td>
-										</tr>
 									</table>
 								</div>
 								<div class="clearfix"></div>
@@ -90,7 +87,7 @@
 									<p id="description">
 
 									</p>
-									<a class="ot-btn btn-main-color text-cap mgb0" id="activitiesLink" href="activities.php">View Project Activities</a>
+									<a class="ot-btn btn-main-color text-cap mgb0" id="newsLink" href="news.php">View Project News</a>
 								</div>
 							</div>
 						</div>
@@ -118,7 +115,7 @@
                 	<div class="layer-1 text-center">
                 		<div class="box-content-overlay-3">
                 			<h2 class=" wow fadeInDown" data-wow-delay=".15s">We aim for a society with active and responsible citizens capable<br> of making positive differences in their communities</h2>
-                			<a href="contact.php" class="ot-btn btn-dark-color btn-long text-cap wow fadeInUp2" data-wow-delay=".25s">Work with us</a>
+                			<a href="action.php" class="ot-btn btn-dark-color btn-long text-cap wow fadeInUp2" data-wow-delay=".25s">Work with us</a>
                 		</div>
                 	</div>
             	</div>
@@ -155,7 +152,7 @@
 		            Royal_Preloader.config({
 		                mode:           'logo', // 'number', "text" or "logo"
 		                logo:           'images/logo/loader.jpg',
-		                timeout:       1,
+		                timeout:        0.5,
 		                showInfo:       false,
 		                opacity:        1,
 		                background:     ['#FFFFFF']

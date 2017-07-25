@@ -25,6 +25,13 @@
           <li class="sidebar-label pt20">Main Menu</li>
 
           <li >
+            <a href="../index.php" target="_blank">
+                <span class="glyphicon glyphicon-globe"></span>
+                <span class="sidebar-title">Visit Website</span>
+            </a>
+          </li>
+
+          <li >
             <a href="index.php">
               <span class="glyphicon glyphicon-home"></span>
               <span class="sidebar-title">Dashboard</span>
@@ -41,25 +48,11 @@
           </li>
 
 
-          <li class="sidebar-label pt20">EVENTS</li>
+          <li class="sidebar-label pt20">Articles</li>
           <li >
             <a href="news.php">
               <span class="fa fa-bullhorn"></span>
               <span class="sidebar-title">News</span>
-            </a>
-          </li>
-
-		      <li >
-            <a href="activities.php">
-              <span class="fa fa-flag"></span>
-              <span class="sidebar-title">Activities</span>
-            </a>
-          </li>
-
-          <li >
-            <a href="events.php">
-              <span class="fa fa-magic"></span>
-              <span class="sidebar-title">Events</span>
             </a>
           </li>
 

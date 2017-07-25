@@ -9,13 +9,12 @@
         <div class="mCustomScrollbar light" data-mcs-theme="minimal-dark">
 
             <ul>
-                <li><a href="index.html"><span>Home</span></a></li>
-                <li><a href="about.html"><span>About </span></a></li>
+                <li><a href="index.php"><span>Home</span></a></li>
+                <li><a href="about.php"><span>About </span></a></li>
                 <li><a href="projects.php"><span>Projects</span></a></li>
-                <li><a href="events.php"><span>Events</span></a></li>
-                <li><a href="activities"><span>Activities</span></a></li>
                 <li><a href="news.php"><span>News</span></a></li>
                 <li><a href="hub.php"><span>HUB</span></a></li>
+                <li><a href="action.php"><span>Take Action</span></a></li>
                 <li><a href="contact.php"><span>Contact Us</span></a></li>
             </ul>
             <div class="footer-mobile-menu">

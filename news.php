@@ -1,3 +1,4 @@
+<?php $pagename='news'; ?>
 <!DOCTYPE html>
 <html lang="">
 <head>
@@ -84,7 +85,7 @@
                               <img src="http://placehold.it/540x440/ccc.jpg" class="img-responsive" alt="Image">
                               <div class="promotionText">
                                  <p>Amazing! You can work with us, just send email.</p>
-                                 <a href="contact.php" class="ot-btn btn-border btn-border-dark text-cap"> Contact Now</a>
+                                 <a href="action.php" class="ot-btn btn-border btn-border-dark text-cap">Take Action Now</a>
                               </div>
                            </aside>
                            <aside class="widget widget_archive">
@@ -134,7 +135,7 @@
             Royal_Preloader.config({
                          mode:           'logo', // 'number', "text" or "logo"
                          logo:           'images/logo/loader.jpg',
-                         timeout:       1,
+                         timeout:        0.5,
                          showInfo:       false,
                          opacity:        1,
                          background:     ['#FFFFFF']

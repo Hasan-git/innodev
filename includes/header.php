@@ -13,15 +13,14 @@
         </ul>
     </div><!-- End Left Header -->
     <nav>
-        <ul class="navi-level-1 hover-style-5 main-navi">
-            <li><a href="index.php"><span>Home</span></a></li>
-            <li><a href="about.php"><span>About </span></a></li>
-            <li><a href="projects.php"><span>Projects</span></a></li>
-            <li><a href="events.php"><span>Events</span></a></li>
-            <li><a href="activities"><span>Activities</span></a></li>
-            <li><a href="news.php"><span>News</span></a></li>
-            <li><a href="hub.php"><span>HUB</span></a></li>
-            <li><a href="contact.php"><span>Contact Us</span></a></li>
+        <ul class="navi-level-1 hover-style-6 main-navi">
+            <li <?php if($pagename=='index'){ echo 'class="active"'; } ?> ><a href="index.php"><span>Home</span></a></li>
+            <li <?php if($pagename=='about'){ echo 'class="active"'; } ?> ><a href="about.php"><span>About </span></a></li>
+            <li <?php if($pagename=='projects'){ echo 'class="active"'; } ?> ><a href="projects.php"><span>Projects</span></a></li>
+            <li <?php if($pagename=='news'){ echo 'class="active"'; } ?> ><a href="news.php"><span>News</span></a></li>
+            <li <?php if($pagename=='hub'){ echo 'class="active"'; } ?> ><a href="hub.php"><span>HUB</span></a></li>
+            <li <?php if($pagename=='action'){ echo 'class="active"'; } ?> ><a href="action.php"><span>Take Action</span></a></li>
+            <li <?php if($pagename=='contact'){ echo 'class="active"'; } ?> ><a href="contact.php"><span>Contact Us</span></a></li>
         </ul>
     </nav><!-- End Nav -->
 

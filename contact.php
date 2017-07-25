@@ -1,3 +1,4 @@
+<?php $pagename='contact'; ?>
 <!DOCTYPE html>
 <html lang="">
 <head>
@@ -113,8 +114,7 @@
 <!-- Mobile Menu
 	================================================== -->
 	<script src="js/plugins/jquery.mobile-menu.js"></script>
-	<!-- Initializing Google Maps -->
-	<script src='https://maps.googleapis.com/maps/api/js?key=&sensor=false&extension=.js'></script>
+
 	<script src="js/plugins/contact.js"></script>
 
 <!-- PreLoad
@@ -123,13 +123,13 @@
 	<script type="text/javascript">
 		(function($) { "use strict";
 			Royal_Preloader.config({
-			mode:           'logo', // 'number', "text" or "logo"
-			logo:           'images/logo/loader.jpg',
-			timeout:       1,
-			showInfo:       false,
-			opacity:        1,
-			background:     ['#FFFFFF']
-		});
+				mode:           'logo', // 'number', "text" or "logo"
+				logo:           'images/logo/loader.jpg',
+				timeout:        0.5,
+				showInfo:       false,
+				opacity:        1,
+				background:     ['#FFFFFF']
+			});
 		})(jQuery);
 	</script>
 

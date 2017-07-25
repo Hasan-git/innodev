@@ -1,3 +1,4 @@
+<?php $pagename='index'; ?>
 <!DOCTYPE html>
 <html lang="">
 	<head>
@@ -38,33 +39,33 @@
 				content: "Welcome To";
 				position: absolute;
 				top: -50px;
-				left: -95px;
+				left: -200px;
 				z-index: 99999;
-				font-size: 80px;
-				font-weight: 600;
+				font-size: 140px;
+				font-weight: 700;
 				color: #ebcd1e;
 				font-family: initial;
 				text-decoration: none;
-				width: 600px;
+				width: 900px;
 			}
 
 			.loader:after {
 				color: rgb(246, 238, 47);
 				transform: translate3d(0, 0, 0);
 				-webkit-animation-name: animatedText,fadeInDown;
-				-webkit-animation-duration: 2s, 1.82s;
+				-webkit-animation-duration: 6s, 5.82s;
 				animation-name: animatedText,fadeInDown;
-				animation-duration: 2s, 1.82s;
+				animation-duration: 6s, 5.82s;
 				animation-iteration-count:1,1;
 			}
 
-			@media only screen and (max-width: 767px) {
+			@media only screen and (max-width: 991px) {
 				/*welcome to*/
 				.loader:after {
-					top: -50px;
+					top: -25px;
 					left: -60px;
-					font-size: 48px;
-					width: 400px;
+					font-size: 54px;
+					width: 500px;
 					font-weight: 400;
 				}
 			}
@@ -93,98 +94,30 @@
 								<!-- MAIN IMAGE -->
 								<img src="images/slider/1.jpg"  alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10">
 
-								<!-- LAYER NR. 1 -->
-								<div class="tp-caption heading-2 white-text"
-									 data-x="center"
-									 data-y="center"  data-voffset="-80"
-							  		 data-transform_in="y:-80px;opacity:0;s:800;e:easeInOutCubic;"
-			 						 data-transform_out="y:-80px;opacity:0;s:300;"
-
-									 data-start="1000"
-									>Youth in Creative
-								</div>
 								<!-- LAYER NR. 2 -->
-								<div class="tp-caption heading-1 white-text text-cap "
+								<div class="tp-caption heading-2 white-text text-cap "
 									 data-x="center"
-									 data-y="center"
+									 data-y="bottom"
 									 data-transform_in="y:80px;opacity:0;s:800;e:easeInOutCubic;"
 				 					 data-transform_out="y:80px;opacity:0;s:300;"
 									 data-start="1400"
-									>INNODEV
+									><b style="background-color: rgba(0,0,0,0.4);" >Youth in Creative</b>
 								</div>
-
-								<!-- LAYER NR. 3 -->
-								<div class="tp-caption btn-1"
-									 data-x="center"  data-hoffset="-85"
-									 data-y="center"  data-voffset="100"
-								  	 data-transform_in="y:100px;opacity:0;s:800;e:easeInOutCubic;"
-				 					data-transform_out="y:200px;opacity:0;s:300;"
-									 data-start="1600"
-									>
-									<a href="" class="ot-btn btn-main-color text-cap ">Our Projects</a>
-
-								</div>
-								<!-- LAYER NR. 4 -->
-								<div class="tp-caption btn-2"
-									 data-x="center"  data-hoffset="85"
-									 data-y="center"  data-voffset="100"
-									 data-transform_in="y:100px;opacity:0;s:800;e:easeInOutCubic;"
-				 					 data-transform_out="y:200px;opacity:0;s:300;"
-
-									 data-start="1600"
-									>
-	              					<a href="" class="ot-btn btn-sub-color text-cap  ">Get a Quote</a>
-								</div>
-
 							</li>
 							<li data-transition="parallaxtoright" data-masterspeed="1000" >
 
 								<!-- MAIN IMAGE -->
 								<img src="images/slider/2.jpg"  alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10">
 
-								<!-- LAYER NR. 1 -->
-								<div class="tp-caption heading-2 white-text"
-									 data-x="center"
-									 data-y="center"  data-voffset="-80"
-							  		 data-transform_in="y:-80px;opacity:0;s:800;e:easeInOutCubic;"
-			 						 data-transform_out="y:-80px;opacity:0;s:300;"
-
-									 data-start="1000"
-									>Innovative & Productive
-								</div>
 								<!-- LAYER NR. 2 -->
-								<div class="tp-caption heading-1 white-text text-cap "
+								<div class="tp-caption heading-2 white-text text-cap "
 									 data-x="center"
-									 data-y="center"
+									 data-y="bottom"
 									 data-transform_in="y:80px;opacity:0;s:800;e:easeInOutCubic;"
-				 					 data-transform_out="y:80px;opacity:0;s:300;"
+									 data-transform_out="y:80px;opacity:0;s:300;"
 									 data-start="1400"
-									>INNODEV
+									><b style="background-color: rgba(0,0,0,0.4);" >Innovative & Productive</b>
 								</div>
-
-								<!-- LAYER NR. 3 -->
-								<div class="tp-caption btn-1"
-									 data-x="center"  data-hoffset="-85"
-									 data-y="center"  data-voffset="100"
-								  	 data-transform_in="y:100px;opacity:0;s:800;e:easeInOutCubic;"
-				 					data-transform_out="y:200px;opacity:0;s:300;"
-									 data-start="1600"
-									>
-									<a href="" class="ot-btn btn-main-color text-cap ">Our Events</a>
-
-								</div>
-								<!-- LAYER NR. 4 -->
-								<div class="tp-caption btn-2"
-									 data-x="center"  data-hoffset="85"
-									 data-y="center"  data-voffset="100"
-									 data-transform_in="y:100px;opacity:0;s:800;e:easeInOutCubic;"
-				 					 data-transform_out="y:200px;opacity:0;s:300;"
-
-									 data-start="1600"
-									>
-	              					<a href="" class="ot-btn btn-sub-color text-cap  ">Get a Quote</a>
-								</div>
-
 							</li>
 							<!-- SLIDE  -->
 							<li data-transition="parallaxtoright" data-masterspeed="1000" >
@@ -192,49 +125,15 @@
 								<!-- MAIN IMAGE -->
 								<img src="images/slider/3.jpg"  alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10">
 
-								<!-- LAYER NR. 1 -->
-								<div class="tp-caption heading-2 white-text"
-									 data-x="center"
-									 data-y="center"  data-voffset="-80"
-							  		 data-transform_in="y:-80px;opacity:0;s:800;e:easeInOutCubic;"
-			 						 data-transform_out="y:-80px;opacity:0;s:300;"
-
-									 data-start="1000"
-									>Activities & Programs
-								</div>
 								<!-- LAYER NR. 2 -->
-								<div class="tp-caption heading-1 white-text text-cap "
+								<div class="tp-caption heading-2 white-text text-cap "
 									 data-x="center"
-									 data-y="center"
+									 data-y="bottom"
 									 data-transform_in="y:80px;opacity:0;s:800;e:easeInOutCubic;"
-				 					 data-transform_out="y:80px;opacity:0;s:300;"
+									 data-transform_out="y:80px;opacity:0;s:300;"
 									 data-start="1400"
-									>INNODEV
+									><b style="background-color: rgba(0,0,0,0.4);" >Activities & Programs</b>
 								</div>
-
-								<!-- LAYER NR. 3 -->
-								<div class="tp-caption btn-1"
-									 data-x="center"  data-hoffset="-85"
-									 data-y="center"  data-voffset="100"
-								  	 data-transform_in="y:100px;opacity:0;s:800;e:easeInOutCubic;"
-				 					data-transform_out="y:200px;opacity:0;s:300;"
-									 data-start="1600"
-									>
-									<a href="" class="ot-btn btn-main-color text-cap ">Our News</a>
-
-								</div>
-								<!-- LAYER NR. 4 -->
-								<div class="tp-caption btn-2"
-									 data-x="center"  data-hoffset="85"
-									 data-y="center"  data-voffset="100"
-									 data-transform_in="y:100px;opacity:0;s:800;e:easeInOutCubic;"
-				 					 data-transform_out="y:200px;opacity:0;s:300;"
-
-									 data-start="1600"
-									>
-	              					<a href="" class="ot-btn btn-sub-color text-cap  ">Get a Quote</a>
-								</div>
-
 							</li>
 
 						</ul>
@@ -247,7 +146,7 @@
 					<div class="container">
 						<div class="row">
 							<div class="title-block">
-								<h2 class="title text-cap">About Us</h2>
+								<h2 class="title text-cap">Who we are!</h2>
 								<div class="divider divider-1">
 									<svg class="svg-triangle-icon-container">
 										<polygon class="svg-triangle-icon" points="6 11,12 0,0 0"></polygon>
@@ -261,30 +160,26 @@
 								which allow them to realize their potentials and become involved citizens and agents of change in their communities.<br>
 								<b class="text-warning">INNODEV</b> promotes a positive and active social, environmental and educational attitude and conditions, thus endows the youth with skills,<br>
 								resources and awareness to achieve better livelihoods in a just, secure and healthy society.
+								<br/><a href="about.php" class="text-warning hover-style-4"><b>Read More...</b></a>
 							</p>
+
 							<div class="about-us-info">
 								<div class="col-md-4">
 									<div class="about-info-item">
 										<span class="counter color1">10</span>
 										<h5 class="text-cap"><b>Years of experience</b></h5>
-										<p>Our team comprises
-											of a dynamic pool of experts, which include social workers, consultants, activists,
-											lawyers, and educators.</p>
 									</div>
 								</div>
 								<div class="col-md-4">
 									<div class="about-info-item">
 										<span class="counter">30</span>
 										<h5 class="text-cap"><b>Number of Events</b></h5>
-										<p>We aim for a society with active and responsible citizens capable of making positive differences
-											in their communities.</p>
 									</div>
 								</div>
 								<div class="col-md-4">
 									<div class="about-info-item">
 										<span class="counter">58</span>
 										<h5 class="text-cap"><b>Activities completed</b></h5>
-										<p>We are implementing an Environmental Awareness Program in Public Schools, for up to 18 schools in different areas.</p>
 									</div>
 								</div>
 							</div>
@@ -395,29 +290,12 @@
 											<p class="three_lines" id="description">
 
 											</p>
-											<a class="ot-btn btn-info text-cap mgb0" id="activitiesLink" href="activities.php">View Activities</a>
-											<a class="ot-btn btn-main-color text-cap mgb0" id="eventsLink"  href="activities.php">View Events</a>
+											<a class="ot-btn btn-main-color text-cap mgb0" id="projectLink" href="projects.php">View Project Details</a>
 										</div>
 										<div class="img-block"><img id="image" src="http://placehold.it/850x478/ccc.jpg" class="img-responsive" alt="Image"></div>
 									</div>
 								</div>
 
-								<!-- get before the last project added-->
-								<div class="block-img-full-width project_article">
-									<div class="latest-blog-post-img block-img-right mgb0">
-										<div class="text-box">
-											<h3 class="text-cap">Project title</h3>
-											<p>
-												project description 3 lines only.
-											</p>
-											<a class="ot-btn btn-info text-cap mgb0" href="activities.php">View Activities</a>
-											<a class="ot-btn btn-main-color text-cap mgb0" href="activities.php">View Events</a>
-										</div>
-										<div class="img-block">
-											<img src="http://placehold.it/850x478/ccc.jpg" class="img-responsive" alt="Image">
-										</div>
-									</div>
-								</div>
 
 							</div>
 						</div>
@@ -425,75 +303,12 @@
 				</section>
 				<!-- End Section What we do -->
 
-				<section class="padding bg-grey">
-					<div class="container">
-						<div class="row">
-							<div class="title-block">
-								<h2 class="title text-cap">Upcoming Events</h2>
-								<div class="divider divider-1">
-									<svg class="svg-triangle-icon-container">
-										<polygon class="svg-triangle-icon" points="6 11,12 0,0 0"></polygon>
-									</svg>
-								</div>
-							</div>
-							<!-- End Title -->
-							<div class="lastest-blog-container current_events">
-
-
-								<!-- get the last 2 events added only -->
-								<div class="col-md-6 event_article">
-									<article class="lastest-blog-item">
-										<figure class="latest-blog-post-img effect-zoe">
-
-											<img id="image" src="http://placehold.it/850x478/ccc.jpg" class="img-responsive" alt="Image">
-
-											<div class="latest-blog-post-date text-cap">
-												<span class="day" ></span>
-												<span class="month"></span>
-											</div>
-										</figure>
-										<div class="latest-blog-post-description">
-											<h3 id="title">event title</h3>
-											<p id="description">
-
-											</p>
-										</div>
-									</article>
-								</div>
-								<div class="col-md-6 event_article">
-									<article class="lastest-blog-item">
-										<figure class="latest-blog-post-img effect-zoe">
-
-											<img src="http://placehold.it/850x478/ccc.jpg" class="img-responsive" alt="Image">
-
-											<div class="latest-blog-post-date text-cap">
-												<span class="day" style="font-size:18px;">29</span>
-												<span class="month">May</span>
-											</div>
-										</figure>
-										<div class="latest-blog-post-description">
-											<h3>event title</h3>
-											<p>
-												event text description.
-											</p>
-										</div>
-									</article>
-								</div>
-								<!-- end events-->
-
-
-							</div>
-						</div>
-					</div>
-				</section>
-				<!-- End Section Lastest Blog -->
-
 				<section>
 					<div class="overlay-arc overlay-3">
 						<div class="layer-1 text-center ">
 							<div class="box-content-overlay-3">
 								<h2 class=" wow fadeInDown" data-wow-delay=".15s">We aim for a society with active and responsible citizens capable<br> of making positive differences in their communities</h2>
-								<a href="contact.php" class="ot-btn btn-dark-color btn-long text-cap wow fadeInUp2" data-wow-delay=".25s">Work with us</a>
+								<a href="action.php" class="ot-btn btn-dark-color btn-long text-cap wow fadeInUp2" data-wow-delay=".25s">Work with us</a>
 							</div>
 						</div>
 					</div>
@@ -527,34 +342,6 @@
 										<a class="ot-btn btn-main-color text-cap" id="newsDetailLink" href="newsdetail.php">Read more</a>
 									</div>
 								</div>
-
-								<div class="col-sm-6 col-md-4 wow fadeInRight news_article" data-wow-delay=".25s">
-									<div class="latest-blog-post-img block-img-full">
-										<a class="img-block"><img src="http://placehold.it/1140x640/ccc.jpg" class="img-responsive" alt="Image"></a>
-										<div class="text-box">
-											<h4 class="text-cap">News title</h4>
-											<p>
-												news text content.
-											</p>
-										</div>
-										<a class="ot-btn btn-main-color text-cap " href="newsdetail.php">Read more</a>
-									</div>
-								</div>
-
-								<div class="col-sm-6 col-md-4 wow fadeInRight news_article" data-wow-delay=".25s">
-									<div class="block-img-full">
-										<a class="img-block"><img src="http://placehold.it/1140x640/ccc.jpg" class="img-responsive" alt="Image"></a>
-										<div class="text-box">
-											<h4 class="text-cap">News title</h4>
-											<p>
-												news text content.
-											</p>
-										</div>
-										<a class="ot-btn btn-main-color text-cap" href="newsdetail.php">Read more</a>
-									</div>
-								</div>
-
-
 								<!-- End Col -->
 							</div>
 							<!-- End Row -->
@@ -563,53 +350,93 @@
 				</section>
 				<!-- End Section What we do -->
 
-				<section class="padding bg-grey padding-bottom-0">
-					<div class="title-block">
-						<h2 class="title text-cap">Our Activities</h2>
-						<div class="divider divider-1">
-							<svg class="svg-triangle-icon-container">
-							  <polygon class="svg-triangle-icon" points="6 11,12 0,0 0"></polygon>
-							</svg>
-						</div>
-					</div>
-					<!-- End Title -->
-				    <div class="lastest-project-warp clearfix">
-						<div class="projectFilter project-terms line-effect-2">
-
-							<!-- types will go here -->
-							<a href="#" data-filter="*" class="current text-cap"><h4>All Projects</h4></a>
-							<a href="#" data-filter=".General" class="text-cap"><h4>General</h4></a>
-							<a href="#" data-filter=".School" class="text-cap"><h4>School</h4></a>
-							<a href="#" data-filter=".Natural" class="text-cap"><h4>Natural</h4></a>
-
-
-						</div> <!-- End Project Fillter -->
-
-						<div class="clearfix projectContainer current_activities">
-
-
-							<!-- activities rows will go here -->
-							<div class="element-item activity_article "><!-- atype go here as class (Natural) -->
-								 <img id="image" src="http://placehold.it/1140x640/ccc.jpg" class="img-responsive" alt="Image">
-								 <div class="project-info">
-									 <a href="actdetail.php">
-										<h4 class="title-project text-cap text-cap" id="title"></h4>
-									 </a>
-									 <a href="" class="cateProject"><span id="atype"></span> / <span id="prName"></span></a>
-								 </div>
+				<section class="padding bg-parallax section-dark-testimonials">
+					<div class="container">
+						<div class="row">
+							<div class="title-block">
+								<h2 class="title text-cap">What People Says</h2>
+								<div class="divider divider-2">
+									<svg class="svg-triangle-icon-container">
+										<polygon class="svg-triangle-icon" points="6 11,12 0,0 0"></polygon>
+									</svg>
+								</div>
 							</div>
+							<!-- End Title -->
+							<div class="testimonial-warp testimonial-2-col">
+								<div class="customNavigation">
+									<a class="btn prev-testimonials-2-columns"><i class="fa fa-angle-left"></i></a>
+									<a class="btn next-testimonials-2-columns"><i class="fa fa-angle-right"></i></a>
+								</div>
 
-						</div>  <!-- End project Container -->
-				    </div> <!-- End  -->
-					<div class="overlay-arc">
-						<div class="layer-1">
-							<a href="activities.php" class="ot-btn btn-dark-color text-cap">View all Activities</a>
+								<div id="owl-testimonials-2-columns" class="owl-carousel owl-theme clearfix">
+									<div class="item item-testimonials text-left">
+										<p class="quote-icon">“</p>
+										<p><i>Some Text Here Some Text Here Some Text Here Some Text HereSome Text HereSome Text Here Some Text HereSome Text HereSome Text Here Some Text Here Some Text Here Some Text Here Some Text HereSome Text HereSome Text Here Some Text HereSome Text HereSome Text Here</i></p>
+										<div class="avatar-testimonials">
+											<img src="http://placehold.it/262x262/ccc.jpg" class="img-responsive" alt="Image">
+										</div>
+										<h4 class="name-testimonials text-cap">Mhmd Ezzedien</h4>
+										<span class="job-testimonials">Web Developer AxisMEA</span>
+									</div><!-- end item -->
+									<div class="item item-testimonials text-left">
+										<p class="quote-icon">“</p>
+										<p><i>Some Text Here Some Text Here Some Text Here Some Text HereSome Text HereSome Text Here Some Text HereSome Text HereSome Text HereSome Text Here Some Text Here Some Text Here Some Text HereSome Text HereSome Text Here Some Text HereSome Text HereSome Text Here</i></p>
+										<div class="avatar-testimonials">
+											<img src="http://placehold.it/256x256/ccc.jpg" class="img-responsive" alt="Image">
+										</div>
+										<h4 class="name-testimonials text-cap">Alaa Bachir</h4>
+										<span class="job-testimonials">Photographer</span>
+									</div><!-- end item -->
+									<div class="item item-testimonials text-left">
+										<p class="quote-icon">“</p>
+										<p><i>Some Text Here Some Text Here Some Text Here Some Text HereSome Text HereSome Text Here Some Text HereSome Text HereSome Text Here Some Text Here Some Text Here Some Text Here Some Text HereSome Text HereSome Text Here Some Text HereSome Text HereSome Text Here</i></p>
+										<div class="avatar-testimonials">
+											<img src="http://placehold.it/225x225/ccc.jpg" class="img-responsive" alt="Image">
+										</div>
+										<h4 class="name-testimonials text-cap">Layal Nehmeh</h4>
+										<span class="job-testimonials"> Manager</span>
+									</div><!-- end item -->
+									<div class="item item-testimonials text-left">
+										<p class="quote-icon">“</p>
+										<p><i>Some Text Here Some Text Here Some Text Here Some Text HereSome Text HereSome Text Here Some Text HereSome Text HereSome Text Here Some Text Here Some Text Here Some Text Here Some Text HereSome Text HereSome Text Here Some Text HereSome Text HereSome Text Here</i></p>
+										<div class="avatar-testimonials">
+											<img src="http://placehold.it/240x240/ccc.jpg" class="img-responsive" alt="Image">
+										</div>
+										<h4 class="name-testimonials text-cap">Sali Oun</h4>
+										<span class="job-testimonials">School Manager</span>
+									</div><!-- end item -->
+
+								</div>
+							</div>
 						</div>
 					</div>
 				</section>
-				<!-- End Section Isotop Lastest Project -->
+				<!-- End Section Owl Testimonials -->
 
-				<?php include_once('includes/team.php'); ?>
+				<section class="padding ">
+					<div class="container">
+						<div class="row">
+							<div class="title-block">
+								<h2 class="title text-cap">Don't forget to sign up!</h2>
+								<div class="divider divider-1">
+									<svg class="svg-triangle-icon-container">
+										<polygon class="svg-triangle-icon" points="6 11,12 0,0 0"></polygon>
+									</svg>
+								</div>
+							</div>
+							<!-- End Title -->
+							<div class="form-subcribe">
+
+								<p class="text-center">Find out early about all upcoming Events and Activities releases with our newsletter.</p>
+								<form  method="post">
+									<input class="newsletter-email input-text" placeholder="email@example.com" type="email">
+									<button class="ot-btn btn-main-color text-cap" type="submit">Subscribe</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- End Section subcribe -->
 
 				<?php include_once('includes/footer.php'); ?>
 			</div>
@@ -675,8 +502,8 @@
 		            Royal_Preloader.config({
 		                mode:           'logo',
 		                logo:           'images/logo/loader.jpg',
-		                timeout:        1,
-		                showInfo:       true,
+		                timeout:        5,
+		                showInfo:       false,
 		                opacity:        1,
 		                background:     ['#FFFFFF']
 		            });

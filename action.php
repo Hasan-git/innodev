@@ -1,4 +1,4 @@
-<?php $pagename='hub'; ?>
+<?php $pagename='action'; ?>
 <!DOCTYPE html>
 <html lang="">
 <head>
@@ -40,12 +40,12 @@
         <section>
             <div class="sub-header sub-header-1 sub-header-about fake-position">
                 <div class="sub-header-content">
-                    <h2 class="text-cap white-text">HUB</h2>
+                    <h2 class="text-cap white-text">Take an Action</h2>
                     <ol class="breadcrumb breadcrumb-arc text-cap">
                         <li>
                             <a href="index.php">Home</a>
                         </li>
-                        <li class="active">HUB</li>
+                        <li class="active">Take Action</li>
                     </ol>
                 </div>
             </div>
@@ -56,13 +56,24 @@
             <div class="container">
                 <div class="row">
                     <div class="about-intro">
-                        <div class="col-lg-12">
-                            <h1 align="center" class="text-warning"> Coming Soon </h1>
-                            <p>&emsp14;</p><p>&emsp14;</p><p>&emsp14;</p>
-                        </div>
-                        <div class="col-lg-8">&emsp14;</div>
-                        <div class="col-lg-8">&emsp14;</div>
+                        <div class="col-lg-8">
+                            <h2>Still Under Construction...</h2>
+                            <form class="form-contact-arc padding-bot-30" name="contact" method="post" action="send_form_email.php">
+                                <div class="row">
+                                    <div class="form-group col-sm-12">
+                                        <input class="form-control" name="yourName" id="yourName" placeholder="Your Name" type="text">
+                                    </div>
+                                    <div class="form-group col-sm-12 ">
+                                        <input class="form-control" name="yourEmail" id="yourEmail" placeholder="Your Email" type="email">
+                                    </div>
+                                    <div class="form-group col-sm-12">
+                                        <input class="form-control" name="yourPhone" id="phoneNumber" placeholder="Phone Number" type="text">
+                                    </div>
+                                </div>
 
+                                <button class="ot-btn btn-long btn-main-color btn-submit" type="submit">Sign Up</button>
+                            </form> <!-- End Form -->
+                        </div>
                     </div>
                 </div>
             </div>

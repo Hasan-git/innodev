@@ -12,13 +12,13 @@
                 <a class="text-cap" href="projects.php">Projects</a>
             </li>
             <li>
-                <a class="text-cap" href="events.php">Events</a>
-            </li>
-            <li>
                 <a class="text-cap" href="news.php">News</a>
             </li>
             <li>
                 <a class="text-cap" href="hub.php">HUB</a>
+            </li>
+			<li>
+                <a class="text-cap" href="action.php">Take Action</a>
             </li>
             <li>
                 <a class="text-cap" href="contact.php">Contact Us</a>
