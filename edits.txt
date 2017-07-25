@@ -1,0 +1,13 @@
+add prName field in the news table, relationed with projects table, prname.
+
+in index.php, projects.php
+in projects section: for the command, (view project news):
+Need to send with url the prName Id, to view the news for current project.
+
+Note: u can locate the new sql file with innodev folder.
+
+Needs:
+1- we need to add more images for news same as actimages.
+so we can make it as gallery for each new in newsdetails page in the public site.
+
+2- need to add prName input type and also add dropzone for the additional images in news forms (new, edit) in AxisPanel.
