@@ -266,7 +266,7 @@
 
 					</div>
 				</section>
-				<!-- End promotion Content Box -->
+				<!-- End promotion Content Box --
 
 				<section class="padding">
 					<div class="container">
@@ -279,11 +279,11 @@
 									</svg>
 								</div>
 							</div>
-							<!-- End Title -->
+							<!-- End Title --
 							<div class="row current_projects">
 
 								<!-- only 2 projects -->
-								<!-- get the last project added-->
+								<!-- get the last project added--
 								<div class="block-img-full-width project_article">
 									<div class="latest-blog-post-img block-img-left ">
 										<div class="text-box">
@@ -302,19 +302,7 @@
 						</div>
 					</div>
 				</section>
-				<!-- End Section What we do -->
-
-				<section>
-					<div class="overlay-arc overlay-3">
-						<div class="layer-1 text-center ">
-							<div class="box-content-overlay-3">
-								<h2 class=" wow fadeInDown" data-wow-delay=".15s">We aim for a society with active and responsible citizens capable<br> of making positive differences in their communities</h2>
-								<a href="action.php" class="ot-btn btn-dark-color btn-long text-cap wow fadeInUp2" data-wow-delay=".25s">Work with us</a>
-							</div>
-						</div>
-					</div>
-				</section>
-				<!-- End Section Overlay -->
+				-- End Section current projects -->
 
 				<section class="padding">
 					<div class="container">
@@ -350,6 +338,20 @@
 					</div>
 				</section>
 				<!-- End Section What we do -->
+
+
+				<section>
+					<div class="overlay-arc overlay-3">
+						<div class="layer-1 text-center ">
+							<div class="box-content-overlay-3">
+								<h2 class=" wow fadeInDown" data-wow-delay=".15s">We aim for a society with active and responsible citizens capable<br> of making positive differences in their communities</h2>
+								<a href="action.php" class="ot-btn btn-dark-color btn-long text-cap wow fadeInUp2" data-wow-delay=".25s">Work with us</a>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- End Section Overlay -->
+
 
 				<section class="padding bg-parallax section-dark-testimonials">
 					<div class="container">
