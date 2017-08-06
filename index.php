@@ -38,15 +38,15 @@
 			.loader:after {
 				content: "Welcome To";
 				position: absolute;
-				top: -50px;
-				left: -200px;
+				top: -60px;
+				left: -38px;
 				z-index: 99999;
-				font-size: 140px;
-				font-weight: 700;
+				font-size: 80px;
+				font-weight: 500;
 				color: #ebcd1e;
 				font-family: initial;
 				text-decoration: none;
-				width: 900px;
+				width: 800px;
 			}
 
 			.loader:after {
@@ -62,11 +62,11 @@
 			@media only screen and (max-width: 991px) {
 				/*welcome to*/
 				.loader:after {
-					top: -25px;
-					left: -60px;
-					font-size: 50px;
-					width: 460px;
-					font-weight: 400;
+					top: -40px;
+					left: -10px;
+					font-size: 35px;
+					width: 400px;
+					font-weight: 300;
 					margin: 0 auto;
 				}
 			}
@@ -505,7 +505,7 @@
 		            Royal_Preloader.config({
 		                mode:           'logo',
 		                logo:           'images/logo/loader.jpg',
-		                timeout:        5,
+		                timeout:        4,
 		                showInfo:       false,
 		                opacity:        1,
 		                background:     ['#FFFFFF']

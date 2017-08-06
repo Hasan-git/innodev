@@ -12,32 +12,42 @@
             <!-- End Title -->
             <div class="ourteamGrid-warp">
                 <div class="team-grid-item">
-                    <img src="http://placehold.it/780x780/ccc.jpg" class="img-responsive" alt="Image">
+                    <img src="images/board/Moussa-Bachir.jpg" class="img-responsive" alt="Image">
                     <div class="grid-team-overlay">
-                        <h5 class="text-cap">Ronald Long</h5>
-                        <p class="member-job">Creative Director</p>
+                        <h5 class="text-cap">Moussa Bachir</h5>
+                        <p class="member-job">President</p>
                         <p class="description-member">
-                            Sed malesuada aliquam aliquet. Etiam rutrum semper neque vitae elementum. Nullam tempor pulvinar nunc ac pretium. Quisque scelerisque vestibulum pulvinar. Praesent eros urna, ullamcorper ac suscipit eget, pulvinar sit amet ligula. Maecenas finibus dictum quam fringilla hendrerit. Curabitur tempor mauris non elit ullamcorper maximus. Phasellus faucibus libero eu enim tincidunt laoreet.
+
                         </p>
                     </div>
                 </div>
                 <div class="team-grid-item">
-                    <img src="http://placehold.it/780x780/ccc.jpg" class="img-responsive" alt="Image">
+                    <img src="images/board/Janine-Naufal.jpg" class="img-responsive" alt="Image">
                     <div class="grid-team-overlay">
-                        <h5 class="text-cap">Jennifer Aguila</h5>
-                        <p class="member-job">Lead Designer</p>
+                        <h5 class="text-cap">Janine Naufal</h5>
+                        <p class="member-job">Vice President</p>
                         <p class="description-member">
-                            Sed malesuada aliquam aliquet. Etiam rutrum semper neque vitae elementum. Nullam tempor pulvinar nunc ac pretium. Quisque scelerisque vestibulum pulvinar. Praesent eros urna, ullamcorper ac suscipit eget, pulvinar sit amet ligula. Maecenas finibus dictum quam fringilla hendrerit. Curabitur tempor mauris non elit ullamcorper maximus. Phasellus faucibus libero eu enim tincidunt laoreet.
+
                         </p>
                     </div>
                 </div>
                 <div class="team-grid-item">
-                    <img src="http://placehold.it/780x780/ccc.jpg" class="img-responsive" alt="Image">
+                    <img src="images/board/Lamis-Bannout.jpg" class="img-responsive" alt="Image">
                     <div class="grid-team-overlay">
-                        <h5 class="text-cap">Henry Hernandez</h5>
-                        <p class="member-job">Photograper</p>
+                        <h5 class="text-cap">Lamis Bannout</h5>
+                        <p class="member-job">Accountant</p>
                         <p class="description-member">
-                            Sed malesuada aliquam aliquet. Etiam rutrum semper neque vitae elementum. Nullam tempor pulvinar nunc ac pretium. Quisque scelerisque vestibulum pulvinar. Praesent eros urna, ullamcorper ac suscipit eget, pulvinar sit amet ligula. Maecenas finibus dictum quam fringilla hendrerit. Curabitur tempor mauris non elit ullamcorper maximus. Phasellus faucibus libero eu enim tincidunt laoreet.
+
+                        </p>
+                    </div>
+                </div>
+                <div class="team-grid-item">
+                    <img src="http://placehold.it/780x1085/ccc.jpg" class="img-responsive" alt="Image">
+                    <div class="grid-team-overlay">
+                        <h5 class="text-cap">Norma Kanj</h5>
+                        <p class="member-job">Secretary & Treasurer</p>
+                        <p class="description-member">
+
                         </p>
                     </div>
                 </div>
@@ -68,11 +78,11 @@
                     <div class="item">
                         <div class="item-team">
                             <div class="portrait-member">
-                                <img src="http://placehold.it/780x780/ccc.jpg" class="img-responsive" alt="Image">
+                                <img src="images/team/Layal-Nehme.jpg" class="img-responsive" alt="Image">
                             </div>
                             <div class="member-info text-center hvr-float-shadow">
-                                <h5 class="text-cap">Layal Nehmeh</h5>
-                                <p class="member-job">General Manager</p>
+                                <h5 class="text-cap">Layal Nehme</h5>
+                                <p class="member-job">Executive Director</p>
                                 <div class="social-member">
 
                                 </div>
@@ -83,11 +93,11 @@
                     <div class="item">
                         <div class="item-team">
                             <div class="portrait-member">
-                                <img src="http://placehold.it/780x780/ccc.jpg" class="img-responsive" alt="Image">
+                                <img src="images/team/Lama-Ghaddar.jpg" class="img-responsive" alt="Image">
                             </div>
                             <div class="member-info text-center hvr-float-shadow">
-                                <h5 class="text-cap">Alaa Bachir</h5>
-                                <p class="member-job">Social Media Coordinator</p>
+                                <h5 class="text-cap">Lama Ghaddar</h5>
+                                <p class="member-job">Program Manager</p>
                                 <div class="social-member">
 
                                 </div>
@@ -97,7 +107,21 @@
                     <div class="item">
                         <div class="item-team">
                             <div class="portrait-member">
-                                <img src="http://placehold.it/780x780/ccc.jpg" class="img-responsive" alt="Image">
+                                <img src="images/team/Suzanne-Fayad.jpg" class="img-responsive" alt="Image">
+                            </div>
+                            <div class="member-info text-center hvr-float-shadow">
+                                <h5 class="text-cap">Suzanne Fayad</h5>
+                                <p class="member-job">HR & Admin Officer</p>
+                                <div class="social-member">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- end item -->
+                    <div class="item">
+                        <div class="item-team">
+                            <div class="portrait-member">
+                                <img src="images/team/Alaa-Bachir.jpg" class="img-responsive" alt="Image">
                             </div>
                             <div class="member-info text-center hvr-float-shadow">
                                 <h5 class="text-cap">Alaa Bachir</h5>
@@ -111,45 +135,18 @@
                     <div class="item">
                         <div class="item-team">
                             <div class="portrait-member">
-                                <img src="http://placehold.it/780x780/ccc.jpg" class="img-responsive" alt="Image">
+                                <img src="images/team/Tharwa-Zeitoun.jpg" class="img-responsive" alt="Image">
                             </div>
                             <div class="member-info text-center hvr-float-shadow">
-                                <h5 class="text-cap">Alaa Bachir</h5>
-                                <p class="member-job">Photographer</p>
+                                <h5 class="text-cap">Tharwa Zeitoun</h5>
+                                <p class="member-job">Project Coordinator</p>
                                 <div class="social-member">
 
                                 </div>
                             </div>
                         </div>
                     </div><!-- end item -->
-                    <div class="item">
-                        <div class="item-team">
-                            <div class="portrait-member">
-                                <img src="http://placehold.it/780x780/ccc.jpg" class="img-responsive" alt="Image">
-                            </div>
-                            <div class="member-info text-center hvr-float-shadow">
-                                <h5 class="text-cap">Alaa Bachir</h5>
-                                <p class="member-job">IT assistant</p>
-                                <div class="social-member">
 
-                                </div>
-                            </div>
-                        </div>
-                    </div><!-- end item -->
-                    <div class="item">
-                        <div class="item-team">
-                            <div class="portrait-member">
-                                <img src="http://placehold.it/780x780/ccc.jpg" class="img-responsive" alt="Image">
-                            </div>
-                            <div class="member-info text-center hvr-float-shadow">
-                                <h5 class="text-cap">Alaa Bachir</h5>
-                                <p class="member-job">Web Management</p>
-                                <div class="social-member">
-
-                                </div>
-                            </div>
-                        </div>
-                    </div><!-- end item -->
                 </div>
             </div>
         </div>
