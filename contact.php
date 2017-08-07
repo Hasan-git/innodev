@@ -77,7 +77,8 @@
 								<div class="right-contact">
 									<h3 class="text-cap">Contact Info</h3>
 									<ul class="address">
-										<li><p><i class="fa fa-home" aria-hidden="true"></i>&nbsp;&nbsp; 7th floor, Hamra St, Beirut, Lebanon</p></li>
+										<li><p><i class="fa fa-home" aria-hidden="true"></i>
+												&nbsp;&nbsp; 6th Flr, Rbeiz Bld. Omar Ben Abdel Aziz St. Hamra, Beirut</p></li>
 										<li><p><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;&nbsp; +961 1 746236</p></li>
 										<li><p><i class="fa fa-fax" aria-hidden="true"></i> &nbsp; +961 1 746236</p></li>
 										<li><p><i class="fa fa-envelope-o" aria-hidden="true"></i>&nbsp;&nbsp; info@innodevlb.org</p></li>

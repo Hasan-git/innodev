@@ -272,7 +272,7 @@
 					<div class="container">
 						<div class="row">
 							<div class="title-block">
-								<h2 class="title text-cap">Current Projects</h2>
+								<h2 class="title text-cap">Current Programs</h2>
 								<div class="divider divider-1">
 									<svg class="svg-triangle-icon-container">
 										<polygon class="svg-triangle-icon" points="6 11,12 0,0 0"></polygon>

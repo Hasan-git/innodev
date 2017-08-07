@@ -9,7 +9,7 @@
                 <a class="text-cap" href="about.php">About</a>
             </li>
             <li>
-                <a class="text-cap" href="projects.php">Projects</a>
+                <a class="text-cap" href="projects.php">Programs</a>
             </li>
             <li>
                 <a class="text-cap" href="news.php">News</a>

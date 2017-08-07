@@ -6,7 +6,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<title>INNODEV - Projects</title>
+		<title>INNODEV - Programs</title>
 
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="css/bootstrap.min.css">
@@ -33,12 +33,12 @@
 			<section>
 				<div class="sub-header sub-header-1 sub-header-our-services fake-position">
 					<div class="sub-header-content">
-						<h2 class="text-cap white-text">Our Projects</h2>
+						<h2 class="text-cap white-text">Our Programs</h2>
 						<ol class="breadcrumb breadcrumb-arc text-cap">
 							<li>
 								<a href="#">Home</a>
 							</li>
-							<li class="active">Projects</li>
+							<li class="active">Programs</li>
 						</ol>
 					</div>
 				</div>
@@ -60,11 +60,11 @@
 								<div class="col-md-4">
 									<table class="table">
 										<tr>
-											<th>Project Name:</th>
+											<th>Program Title:</th>
 											<td id="projectName"></td>
 										</tr>
 										<tr>
-											<th>Project Target:</th>
+											<th>Program Target:</th>
 											<td id="target"></td>
 										</tr>
 										<tr>
@@ -87,7 +87,7 @@
 									<p id="description">
 
 									</p>
-									<a class="ot-btn btn-main-color text-cap mgb0" id="newsLink" href="news.php">View Project News</a>
+									<a class="ot-btn btn-main-color text-cap mgb0" id="newsLink" href="news.php">View Program News</a>
 								</div>
 							</div>
 						</div>
