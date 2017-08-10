@@ -20,7 +20,7 @@ jQuery(document).ready(function() {
         if (!data.data.length) {
               $('.records_article').children().remove()
               $('.records_article_paginaton').children().remove()
-              $('.records_article').append('<div class="alert alert-info" style="min-width: 331px;"><i class="fa fa-briefcase"></i>  NO NEWS FOUND </div>');
+              $('.records_article').append('<div class="alert alert-info" style="min-width: 331px;"><i class="fa fa-briefcase"></i>  NO PROJECTS FOUND </div>');
               return;
             }
 
