@@ -57,7 +57,7 @@
 						<div class="row">
 							<div class="about-intro">
 								<div class="about-intro-img">
-									<img src="http://placehold.it/570x570/ccc.jpg" class="img-responsive" alt="Image">
+									<img src="images\logo\innodev-logo.jpg" class="img-responsive" alt="Image">
 								</div>
 								<div class="about-intro-text">
 									<h2 class="text-cap">About Us</h2>

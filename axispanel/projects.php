@@ -122,11 +122,11 @@
                                             <div class="form-group admin-form">
 
                                                 <div class="col-sm-3">
-                                                    <label class="control-label">Starting Date*</label>
+                                                    <label class="control-label">Starting Date</label>
                                                     <input  type="date" name="startDate" id="startDate" class="form-control">
                                                 </div>
                                                 <div class="col-sm-3">
-                                                    <label class="control-label">End Date*</label>
+                                                    <label class="control-label">End Date</label>
                                                     <input  type="date" name="endDate" id="endDate" class="form-control">
                                                 </div>
 
@@ -199,11 +199,11 @@
                                             <div class="form-group admin-form">
 
                                                 <div class="col-sm-3">
-                                                    <label class="control-label">Starting Date*</label>
+                                                    <label class="control-label">Starting Date</label>
                                                     <input type="date" name="startDate" id="startDate" class="form-control" placeholder="Date..." >
                                                 </div>
                                                 <div class="col-sm-3">
-                                                    <label class="control-label">End Date*</label>
+                                                    <label class="control-label">End Date</label>
                                                     <input type="date" name="endDate" id="endDate" class="form-control" placeholder="Date..." >
                                                 </div>
 
