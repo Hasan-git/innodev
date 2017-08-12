@@ -42,7 +42,7 @@
                     </div>
                 </div>
                 <div class="team-grid-item">
-                    <img src="http://placehold.it/780x1085/ccc.jpg" class="img-responsive" alt="Image">
+                    <img src="images/board/Norma-Kanj.jpg" class="img-responsive" alt="Image">
                     <div class="grid-team-overlay">
                         <h5 class="text-cap">Norma Kanj</h5>
                         <p class="member-job">Secretary & Treasurer</p>
@@ -175,39 +175,32 @@
                 <div id="owl-testimonials-2-columns" class="owl-carousel owl-theme clearfix">
                     <div class="item item-testimonials text-left">
                         <p class="quote-icon">“</p>
-                        <p><i>Some Text Here Some Text Here Some Text Here Some Text HereSome Text HereSome Text Here Some Text HereSome Text HereSome Text Here Some Text Here Some Text Here Some Text Here Some Text HereSome Text HereSome Text Here Some Text HereSome Text HereSome Text Here</i></p>
+                        <p><i>Youth is happy because it has the ability to see beauty. Anyone who keeps the ability to see beauty never grows old. </i></p>
                         <div class="avatar-testimonials">
-                            <img src="http://placehold.it/262x262/ccc.jpg" class="img-responsive" alt="Image">
+                            <img src="images/people/Franz-Kafka.jpg" class="img-responsive" alt="Image">
                         </div>
-                        <h4 class="name-testimonials text-cap">Mhmd Ezzedien</h4>
-                        <span class="job-testimonials">Web Developer AxisMEA</span>
+                        <h4 class="name-testimonials text-cap">Franz Kafka</h4>
+                        <span class="job-testimonials"></span>
                     </div><!-- end item -->
+
                     <div class="item item-testimonials text-left">
                         <p class="quote-icon">“</p>
-                        <p><i>Some Text Here Some Text Here Some Text Here Some Text HereSome Text HereSome Text Here Some Text HereSome Text HereSome Text HereSome Text Here Some Text Here Some Text Here Some Text HereSome Text HereSome Text Here Some Text HereSome Text HereSome Text Here</i></p>
+                        <p><i>In youth we learn; in age we understand.</i></p>
                         <div class="avatar-testimonials">
-                            <img src="http://placehold.it/256x256/ccc.jpg" class="img-responsive" alt="Image">
+                            <img src="images/people/Marie-von-Ebner-Eschenbach.jpg" class="img-responsive" alt="Image">
                         </div>
-                        <h4 class="name-testimonials text-cap">Alaa Bachir</h4>
-                        <span class="job-testimonials">Photographer</span>
+                        <h4 class="name-testimonials text-cap">Marie von Ebner-Eschenbach</h4>
+                        <span class="job-testimonials"></span>
                     </div><!-- end item -->
+
                     <div class="item item-testimonials text-left">
                         <p class="quote-icon">“</p>
-                        <p><i>Some Text Here Some Text Here Some Text Here Some Text HereSome Text HereSome Text Here Some Text HereSome Text HereSome Text Here Some Text Here Some Text Here Some Text Here Some Text HereSome Text HereSome Text Here Some Text HereSome Text HereSome Text Here</i></p>
+                        <p><i>The youth is the hope of our future.</i></p>
                         <div class="avatar-testimonials">
-                            <img src="http://placehold.it/225x225/ccc.jpg" class="img-responsive" alt="Image">
+                            <img src="images/people/Jose-Rizal.jpg" class="img-responsive" alt="Image">
                         </div>
-                        <h4 class="name-testimonials text-cap">Layal Nehmeh</h4>
-                        <span class="job-testimonials"> Manager</span>
-                    </div><!-- end item -->
-                    <div class="item item-testimonials text-left">
-                        <p class="quote-icon">“</p>
-                        <p><i>Some Text Here Some Text Here Some Text Here Some Text HereSome Text HereSome Text Here Some Text HereSome Text HereSome Text Here Some Text Here Some Text Here Some Text Here Some Text HereSome Text HereSome Text Here Some Text HereSome Text HereSome Text Here</i></p>
-                        <div class="avatar-testimonials">
-                            <img src="http://placehold.it/240x240/ccc.jpg" class="img-responsive" alt="Image">
-                        </div>
-                        <h4 class="name-testimonials text-cap">Sali Oun</h4>
-                        <span class="job-testimonials">School Manager</span>
+                        <h4 class="name-testimonials text-cap">Jose Rizal</h4>
+                        <span class="job-testimonials"></span>
                     </div><!-- end item -->
 
                 </div>
