@@ -1,11 +1,6 @@
     jQuery(document).ready(function() {
 
       "use strict";
-      var urlPath   = "php/news/";
-
-
-
-    //////////////////////////////////////
 
     var news,_data;
     if( $.urlParam('id')  ){
@@ -14,7 +9,7 @@
       }
     }
     $.ajax({
-      url: urlPath + 'get.php',
+      url: 'php/news/get.php',
       method:'GET',
       dataType:'json',
       data: _data,
@@ -56,7 +51,7 @@
       initArchive: function(){
 
         $.ajax({
-          url: urlPath + 'date.php',
+          url: 'php/news/date.php',
           method:'GET',
           dataType:'json',
           success:function(response){

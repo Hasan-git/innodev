@@ -48,7 +48,7 @@
           "showMethod": "fadeIn",
           "hideMethod": "fadeOut"
         }
-    //VALIDATION CONFIGURATION    
+    //VALIDATION CONFIGURATION
     var conf = $.formUtils.defaultConfig();
     conf.language = 'en';
     conf.modules =  'security, date';
@@ -59,8 +59,6 @@
         language:   conf.language,
         modules:    conf.modules
     });
-
-    var urlPath   = "php/news/";
 
     $(".select2-single").select2();
 
@@ -75,7 +73,7 @@
 
     //Get all records
     $.ajax({
-        url: urlPath + 'get.php',
+        url: 'php/news/get.php',
         method:'GET',
         dataType:'json',
         success:function(data){
@@ -107,9 +105,9 @@
                         },
                     }
                 ]
-            })     
+            })
         // Add Placeholder text to datatables filter bar
-        $('.dataTables_filter input').attr("placeholder", "Enter Terms...");                  
+        $('.dataTables_filter input').attr("placeholder", "Enter Terms...");
         }
     })
 
@@ -134,18 +132,18 @@
 
 
         $('#editFormContainer').show(700);
-        
-        //var product = JSON.parse($(this).attr('record-id')) 
+
+        //var product = JSON.parse($(this).attr('record-id'))
         var mainRecord = $(this).attr('data-record');
         mainRecord = JSON.parse(mainRecord);
-       
+
        console.log(mainRecord)
         //INIT
         // services.getProjectNamesEditForm(mainRecord.prdetailsName)
         // services.getProjectTypesEditForm(mainRecord.prdetailsType)
 
         var datatableRow = $(this).attr('data-row');
-        
+
         //set datatable row in data-row attr to for saveEditForm(Save button) to have the access for datatable row
         $('#editFormContainer').find('#saveEditForm').attr("data-row",datatableRow)
         // $('#editFormContainer').find('#nfBoxName').html(datatableRow)
@@ -167,13 +165,13 @@
 
                 var fd = new FormData(document.getElementById("editForm"));
                 $.ajax({
-                    url: urlPath + 'update.php',
+                    url: 'php/news/update.php',
                     method:'POST',
                     data: fd,
                     processData: false, // tell jQuery not to process the data
                     contentType: false, // tell jQuery not to set contentType
-                    success:function(data){ 
-                    // Serialize the form to Json 
+                    success:function(data){
+                    // Serialize the form to Json
                     var localRecord = $('#editForm').serializeFormJSON()
 
                     var response = JSON.parse(data)
@@ -201,7 +199,7 @@
                        }
                     }
             });
-            
+
            }
 
     });
@@ -228,10 +226,10 @@
         $('#newFormContainer').hide(700);
     });
 
-        
+
     //CREATE NEW brand IN PROCESS
     $('#saveNewForm').click(function(){
-            
+
             var frm = $('#newform').serializeFormJSON();
             // console.log(frm.prdetailsType)
            if( !$('#newform').isValid(conf.language, conf, true) ) {
@@ -243,18 +241,18 @@
 
 
             $.ajax({
-                url: urlPath + 'post.php',
+                url: 'php/news/post.php',
                 method:'POST',
                 data: fd,
                 processData: false, // tell jQuery not to process the data
                 contentType: false, // tell jQuery not to set contentType
-                success:function(data){ 
+                success:function(data){
 
                     var _newRecord = JSON.parse(data);
 
                     // if(_newRecord.prdetailsType == typeParam){
                         // _newRecord.new = _newRecord.new==1 ? true : false;
-                        var myDataTable= $('#datatable3').DataTable();                        
+                        var myDataTable= $('#datatable3').DataTable();
                         myDataTable.row.add(_newRecord ).draw( false )
                     // }
 
@@ -268,7 +266,7 @@
                             toastr.error("Something went wrong", 'Notification', {timeOut: 5000})
                        }
                 }
-            });    
+            });
            }
     });
 
@@ -281,23 +279,23 @@
         var thisDeleteBtn = $(this);
         var RecordId = $(this).attr('record-id');
         var inst = $('[data-remodal-id=modal]').remodal();
-                
+
         inst.open();
 
         $(document).on('confirmation', '.remodal', function () {
-            
+
             $.ajax({
-                    url: urlPath + 'delete.php',
+                    url: 'php/news/delete.php',
                     method:'POST',
                     data: {Id:RecordId},
-                    success:function(data){ 
+                    success:function(data){
 
                     //get the dt instance
                     var myDataTable= $('#datatable3').DataTable();
 
                     // get / set dt row
                     var row = myDataTable.row($(thisDeleteBtn).parents('tr')).remove().draw();;
-                    
+
                     inst.close();
                     toastr.success('Record deleted successfully', 'Notification', {timeOut: 5000})
                     } ,

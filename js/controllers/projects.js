@@ -1,9 +1,7 @@
 jQuery(document).ready(function() {
 
   "use strict";
-  var urlPath = "php/projects/";
 
-    //////////////////////////////////////
 
     var records,fullRecords;
 
@@ -11,8 +9,10 @@ jQuery(document).ready(function() {
     var records_per_page = 1;
     var articleHtml = $( ".records_article" ).first().clone();
 
+    //////////////////////////////////////
+
     $.ajax({
-      url: urlPath + 'get.php',
+      url: 'php/projects/get.php',
       method: 'GET',
       dataType: 'json',
       success: function(data) {

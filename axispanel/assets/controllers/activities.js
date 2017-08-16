@@ -68,7 +68,6 @@
             modules: conf.modules
         });
 
-        var urlPath = "php/activities/";
 
         $(".select2-single").select2();
 
@@ -146,7 +145,7 @@
 
         //Get all records
         $.ajax({
-            url: urlPath + 'get.php',
+            url: 'php/activities/get.php',
             method: 'GET',
             dataType: 'json',
             success: function(data) {
@@ -273,7 +272,7 @@
 
                 var fd = new FormData(document.getElementById("editForm"));
                 $.ajax({
-                    url: urlPath + 'update.php',
+                    url: 'php/activities/update.php',
                     method: 'POST',
                     data: fd,
                     processData: false, // tell jQuery not to process the data
@@ -593,7 +592,7 @@
 
 
                 $.ajax({
-                    url: urlPath + 'post.php',
+                    url: 'php/activities/post.php',
                     method: 'POST',
                     data: fd,
                     processData: false, // tell jQuery not to process the data
@@ -772,7 +771,7 @@
             $(document).on('confirmation', '.remodal', function() {
 
                 $.ajax({
-                    url: urlPath + 'delete.php',
+                    url: 'php/activities/delete.php',
                     method: 'POST',
                     data: {
                         Id: RecordId
