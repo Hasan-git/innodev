@@ -104,7 +104,7 @@
                                             <div class="form-group admin-form">
                                                 <div class="col-sm-12">
                                                     <label class="control-label">News Content*</label>
-                                                    <textarea data-validation="required" name="text" id="text" class="form-control textarea-grow" rows="4" placeholder="Your content..." required></textarea>
+                                                    <textarea data-validation="required" name="text" id="text" class="form-control textarea-grow" rows="8" placeholder="Your content..." required></textarea>
                                                 </div>
                                             </div>
                                             <div class="form-group admin-form">
@@ -163,7 +163,7 @@
                                             <div class="form-group admin-form">
                                                 <div class="col-sm-12">
                                                     <label class="control-label">News Content*</label>
-                                                    <textarea data-validation="required" name="text" id="text" class="form-control textarea-grow" rows="4" placeholder="Your content ..." required></textarea>
+                                                    <textarea data-validation="required" name="text" id="text" class="form-control textarea-grow" rows="8" placeholder="Your content ..." required></textarea>
                                                 </div>
                                             </div>
                                             <div class="form-group admin-form">

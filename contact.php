@@ -66,7 +66,7 @@
 										</div>
 										<div class="input-content">
 											<div class="form-group form-textarea">
-												<textarea id="textarea" class="form-control" name="comments" rows="6" placeholder="Your Messages" ></textarea>
+												<textarea id="textarea" class="form-control" name="comments" rows="6" placeholder="Your Message" ></textarea>
 											</div>
 										</div>
 										<button  class="ot-btn btn-main-color btn-long text-cap btn-submit" type="submit" >Send Mail</button>

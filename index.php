@@ -6,6 +6,12 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
+		<meta name="author" content="INNODEV">
+		<meta name="keywords" content="innodev, society, citizens, communities, youth in creative, innovative, productive, sustainable activities, activities, potentials, involved citizens" />
+
+		<meta property="og:image" content="http://www.innodevlb.org/assets/ico/144.png" />
+		<meta property="og:description" content="INNODEV engages youth in creative, innovative, productive and sustainable activities and programs, which allow them to realize their potentials and become involved citizens and agents of change in their communities." />
+
 		<title>INNODEV - HomePage</title>
 
 		<!-- Bootstrap CSS -->
@@ -100,9 +106,9 @@
 									 data-x="center"
 									 data-y="bottom"
 									 data-transform_in="y:80px;opacity:0;s:800;e:easeInOutCubic;"
-				 					 data-transform_out="y:80px;opacity:0;s:300;"
+									 data-transform_out="y:80px;opacity:0;s:300;"
 									 data-start="1400"
-									><b style="background-color: rgba(0,0,0,0.4);" >Youth in Creative</b>
+								><b style="background-color: rgba(0,0,0,0.4);" >Art & Culture</b>
 								</div>
 							</li>
 							<li data-transition="parallaxtoright" data-masterspeed="1000" >
@@ -117,7 +123,7 @@
 									 data-transform_in="y:80px;opacity:0;s:800;e:easeInOutCubic;"
 									 data-transform_out="y:80px;opacity:0;s:300;"
 									 data-start="1400"
-									><b style="background-color: rgba(0,0,0,0.4);" >Innovative & Productive</b>
+								><b style="background-color: rgba(0,0,0,0.4);" >Youth Empowerment</b>
 								</div>
 							</li>
 							<!-- SLIDE  -->
@@ -133,10 +139,41 @@
 									 data-transform_in="y:80px;opacity:0;s:800;e:easeInOutCubic;"
 									 data-transform_out="y:80px;opacity:0;s:300;"
 									 data-start="1400"
-									><b style="background-color: rgba(0,0,0,0.4);" >Activities & Programs</b>
+								><b style="background-color: rgba(0,0,0,0.4);" >School Awareness</b>
 								</div>
 							</li>
+							<!-- SLIDE  -->
+							<li data-transition="parallaxtoright" data-masterspeed="1000" >
 
+								<!-- MAIN IMAGE -->
+								<img src="images/slider/4.jpg"  alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10">
+
+								<!-- LAYER NR. 2 -->
+								<div class="tp-caption heading-2 white-text text-cap "
+									 data-x="center"
+									 data-y="bottom"
+									 data-transform_in="y:80px;opacity:0;s:800;e:easeInOutCubic;"
+									 data-transform_out="y:80px;opacity:0;s:300;"
+									 data-start="1400"
+								><b style="background-color: rgba(0,0,0,0.4);" >Reduce, Reuse, Recycle</b>
+								</div>
+							</li>
+							<!-- SLIDE  -->
+							<li data-transition="parallaxtoright" data-masterspeed="1000" >
+
+								<!-- MAIN IMAGE -->
+								<img src="images/slider/5.jpg"  alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10">
+
+								<!-- LAYER NR. 2 -->
+								<div class="tp-caption heading-2 white-text text-cap "
+									 data-x="center"
+									 data-y="bottom"
+									 data-transform_in="y:80px;opacity:0;s:800;e:easeInOutCubic;"
+									 data-transform_out="y:80px;opacity:0;s:300;"
+									 data-start="1400"
+								><b style="background-color: rgba(0,0,0,0.4);" >Environmental Awareness</b>
+								</div>
+							</li>
 						</ul>
 					</div><!-- END REVOLUTION SLIDER -->
 					</div><!-- END REVOLUTION SLIDER WRAPPER -->
@@ -167,7 +204,7 @@
 							<div class="about-us-info">
 								<div class="col-md-4">
 									<div class="about-info-item">
-										<span class="counter color1">10</span>
+										<span class="counter color1">3</span>
 										<h5 class="text-cap"><b>Years of experience</b></h5>
 									</div>
 								</div>
@@ -212,21 +249,21 @@
 								</div>
 								<div class="col-md-3   wow fadeInRight" data-wow-delay=".35s">
 									<div class="process-2-item">
-										<span class="order order2">02</span><h4 class="text-cap"> - Concept</h4>
+										<span class="order order2">02</span><h4 class="text-cap"> - Women</h4>
 										<p>INNODEV believes in transparency, accountability, empowerment, equality, partnership,
 											networking and nondiscrimination.</p>
 									</div>
 								</div>
 								<div class="col-md-3   wow fadeInRight" data-wow-delay="0.45s">
 									<div class="process-2-item">
-										<span class="order order3">03</span><h4 class="text-cap"> - Professional</h4>
+										<span class="order order3">03</span><h4 class="text-cap"> - Environment</h4>
 										<p>INNODEV provides professional expertise to people with passion to make a positive
 											change in their communities.</p>
 									</div>
 								</div>
 								<div class="col-md-3   wow fadeInRight" data-wow-delay=".55s">
 									<div class="process-2-item">
-										<span class="order order4">04</span><h4 class="text-cap"> - Students</h4>
+										<span class="order order4">04</span><h4 class="text-cap"> - Art & Culture</h4>
 										<p>INNODEV is keen on raising awareness and concern among Lebanese on environmental
 											challenges and understanding on waste problems.</p>
 									</div>
@@ -242,7 +279,7 @@
 						<figure class="promotion-box-dark box-pro-4">
 							<div class="box-dark-content">
 								<span class="lnr lnr-layers icon-promotion"></span>
-								<h3 class="text-cap">Creativ Life</h3>
+								<h3 class="text-cap">Creative Life</h3>
 							</div>
 						</figure>
 						<figure class="promotion-box-dark box-pro-1">
@@ -325,10 +362,10 @@
 										<a class="img-block"><img id="image" src="http://placehold.it/1140x640/ccc.jpg" class="img-responsive" alt="Image"></a>
 										<div class="text-box">
 											<h4 class="text-cap" id="title"></h4>
-											<p id="text">
+											<p id="text" class="three_lines" style="text-space: 400; text-after-overflow: ...">
 											</p>
 										</div>
-										<a class="ot-btn btn-main-color text-cap" id="newsDetailLink" href="newsdetail.php">Read more</a>
+										<a class="ot-btn btn-main-color text-cap" id="newsDetailLink" href="newsdetail.php" target="_blank">Read more</a>
 									</div>
 								</div>
 								<!-- End Col -->
@@ -372,41 +409,35 @@
 								</div>
 
 								<div id="owl-testimonials-2-columns" class="owl-carousel owl-theme clearfix">
+
 									<div class="item item-testimonials text-left">
 										<p class="quote-icon">“</p>
-										<p><i>Some Text Here Some Text Here Some Text Here Some Text HereSome Text HereSome Text Here Some Text HereSome Text HereSome Text Here Some Text Here Some Text Here Some Text Here Some Text HereSome Text HereSome Text Here Some Text HereSome Text HereSome Text Here</i></p>
+										<p><i>Youth is happy because it has the ability to see beauty. Anyone who keeps the ability to see beauty never grows old. </i></p>
 										<div class="avatar-testimonials">
-											<img src="http://placehold.it/262x262/ccc.jpg" class="img-responsive" alt="Image">
+											<img src="images/people/Franz-Kafka.jpg" class="img-responsive" alt="Image">
 										</div>
-										<h4 class="name-testimonials text-cap">Mhmd Ezzedien</h4>
-										<span class="job-testimonials">Web Developer AxisMEA</span>
+										<h4 class="name-testimonials text-cap">Franz Kafka</h4>
+										<span class="job-testimonials"></span>
 									</div><!-- end item -->
+
 									<div class="item item-testimonials text-left">
 										<p class="quote-icon">“</p>
-										<p><i>Some Text Here Some Text Here Some Text Here Some Text HereSome Text HereSome Text Here Some Text HereSome Text HereSome Text HereSome Text Here Some Text Here Some Text Here Some Text HereSome Text HereSome Text Here Some Text HereSome Text HereSome Text Here</i></p>
+										<p><i>In youth we learn; in age we understand.</i></p>
 										<div class="avatar-testimonials">
-											<img src="http://placehold.it/256x256/ccc.jpg" class="img-responsive" alt="Image">
+											<img src="images/people/Marie-von-Ebner-Eschenbach.jpg" class="img-responsive" alt="Image">
 										</div>
-										<h4 class="name-testimonials text-cap">Alaa Bachir</h4>
-										<span class="job-testimonials">Photographer</span>
+										<h4 class="name-testimonials text-cap">Marie von Ebner-Eschenbach</h4>
+										<span class="job-testimonials"></span>
 									</div><!-- end item -->
+
 									<div class="item item-testimonials text-left">
 										<p class="quote-icon">“</p>
-										<p><i>Some Text Here Some Text Here Some Text Here Some Text HereSome Text HereSome Text Here Some Text HereSome Text HereSome Text Here Some Text Here Some Text Here Some Text Here Some Text HereSome Text HereSome Text Here Some Text HereSome Text HereSome Text Here</i></p>
+										<p><i>The youth is the hope of our future.</i></p>
 										<div class="avatar-testimonials">
-											<img src="http://placehold.it/225x225/ccc.jpg" class="img-responsive" alt="Image">
+											<img src="images/people/Jose-Rizal.jpg" class="img-responsive" alt="Image">
 										</div>
-										<h4 class="name-testimonials text-cap">Layal Nehmeh</h4>
-										<span class="job-testimonials"> Manager</span>
-									</div><!-- end item -->
-									<div class="item item-testimonials text-left">
-										<p class="quote-icon">“</p>
-										<p><i>Some Text Here Some Text Here Some Text Here Some Text HereSome Text HereSome Text Here Some Text HereSome Text HereSome Text Here Some Text Here Some Text Here Some Text Here Some Text HereSome Text HereSome Text Here Some Text HereSome Text HereSome Text Here</i></p>
-										<div class="avatar-testimonials">
-											<img src="http://placehold.it/240x240/ccc.jpg" class="img-responsive" alt="Image">
-										</div>
-										<h4 class="name-testimonials text-cap">Sali Oun</h4>
-										<span class="job-testimonials">School Manager</span>
+										<h4 class="name-testimonials text-cap">Jose Rizal</h4>
+										<span class="job-testimonials"></span>
 									</div><!-- end item -->
 
 								</div>
@@ -431,14 +462,14 @@
 							<div class="form-subcribe">
 
 								<p class="text-center">Find out early about all upcoming Events and Activities releases with our newsletter.</p>
-								<form  method="post">
-									<input class="newsletter-email input-text" placeholder="email@example.com" type="email">
+								<form method="post" action="sendmail.php">
+									<input name="email" class="newsletter-email input-text" placeholder="email@example.com" type="email">
 									<button class="ot-btn btn-main-color text-cap" type="submit">Subscribe</button>
 								</form>
 							</div>
 						</div>
 					</div>
-				</section>
+			</section>
 				<!-- End Section subcribe -->
 
 				<?php include_once('includes/footer.php'); ?>
@@ -451,7 +482,9 @@
 
 
 		<!-- SCRIPT -->
-	    <script src="js/vendor/jquery.min.js"></script>
+
+		<script src="js/vendor/script.js"></script>
+		<script src="js/vendor/jquery.min.js"></script>
 	    <script src="js/vendor/bootstrap.min.js"></script>
 		<script src="js/plugins/jquery.waypoints.min.js"></script>
 	    <script src="js/plugins/jquery.mCustomScrollbar.concat.min.js"></script>

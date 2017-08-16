@@ -40,7 +40,7 @@
         <section>
             <div class="sub-header sub-header-1 sub-header-about fake-position">
                 <div class="sub-header-content">
-                    <h2 class="text-cap white-text">Take an Action</h2>
+                    <h2 class="text-cap white-text">Take Action</h2>
                     <ol class="breadcrumb breadcrumb-arc text-cap">
                         <li>
                             <a href="index.php">Home</a>
@@ -57,21 +57,25 @@
                 <div class="row">
                     <div class="about-intro">
                         <div class="col-lg-8">
-                            <h2>Still Under Construction...</h2>
+                            <h2>Join Our Team</h2>
                             <form class="form-contact-arc padding-bot-30" name="contact" method="post" action="send_form_email.php">
                                 <div class="row">
-                                    <div class="form-group col-sm-12">
-                                        <input class="form-control" name="yourName" id="yourName" placeholder="Your Name" type="text">
-                                    </div>
                                     <div class="form-group col-sm-12 ">
-                                        <input class="form-control" name="yourEmail" id="yourEmail" placeholder="Your Email" type="email">
+                                        <input type="text" class="form-control" name="yourName" id="yourName" placeholder="Your Name">
                                     </div>
                                     <div class="form-group col-sm-12">
-                                        <input class="form-control" name="yourPhone" id="phoneNumber" placeholder="Phone Number" type="text">
+                                        <input type="email" class="form-control" name="yourEmail" id="yourEmail" placeholder="Your Email" >
+                                    </div>
+                                    <div class="form-group col-sm-12">
+                                        <input type="text" class="form-control" name="yourPhone" id="phoneNumber" placeholder="Phone Number" >
                                     </div>
                                 </div>
-
-                                <button class="ot-btn btn-long btn-main-color btn-submit" type="submit">Sign Up</button>
+                                <div class="input-content">
+                                    <div class="form-group form-textarea">
+                                        <textarea id="textarea" class="form-control" name="comments" rows="6" placeholder="Your Message" ></textarea>
+                                    </div>
+                                </div>
+                                <button  class="ot-btn btn-main-color btn-long text-cap btn-submit" type="submit" >Send Email</button>
                             </form> <!-- End Form -->
                         </div>
                     </div>

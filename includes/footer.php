@@ -29,10 +29,13 @@
     <!-- End Nav Footer -->
     <div class="footer-right">
         <ul class="social social-footer">
-            <li class="facebook active"><a href="#"><i class="fa fa-facebook"></i></a></li>
-            <li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
-            <li class="google-plus"><a href="#"><i class="fa fa-instagram"></i></a></li>
-            <li class="youtube"><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+            <li class="facebook active"><a href="https://www.facebook.com/innodevlb.org/" target="_blank">
+                    <i class="fa fa-facebook"></i></a></li>
+            <li class="twitter"><a href="https://twitter.com/innodevlb" target="_blank">
+                    <i class="fa fa-twitter"></i></a></li>
+            <li class="instagram"><a href="https://www.instagram.com/innodevlb/" target="_blank">
+                    <i class="fa fa-instagram"></i></a></li>
+            <!-- <li class="youtube"><a href="#"><i class="fa fa-youtube-play"></i></a></li>-->
         </ul>
     </div>
     <!-- End Right Footer -->

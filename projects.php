@@ -63,22 +63,22 @@
 											<th>Program Title:</th>
 											<td id="projectName"></td>
 										</tr>
-										<tr>
-											<th>Program Target:</th>
-											<td id="target"></td>
-										</tr>
-										<tr>
-											<th>Doner Name:</th>
-											<td id="doner"></td>
-										</tr>
-										<tr>
-											<th>Start Date:</th>
-											<td id="startDate"></td>
-										</tr>
-										<tr>
-											<th>End Date:</th>
-											<td id="endDate"></td>
-										</tr>
+<!--										<tr>-->
+<!--											<th>Program Target:</th>-->
+<!--											<td id="target"></td>-->
+<!--										</tr>-->
+<!--										<tr>-->
+<!--											<th>Doner Name:</th>-->
+<!--											<td id="doner"></td>-->
+<!--										</tr>-->
+<!--										<tr>-->
+<!--											<th>Start Date:</th>-->
+<!--											<td id="startDate"></td>-->
+<!--										</tr>-->
+<!--										<tr>-->
+<!--											<th>End Date:</th>-->
+<!--											<td id="endDate"></td>-->
+<!--										</tr>-->
 									</table>
 								</div>
 								<div class="clearfix"></div>
@@ -87,7 +87,7 @@
 									<p id="description">
 
 									</p>
-									<a class="ot-btn btn-main-color text-cap mgb0" id="newsLink" href="news.php">View Program News</a>
+<!--									<a class="ot-btn btn-main-color text-cap mgb0" id="newsLink" href="news.php">View Program News</a>-->
 								</div>
 							</div>
 						</div>

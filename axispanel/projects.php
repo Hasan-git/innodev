@@ -116,17 +116,17 @@
                                             <div class="form-group admin-form">
                                                 <div class="col-sm-12">
                                                     <label class="control-label">Project Notes</label>
-                                                    <textarea name="notes" id="notes" class="form-control textarea-grow" rows="4" placeholder="Write Your Own Notes Here..."></textarea>
+                                                    <textarea name="notes" id="notes" class="form-control textarea-grow" rows="10" placeholder="Write Your Own Notes Here..."></textarea>
                                                 </div>
                                             </div>
                                             <div class="form-group admin-form">
 
                                                 <div class="col-sm-3">
-                                                    <label class="control-label">Starting Date*</label>
+                                                    <label class="control-label">Starting Date</label>
                                                     <input  type="date" name="startDate" id="startDate" class="form-control">
                                                 </div>
                                                 <div class="col-sm-3">
-                                                    <label class="control-label">End Date*</label>
+                                                    <label class="control-label">End Date</label>
                                                     <input  type="date" name="endDate" id="endDate" class="form-control">
                                                 </div>
 
@@ -193,17 +193,17 @@
                                             <div class="form-group admin-form">
                                                 <div class="col-sm-12">
                                                     <label class="control-label">Project Notes</label>
-                                                    <textarea name="notes" id="notes" class="form-control textarea-grow" rows="4" placeholder="Project Notes"></textarea>
+                                                    <textarea name="notes" id="notes" class="form-control textarea-grow" rows="10" placeholder="Project Notes"></textarea>
                                                 </div>
                                             </div>
                                             <div class="form-group admin-form">
 
                                                 <div class="col-sm-3">
-                                                    <label class="control-label">Starting Date*</label>
+                                                    <label class="control-label">Starting Date</label>
                                                     <input type="date" name="startDate" id="startDate" class="form-control" placeholder="Date..." >
                                                 </div>
                                                 <div class="col-sm-3">
-                                                    <label class="control-label">End Date*</label>
+                                                    <label class="control-label">End Date</label>
                                                     <input type="date" name="endDate" id="endDate" class="form-control" placeholder="Date..." >
                                                 </div>
 

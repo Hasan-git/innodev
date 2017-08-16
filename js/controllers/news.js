@@ -10,7 +10,7 @@
         var records, _data,fullRecords;
 
         var current_page = 1;
-        var records_per_page = 2;
+        var records_per_page = 4;
         var articleHtml = $(".records_article").first().clone();
 
         if ($.urlParam('month') && $.urlParam('year')) {
@@ -42,7 +42,7 @@
             actions.preClicked();
             actions.firstClicked();
             actions.lastClicked();
-            actions.changePage(1)
+            actions.changePage(1,"scrollOff")
 
               },
               error: function(error) {
@@ -86,7 +86,7 @@
                 actions.changePage(current_page);
               })
             },
-            changePage: function(page) {
+            changePage: function(page,scroll) {
               var btn_next = $('.next');
               var btn_prev = $('.pre');
               var btn_first = $('.first');
@@ -119,7 +119,7 @@
                         article.find("img").attr('src', "images/news/" + recordsObject.imageName);
                         article.find(".news_title").html(recordsObject.title);
                         article.find(".author").html(recordsObject.author);
-                        article.find(".content").html(recordsObject.text);
+                        article.find(".content").html(recordsObject.text).addClass("three_lines");
                         article.find(".nxt-href").attr('href', 'newsdetail.php?id=' + recordsObject.Id);
 
                         article.prependTo('.articles')
@@ -128,14 +128,15 @@
 
                     page_span.html(page);
 
-                    var target = $('.records_article');
-                    if (target.length) {
-                      event.preventDefault();
-                      $('html, body').stop().animate({
-                        scrollTop: target.offset().top - 140
-                      }, 1000);
+                    if(scroll != "scrollOff") {
+                      var target = $('.records_article');
+                      if (target.length) {
+                        event.preventDefault();
+                        $('html, body').stop().animate({
+                          scrollTop: target.offset().top - 140
+                        }, 1000);
+                      }
                     }
-
                     if (page == 1) {
                       btn_prev.css('visibility', 'hidden');
                       btn_first.css('visibility', 'hidden');
@@ -152,14 +153,14 @@
                       btn_last.css('visibility', 'visible');
                     }
 
-                    setInterval(function() {
-                      if ($('.projectContainer').height() < 400) {
-                        $('.records_article_paginaton').css('margin-top', 280 + 'px')
-                      } else {
-                        $('.records_article_paginaton').css('margin-top', 0 + 'px')
-                      }
-
-                    }, 1000);
+                    //setInterval(function() {
+                    //  if ($('.projectContainer').height() < 400) {
+                    //    $('.records_article_paginaton').css('margin-top', 280 + 'px')
+                    //  } else {
+                    //    $('.records_article_paginaton').css('margin-top', 0 + 'px')
+                    //  }
+                    //
+                    //}, 1000);
                   },
                   initArchive: function() {
                     $.ajax({

@@ -58,8 +58,8 @@
                                     <a href="newsdetail.php" class="news_title"></a>
                                     <span class="pull-right"><small class="author"></small></span>
                                  </h3>
-                                 <p class="content"></p>
-                                 <a href="newsdetail.php" class="ot-btn btn-main-color text-cap nxt-href" >
+                                 <p class="three_lines content"></p>
+                                 <a href="newsdetail.php" class="ot-btn btn-main-color text-cap nxt-href" target="_blank">
                                     Continue Reading...
                                  </a>
                               </div>
