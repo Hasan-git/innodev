@@ -15,23 +15,37 @@ if($_POST) {
     $subscriber_email = ($_POST['email']);
 
     if(!isEmail($subscriber_email)) {
+
+        header("HTTP/1.0 400 Bad Request");
         $array = array();
         $array['valid'] = 0;
-        $array['message'] = 'Insert a valid email address!';
+        $array['message'] = 'Please, insert a valid email address!';
         echo json_encode($array);
     }
     else {
-        $array = array();
-        $array['valid'] = 1;
-        $array['message'] = 'Thanks for your subscription!';
-        echo json_encode($array);
 
         // Send email
 	$subject = 'New Subscriber!';
 	$body = "You have a new subscriber!\n\nEmail: " . $subscriber_email;
         // uncomment this to set the From and Reply-To emails, then pass the $headers variable to the "mail" function below
 	$headers = "From: ".$subscriber_email." <" . $subscriber_email . ">" . "\r\n" . "Reply-To: " . $subscriber_email;
-	mail($emailTo, $subject, $body,$headers);
+
+	if(@mail($emailTo, $subject, $body,$headers)){
+        header("HTTP/1.0 200 OK");
+         $array = array(
+            'valid' => 1,
+            'message' => 'Thanks for your subscription!' );
+
+        echo json_encode($array);
+    }else{
+        header("HTTP/1.0 500 Internal Server Error");
+        $array = array(
+            'valid' => 0,
+            'message' => 'Unable to subscribe. Please, contact support' );
+        echo json_encode($array);
+    }
+
+
     }
 
 }

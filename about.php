@@ -24,6 +24,8 @@
 	  	<link rel="stylesheet" href="css/animate.css" type="text/css">
 	  	<!-- Main Style -->
 	  	<link rel="stylesheet" href="style.css">
+	  	<!-- toastr -->
+    <link rel="stylesheet" type="text/css" href="js/plugins/toaster/toastr.min.css">
 
 		<!-- Favicons
 		================================================== -->
@@ -259,11 +261,13 @@
 		<script src="js/plugins/jquery.mCustomScrollbar.concat.min.js"></script>
 		<script type="text/javascript" src="js/plugins/skrollr.min.js"></script>
 		<script src="js/plugins/wow.min.js"></script>
+		<script src="js/plugins/toaster/toastr.min.js"></script>
 
     <!-- Initializing Owl Carousel
     ================================================== -->
     <script src="js/plugins/owl.carousel.js"></script>
     <script src="js/plugins/custom-owl.js"></script>
+    <script src="js/controllers/about.js"></script>
 	 <!-- Mobile Menu
 	 ================================================== -->
 	 <script src="js/plugins/jquery.mobile-menu.js"></script>

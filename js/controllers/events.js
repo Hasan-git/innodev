@@ -1,17 +1,15 @@
     jQuery(document).ready(function() {
 
       "use strict";
-      var urlPath = "php/events/";
-
-
-
-        //////////////////////////////////////
 
         var records, _data, fullRecords;
 
         var current_page = 1;
         var records_per_page = 2;
         var articleHtml = $(".records_article").first().clone();
+
+        //////////////////////////////////////
+
 
         if ($.urlParam('prName')) {
           _data = {
@@ -20,7 +18,7 @@
         }
 
         $.ajax({
-          url: urlPath + 'get.php',
+          url: 'php/events/get.php',
           method: 'GET',
           dataType: 'json',
           data: _data,

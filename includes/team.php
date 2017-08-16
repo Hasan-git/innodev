@@ -225,9 +225,9 @@
             <div class="form-subcribe">
 
                 <p class="text-center">Find out early about all upcoming Events and Activities releases with our newsletter.</p>
-                <form method="post" action="sendmail.php">
-                    <input name="email" class="newsletter-email input-text" placeholder="email@example.com" type="email">
-                    <button class="ot-btn btn-main-color text-cap" type="submit">Subscribe</button>
+                <form method="post" id="subscribeForm" action="">
+                    <input name="email" id="email" class="newsletter-email input-text" placeholder="email@example.com" type="email">
+                    <button class="ot-btn btn-main-color text-cap" id="btnSubscribe" type="button">Subscribe</button>
                 </form>
                 <div class="success-message"></div>
                 <div class="error-message"></div>

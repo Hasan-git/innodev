@@ -25,6 +25,9 @@
     <!-- Main Style -->
     <link rel="stylesheet" href="style.css">
 
+    <!-- toastr -->
+    <link rel="stylesheet" type="text/css" href="js/plugins/toaster/toastr.min.css">
+
     <!-- Favicons
     ================================================== -->
     <link rel="shortcut icon" href="favicon.ico">
@@ -58,24 +61,24 @@
                     <div class="about-intro">
                         <div class="col-lg-8">
                             <h2>Join Our Team</h2>
-                            <form class="form-contact-arc padding-bot-30" name="contact" method="post" action="send_form_email.php">
+                            <form class="form-contact-arc padding-bot-30" id="contactForm"  name="contact" method="post" action="">
                                 <div class="row">
                                     <div class="form-group col-sm-12 ">
-                                        <input type="text" class="form-control" name="yourName" id="yourName" placeholder="Your Name">
+                                        <input type="text" class="form-control" data-validation="required" name="yourName" id="yourName" placeholder="Your Name">
                                     </div>
                                     <div class="form-group col-sm-12">
-                                        <input type="email" class="form-control" name="yourEmail" id="yourEmail" placeholder="Your Email" >
+                                        <input type="email" class="form-control" data-validation="required email" name="yourEmail" id="yourEmail" placeholder="Your Email" >
                                     </div>
                                     <div class="form-group col-sm-12">
-                                        <input type="text" class="form-control" name="yourPhone" id="phoneNumber" placeholder="Phone Number" >
+                                        <input type="text" class="form-control"  name="yourPhone" id="phoneNumber" placeholder="Phone Number" >
                                     </div>
                                 </div>
                                 <div class="input-content">
                                     <div class="form-group form-textarea">
-                                        <textarea id="textarea" class="form-control" name="comments" rows="6" placeholder="Your Message" ></textarea>
+                                        <textarea id="textarea" class="form-control" data-validation="required" name="comments" rows="6" placeholder="Your Message" ></textarea>
                                     </div>
                                 </div>
-                                <button  class="ot-btn btn-main-color btn-long text-cap btn-submit" type="submit" >Send Email</button>
+                                <button  class="ot-btn btn-main-color btn-long text-cap btn-submit" id="send" type="button" >Send Email</button>
                             </form> <!-- End Form -->
                         </div>
                     </div>
@@ -97,6 +100,8 @@
 <script src="js/plugins/jquery.mCustomScrollbar.concat.min.js"></script>
 <script type="text/javascript" src="js/plugins/skrollr.min.js"></script>
 <script src="js/plugins/wow.min.js"></script>
+<script src="js/plugins/toaster/toastr.min.js"></script>
+<script src="axispanel/vendor/plugins/jqueryFormValidator/form-validator/jquery.form-validator.js"></script>
 
 <!-- Initializing Owl Carousel
 ================================================== -->
@@ -105,6 +110,8 @@
 <!-- Mobile Menu
 ================================================== -->
 <script src="js/plugins/jquery.mobile-menu.js"></script>
+
+<script src="js/controllers/action.js"></script>
 
 <!-- PreLoad
 ================================================== -->

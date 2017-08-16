@@ -1,14 +1,11 @@
 jQuery(document).ready(function() {
     "use strict";
 
-    var urlPath = "php/index/";
-
-    //////////////////////////////////////
 
     var actions = {
         initProjects: function() {
             $.ajax({
-                url: urlPath + 'projects.php',
+                url: 'php/index/projects.php',
                 method: 'GET',
                 dataType: 'json',
                 success: function(data) {
@@ -45,7 +42,7 @@ jQuery(document).ready(function() {
         },
         initEvents: function() {
             $.ajax({
-                url: urlPath + 'events.php',
+                url: 'php/index/events.php',
                 method: 'GET',
                 dataType: 'json',
                 success: function(data) {
@@ -85,7 +82,7 @@ jQuery(document).ready(function() {
         },
         initNews: function() {
             $.ajax({
-                url: urlPath + 'news.php',
+                url: 'php/index/news.php',
                 method: 'GET',
                 dataType: 'json',
                 success: function(data) {
@@ -118,7 +115,7 @@ jQuery(document).ready(function() {
         },
         initActivities: function() {
             $.ajax({
-                url: urlPath + 'activities.php',
+                url: 'php/index/activities.php',
                 method: 'GET',
                 dataType: 'json',
                 success: function(data) {
@@ -150,6 +147,39 @@ jQuery(document).ready(function() {
                     // toastr.error(err.responseText, 'Notification', {timeOut: 5000})
                 }
             });
+        },
+        subscribe: function() {
+
+            $('#btnSubscribe').click(function(){
+
+                var formData = $('#subscribeForm').serialize();
+
+                if($('#email').val() === ''){
+                    $('#email').focus();
+                    toastr.error("Please, enter an email", 'Notification', {timeOut: 5000})
+                    return false;
+                }
+
+                $.ajax({
+                url: 'sendmail.php',
+                method: 'POST',
+                data: formData,
+                success: function(data) {
+
+                    var response = JSON.parse(data);
+
+                    //////////////////
+
+                    toastr.success(response.message, 'Notification', {timeOut: 5000})
+                    $('#email').val("")
+
+                },
+                error: function(error) {
+                    var err = JSON.parse(error.responseText);
+                     toastr.error(err['message'], 'Notification', {timeOut: 5000})
+                }
+                });
+            })
         }
     }
 
@@ -157,5 +187,6 @@ jQuery(document).ready(function() {
     actions.initEvents()
     actions.initNews()
     actions.initActivities()
+    actions.subscribe()
 
 });

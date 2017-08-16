@@ -1,10 +1,6 @@
 jQuery(document).ready(function() {
   "use strict";
 
-  var urlPath   = "php/activities/";
-
-    //////////////////////////////////////
-
     var record,_data;
     if( $.urlParam('id') ){
       _data= {
@@ -13,7 +9,7 @@ jQuery(document).ready(function() {
     }
 
     $.ajax({
-      url: urlPath + 'get.php',
+      url: 'php/activities/get.php',
       method: 'GET',
       data: _data,
       dataType: 'json',

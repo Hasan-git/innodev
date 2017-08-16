@@ -1,8 +1,6 @@
 jQuery(document).ready(function() {
     "use strict";
 
-
-
     $(".projectContainer").isotope({
         layoutMode: 'fitRows',
         filter: '*',
@@ -16,13 +14,11 @@ jQuery(document).ready(function() {
 
     $(".projectContainer").isotope('layout');
 
-    var urlPath = "php/activities/";
-
-    //////////////////////////////////////
 
     var fullRecords;
     var records, _data;
 
+    //////////////////////////////////////
 
     if ($.urlParam('prName')) {
         _data = {
@@ -34,7 +30,7 @@ jQuery(document).ready(function() {
     var records_per_page = 3; // activities per page
 
     $.ajax({
-        url: urlPath + 'get.php',
+        url: 'php/activities/get.php',
         method: 'GET',
         dataType: 'json',
         data: _data,

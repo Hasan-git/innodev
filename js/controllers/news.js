@@ -1,17 +1,14 @@
     jQuery(document).ready(function() {
 
       "use strict";
-      var urlPath = "php/news/";
 
-
-
-        //////////////////////////////////////
-
-        var records, _data,fullRecords;
+       var records, _data,fullRecords;
 
         var current_page = 1;
         var records_per_page = 4;
         var articleHtml = $(".records_article").first().clone();
+
+        //////////////////////////////////////
 
         if ($.urlParam('month') && $.urlParam('year')) {
           _data = {
@@ -20,7 +17,7 @@
           }
         }
         $.ajax({
-          url: urlPath + 'get.php',
+          url: 'php/news/get.php',
           method: 'GET',
           dataType: 'json',
           data: _data,
@@ -164,7 +161,7 @@
                   },
                   initArchive: function() {
                     $.ajax({
-                      url: urlPath + 'date.php',
+                      url: 'php/news/date.php',
                       method: 'GET',
                       dataType: 'json',
                       success: function(response) {

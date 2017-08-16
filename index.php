@@ -21,6 +21,7 @@
 		<link rel="stylesheet" href="css/elegant-font.css">
 		<link rel="stylesheet" href="css/linearicons.css">
 
+
 		<!-- REVOLUTION STYLE SHEETS -->
 		<link rel="stylesheet" type="text/css" href="revolution/css/settings.css">
 		<!-- REVOLUTION LAYERS STYLES -->
@@ -33,6 +34,9 @@
 	  	<!-- SCROLL BAR MOBILE MENU
   		================================================== -->
  		 <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" />
+
+ 		 <!-- toastr -->
+    <link rel="stylesheet" type="text/css" href="js/plugins/toaster/toastr.min.css">
 
 		<!-- Main Style -->
 		<link rel="stylesheet" href="style.css">
@@ -462,9 +466,9 @@
 							<div class="form-subcribe">
 
 								<p class="text-center">Find out early about all upcoming Events and Activities releases with our newsletter.</p>
-								<form method="post" action="sendmail.php">
-									<input name="email" class="newsletter-email input-text" placeholder="email@example.com" type="email">
-									<button class="ot-btn btn-main-color text-cap" type="submit">Subscribe</button>
+								<form method="post" id="subscribeForm" action=""><!-- sendmail.php -->
+									<input name="email" class="newsletter-email input-text" id="email" placeholder="email@example.com" type="email">
+									<button class="ot-btn btn-main-color text-cap" id="btnSubscribe" type="button">Subscribe</button>
 								</form>
 							</div>
 						</div>
@@ -483,7 +487,7 @@
 
 		<!-- SCRIPT -->
 
-		<script src="js/vendor/script.js"></script>
+
 		<script src="js/vendor/jquery.min.js"></script>
 	    <script src="js/vendor/bootstrap.min.js"></script>
 		<script src="js/plugins/jquery.waypoints.min.js"></script>
@@ -507,6 +511,7 @@
 		<script type="text/javascript" src="revolution/js/extensions/revolution.extension.parallax.min.js"></script>
 		<script type="text/javascript" src="revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
 		<script type="text/javascript" src="revolution/js/extensions/revolution.extension.video.min.js"></script>
+		<script src="js/plugins/toaster/toastr.min.js"></script>
 		<!-- Intializing Slider-->
 		<script type="text/javascript" src="js/plugins/slider.js"></script>
 
