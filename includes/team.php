@@ -14,7 +14,7 @@
                 <div class="team-grid-item">
                     <img src="images/board/Moussa-Bachir.jpg" class="img-responsive" alt="Image">
                     <div class="grid-team-overlay">
-                        <h5 class="text-cap">Moussa Bachir</h5>
+                        <h5 class="text-cap">Moussa Bashir</h5>
                         <p class="member-job">President</p>
                         <p class="description-member">
 
@@ -124,7 +124,7 @@
                                 <img src="images/team/Alaa-Bachir.jpg" class="img-responsive" alt="Image">
                             </div>
                             <div class="member-info text-center hvr-float-shadow">
-                                <h5 class="text-cap">Alaa Bachir</h5>
+                                <h5 class="text-cap">Alaa Bashir</h5>
                                 <p class="member-job">Communication Officer</p>
                                 <div class="social-member">
 
@@ -225,10 +225,12 @@
             <div class="form-subcribe">
 
                 <p class="text-center">Find out early about all upcoming Events and Activities releases with our newsletter.</p>
-                <form  method="post">
-                    <input class="newsletter-email input-text" placeholder="email@example.com" type="email">
+                <form method="post" action="sendmail.php">
+                    <input name="email" class="newsletter-email input-text" placeholder="email@example.com" type="email">
                     <button class="ot-btn btn-main-color text-cap" type="submit">Subscribe</button>
                 </form>
+                <div class="success-message"></div>
+                <div class="error-message"></div>
             </div>
         </div>
     </div>

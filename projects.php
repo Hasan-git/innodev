@@ -87,7 +87,7 @@
 									<p id="description">
 
 									</p>
-									<a class="ot-btn btn-main-color text-cap mgb0" id="newsLink" href="news.php">View Program News</a>
+<!--									<a class="ot-btn btn-main-color text-cap mgb0" id="newsLink" href="news.php">View Program News</a>-->
 								</div>
 							</div>
 						</div>

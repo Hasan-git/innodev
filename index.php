@@ -106,9 +106,9 @@
 									 data-x="center"
 									 data-y="bottom"
 									 data-transform_in="y:80px;opacity:0;s:800;e:easeInOutCubic;"
-				 					 data-transform_out="y:80px;opacity:0;s:300;"
+									 data-transform_out="y:80px;opacity:0;s:300;"
 									 data-start="1400"
-									><b style="background-color: rgba(0,0,0,0.4);" >Youth in Creative</b>
+								><b style="background-color: rgba(0,0,0,0.4);" >Art & Culture</b>
 								</div>
 							</li>
 							<li data-transition="parallaxtoright" data-masterspeed="1000" >
@@ -123,7 +123,7 @@
 									 data-transform_in="y:80px;opacity:0;s:800;e:easeInOutCubic;"
 									 data-transform_out="y:80px;opacity:0;s:300;"
 									 data-start="1400"
-									><b style="background-color: rgba(0,0,0,0.4);" >Innovative & Productive</b>
+								><b style="background-color: rgba(0,0,0,0.4);" >Youth Empowerment</b>
 								</div>
 							</li>
 							<!-- SLIDE  -->
@@ -139,7 +139,7 @@
 									 data-transform_in="y:80px;opacity:0;s:800;e:easeInOutCubic;"
 									 data-transform_out="y:80px;opacity:0;s:300;"
 									 data-start="1400"
-									><b style="background-color: rgba(0,0,0,0.4);" >Activities & Programs</b>
+								><b style="background-color: rgba(0,0,0,0.4);" >School Awareness</b>
 								</div>
 							</li>
 							<!-- SLIDE  -->
@@ -155,7 +155,7 @@
 									 data-transform_in="y:80px;opacity:0;s:800;e:easeInOutCubic;"
 									 data-transform_out="y:80px;opacity:0;s:300;"
 									 data-start="1400"
-								><b style="background-color: rgba(0,0,0,0.4);" >Youth in Action</b>
+								><b style="background-color: rgba(0,0,0,0.4);" >Reduce, Reuse, Recycle</b>
 								</div>
 							</li>
 							<!-- SLIDE  -->
@@ -171,7 +171,7 @@
 									 data-transform_in="y:80px;opacity:0;s:800;e:easeInOutCubic;"
 									 data-transform_out="y:80px;opacity:0;s:300;"
 									 data-start="1400"
-								><b style="background-color: rgba(0,0,0,0.4);" >Spread Positive Vibes</b>
+								><b style="background-color: rgba(0,0,0,0.4);" >Environmental Awareness</b>
 								</div>
 							</li>
 						</ul>
@@ -249,21 +249,21 @@
 								</div>
 								<div class="col-md-3   wow fadeInRight" data-wow-delay=".35s">
 									<div class="process-2-item">
-										<span class="order order2">02</span><h4 class="text-cap"> - Concept</h4>
+										<span class="order order2">02</span><h4 class="text-cap"> - Women</h4>
 										<p>INNODEV believes in transparency, accountability, empowerment, equality, partnership,
 											networking and nondiscrimination.</p>
 									</div>
 								</div>
 								<div class="col-md-3   wow fadeInRight" data-wow-delay="0.45s">
 									<div class="process-2-item">
-										<span class="order order3">03</span><h4 class="text-cap"> - Professional</h4>
+										<span class="order order3">03</span><h4 class="text-cap"> - Environment</h4>
 										<p>INNODEV provides professional expertise to people with passion to make a positive
 											change in their communities.</p>
 									</div>
 								</div>
 								<div class="col-md-3   wow fadeInRight" data-wow-delay=".55s">
 									<div class="process-2-item">
-										<span class="order order4">04</span><h4 class="text-cap"> - Students</h4>
+										<span class="order order4">04</span><h4 class="text-cap"> - Art & Culture</h4>
 										<p>INNODEV is keen on raising awareness and concern among Lebanese on environmental
 											challenges and understanding on waste problems.</p>
 									</div>
@@ -362,10 +362,10 @@
 										<a class="img-block"><img id="image" src="http://placehold.it/1140x640/ccc.jpg" class="img-responsive" alt="Image"></a>
 										<div class="text-box">
 											<h4 class="text-cap" id="title"></h4>
-											<p id="text">
+											<p id="text" class="three_lines" style="text-space: 400; text-after-overflow: ...">
 											</p>
 										</div>
-										<a class="ot-btn btn-main-color text-cap" id="newsDetailLink" href="newsdetail.php">Read more</a>
+										<a class="ot-btn btn-main-color text-cap" id="newsDetailLink" href="newsdetail.php" target="_blank">Read more</a>
 									</div>
 								</div>
 								<!-- End Col -->
@@ -462,14 +462,14 @@
 							<div class="form-subcribe">
 
 								<p class="text-center">Find out early about all upcoming Events and Activities releases with our newsletter.</p>
-								<form  method="post">
-									<input class="newsletter-email input-text" placeholder="email@example.com" type="email">
+								<form method="post" action="sendmail.php">
+									<input name="email" class="newsletter-email input-text" placeholder="email@example.com" type="email">
 									<button class="ot-btn btn-main-color text-cap" type="submit">Subscribe</button>
 								</form>
 							</div>
 						</div>
 					</div>
-				</section>
+			</section>
 				<!-- End Section subcribe -->
 
 				<?php include_once('includes/footer.php'); ?>
@@ -482,7 +482,9 @@
 
 
 		<!-- SCRIPT -->
-	    <script src="js/vendor/jquery.min.js"></script>
+
+		<script src="js/vendor/script.js"></script>
+		<script src="js/vendor/jquery.min.js"></script>
 	    <script src="js/vendor/bootstrap.min.js"></script>
 		<script src="js/plugins/jquery.waypoints.min.js"></script>
 	    <script src="js/plugins/jquery.mCustomScrollbar.concat.min.js"></script>
