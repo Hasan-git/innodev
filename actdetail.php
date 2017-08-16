@@ -101,8 +101,7 @@
 <script src="js/plugins/wow.min.js"></script>
 <script type="text/javascript" src="js/plugins/skrollr.min.js"></script>
 
-<script type="text/javascript" src="js/controllers/factory.js"></script>
-<script type="text/javascript" src="js/controllers/actDetails.js"></script>
+
 
 
 
@@ -136,5 +135,8 @@
 <!-- Global Js
 ================================================== -->
 <script src="js/plugins/custom.js"></script>
+
+<script type="text/javascript" src="js/controllers/factory.js"></script>
+<script type="text/javascript" src="js/controllers/actDetails.js"></script>
 </body>
 </html>
